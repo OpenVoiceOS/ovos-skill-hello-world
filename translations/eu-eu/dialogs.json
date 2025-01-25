@@ -1,24 +1,23 @@
 {
     "/dialog/hello.world.dialog": [
-        "Kaixo mundua!",
-        "Kaixo!",
-        "Kaixo zuri ere!"
+        "Kaixo",
+        "Kaixo, mundu",
+        "Epa zuri ere"
     ],
     "/dialog/how.are.you.dialog": [
-        "Ondo nago.",
-        "Nahiko ondo.",
-        "Ondo esan beharko.",
-        "Primeran nago.",
-        "Hobeto egon liteke.",
-        "Oso ondo nago."
+        "Hobeto izan zitekeen",
+        "Bikain egiten ari naiz",
+        "Oso ongi egiten ari naiz",
+        "Ongi egiten ari naiz",
+        "Ez dago gaizki",
+        "Ongi samar"
     ],
     "/dialog/welcome.dialog": [
-        "Edozein unetan.",
-        "Nahi duzunean.",
-        "Pozten naiz laguntzeaz.",
-        "Ez horregatik.",
-        "Plazera nirea da.",
-        "Ez dago arazorik.",
-        "Deusetaz."
+        "noiznahi",
+        "Pozten naiz baliagarri izateaz",
+        "Pozten naiz lagundu izana",
+        "Plazera izan da",
+        "Arazorik ez",
+        "Ez horregatik"
     ]
 }

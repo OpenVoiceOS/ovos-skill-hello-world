@@ -1,23 +1,23 @@
 {
     "/dialog/hello.world.dialog": [
-        "Ola mundo",
         "Ola",
-        "Ola para ti tam\u00e9n"
+        "Ola mundo",
+        "Ola a ti tamén"
     ],
     "/dialog/how.are.you.dialog": [
-        "Estou ben",
-        "Moi ben",
-        "Nada mal",
+        "Podía ir mellor",
+        "Estou de marabilla",
         "Estou moi ben",
-        "Poder\u00eda estar mellor",
-        "Estou indo moi ben"
+        "Estou ben",
+        "Vou indo",
+        "Non hai queixa"
     ],
     "/dialog/welcome.dialog": [
-        "Cando queiras.",
-        "Feliz de poder axudarche.",
-        "Feliz de axudar.",
-        "O pracer \u00e9 meu.",
-        "Ning\u00fan problema.",
-        "De nada."
+        "De nada",
+        "Un pracer poder axudar",
+        "Un pracer axudar",
+        "De nada",
+        "Sen problema ningún",
+        "Faltaría máis"
     ]
 }
