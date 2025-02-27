@@ -1,7 +1,7 @@
 {
-    "/intent/HowAreYou.intent": [
-        "como est\u00e1s",
-        "como estiveches",
-        "como foi o teu d\u00eda"
+    "/intents/HowAreYou.intent": [
+        "que tal",
+        "como che foi o día",
+        "como che foi"
     ]
 }
