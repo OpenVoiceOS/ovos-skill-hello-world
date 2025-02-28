@@ -1,7 +1,12 @@
 {
-  "/intents/HowAreYou.intent": [
-    "hvordan går det med dig",
-    "hvordan har du haft det",
-    "hvordan har din dag været"
-  ]
+    "/intent/HowAreYou.intent": [
+        "hvordan er din dag gået",
+        "hvordan har du det (har det)",
+        "hvordan har du haft det"
+    ],
+    "/intents/HowAreYou.intent": [
+        "hvordan går det med dig",
+        "hvordan har din dag været",
+        "hvordan har du haft det"
+    ]
 }

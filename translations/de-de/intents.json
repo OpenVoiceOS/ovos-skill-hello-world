@@ -1,7 +1,12 @@
 {
-  "/intents/HowAreYou.intent": [
-    "wie geht es dir",
-    "Wie geht es dir",
-    "Wie war dein Tag"
-  ]
+    "/intent/HowAreYou.intent": [
+        "Wie geht es dir",
+        "wie ist es dir gegangen",
+        "wie war dein Tag"
+    ],
+    "/intents/HowAreYou.intent": [
+        "Wie geht es dir",
+        "Wie war dein Tag",
+        "wie geht es dir"
+    ]
 }
