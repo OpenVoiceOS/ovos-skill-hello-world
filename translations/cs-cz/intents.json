@@ -1,7 +1,7 @@
 {
     "/intent/HowAreYou.intent": [
-        "jak se (m\u00e1\u0161|)",
-        "jak jsi se m\u011bl",
-        "jak\u00fd byl tv\u016fj den"
+        "jak jsi se měl",
+        "jak se (máš|)",
+        "jaký byl tvůj den"
     ]
 }

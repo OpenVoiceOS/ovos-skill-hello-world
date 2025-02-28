@@ -1,7 +1,7 @@
 {
     "/intent/HowAreYou.intent": [
         "Jak tam (leci|)",
-        "jak si\u0119 masz",
-        "jak ci min\u0105\u0142 dzie\u0144"
+        "jak ci minął dzień",
+        "jak się masz"
     ]
 }

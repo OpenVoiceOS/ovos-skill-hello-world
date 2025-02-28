@@ -1,7 +1,7 @@
 {
     "/intent/HowAreYou.intent": [
-        "hogy vagy",
         "hogy telt a napod",
+        "hogy vagy",
         "milyen volt a napod"
     ]
 }
