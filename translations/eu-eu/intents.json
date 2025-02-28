@@ -1,7 +1,12 @@
 {
+    "/intent/HowAreYou.intent": [
+        "(nola|zelan|zer moduz|ongi|ondo) (joan da|joan zaizu|doakizu|doa|doa zure|) eguna",
+        "(ongi|ondo) (al|) (zaude|zabiltza|zabiltz|zagoz)",
+        "(zer moduz|zelan) (eguna|zaude|zabiltza|zabiltz|zagoz|)"
+    ],
     "/intents/HowAreYou.intent": [
+        "nola egon zara",
         "zer ari zara (egiten|)",
-        "zer moduz eguna",
-        "nola egon zara"
+        "zer moduz eguna"
     ]
 }

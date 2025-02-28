@@ -1,7 +1,7 @@
 {
     "/intent/HowAreYou.intent": [
-        "\u00bfQu\u00e9 tal|C\u00f3mo estas?",
-        "c\u00f3mo te ha ido",
-        "c\u00f3mo ha ido el d\u00eda"
+        "(Qué tal|Cómo estas)",
+        "cómo ha ido el día",
+        "cómo te ha ido"
     ]
 }
