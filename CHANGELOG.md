@@ -1,5 +1,13 @@
 # Changelog
 
+## [0.1.14a1](https://github.com/OpenVoiceOS/ovos-skill-hello-world/tree/0.1.14a1) (2025-03-20)
+
+[Full Changelog](https://github.com/OpenVoiceOS/ovos-skill-hello-world/compare/0.1.13a1...0.1.14a1)
+
+**Merged pull requests:**
+
+- fix: update and make it less jarring with "hello english folks" [\#56](https://github.com/OpenVoiceOS/ovos-skill-hello-world/pull/56) ([JarbasAl](https://github.com/JarbasAl))
+
 ## [0.1.13a1](https://github.com/OpenVoiceOS/ovos-skill-hello-world/tree/0.1.13a1) (2025-03-13)
 
 [Full Changelog](https://github.com/OpenVoiceOS/ovos-skill-hello-world/compare/0.1.12...0.1.13a1)
