@@ -1,0 +1,14 @@
+{
+  "skill_id": "skill-ovos-hello-world.openvoiceos",
+  "source": "https://github.com/OpenVoiceOS/skill-ovos-hello-world",
+  "name": "Hallo wereld",
+  "description": "Voorbeeld skill om ontwikkelaars te laten zien hoe een OVOS-skill ontwikkeld kan worden",
+  "examples": [
+    "Hallo wereld",
+    "Bedankt",
+    "Hoe is het met je?"
+  ],
+  "tags": [
+    "handleiding"
+  ]
+}

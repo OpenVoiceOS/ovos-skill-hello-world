@@ -23,6 +23,8 @@ class HelloWorldSkill(OVOSSkill):
 
     @classproperty
     def runtime_requirements(self):
+        # if this isn't defined the skill will
+        # only load if there is internet
         return RuntimeRequirements(
             internet_before_load=False,
             network_before_load=False,
@@ -77,7 +79,6 @@ class HelloWorldSkill(OVOSSkill):
     def handle_how_are_you_intent(self, message):
         """This is a Padatious intent handler.
         It is triggered using a list of sample phrases."""
-
         self.speak_dialog("how.are.you")
         LOG.info("There are five types of log messages: 'info, debug, warning, error, and exception.")
         # Skills can log useful information. These will appear in the CLI and
@@ -102,13 +103,14 @@ class HelloWorldSkill(OVOSSkill):
         """
         # wait=True will block the message bus until the dialog is finished
         self.speak_dialog("hello.world", wait=True)
-        # this will speak the string without translation
-        self.speak("hello english folks")
+        LOG.debug("'hello world' TTS finished")
+        # this would speak the string without translation
+        # self.speak("hello world")
 
-    def stop(self):
+    def stop(self) -> bool:
         """Optional action to take when "stop" is requested by the user.
         This method should return True if it stopped something or
         False (or None) otherwise.
         If not relevant to your skill, feel free to remove.
         """
-        pass
+        return False
