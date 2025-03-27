@@ -1,8 +1,7 @@
 {
-    "/intent/HowAreYou.intent": [
-        "comment (ça va|vas-tu)",
-        "comment a été ta journée",
-        "comment se (passe|déroule) ta journée",
-        "est-ce que ça va"
-    ]
+  "/intents/HowAreYou.intent": [
+    "comment vas-tu\ncomment ça va",
+    "comment s'est passée ta journée\ncomment ça s'est passé aujourd'hui",
+    "comment as-tu été\ncomment ça a été"
+  ]
 }
