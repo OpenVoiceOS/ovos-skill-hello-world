@@ -1,5 +1,14 @@
 # Changelog
 
+## [0.1.15a3](https://github.com/OpenVoiceOS/ovos-skill-hello-world/tree/0.1.15a3) (2025-03-27)
+
+[Full Changelog](https://github.com/OpenVoiceOS/ovos-skill-hello-world/compare/0.1.15a2...0.1.15a3)
+
+**Merged pull requests:**
+
+- Missing French [\#59](https://github.com/OpenVoiceOS/ovos-skill-hello-world/pull/59) ([gitlocalize-app[bot]](https://github.com/apps/gitlocalize-app))
+- Better dialog [\#58](https://github.com/OpenVoiceOS/ovos-skill-hello-world/pull/58) ([gitlocalize-app[bot]](https://github.com/apps/gitlocalize-app))
+
 ## [0.1.15a2](https://github.com/OpenVoiceOS/ovos-skill-hello-world/tree/0.1.15a2) (2025-03-27)
 
 [Full Changelog](https://github.com/OpenVoiceOS/ovos-skill-hello-world/compare/0.1.14...0.1.15a2)
