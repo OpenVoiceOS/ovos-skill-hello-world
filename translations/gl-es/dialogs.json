@@ -1,15 +1,15 @@
 {
   "/dialog/hello.dialog": [
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null
+    "Ola!",
+    "Ei, ola!",
+    "Boas!",
+    "Ola a ti tamén!",
+    "Encantado de verte!",
+    "Ola de novo!",
+    "Ei! Como vai todo?",
+    "Alegro de escoitarte!",
+    "Ola! Que tal estás?",
+    "Ei, amigo!"
   ],
   "/dialog/hello.world.dialog": [
     "Ola"
@@ -23,11 +23,11 @@
     "Non hai queixa"
   ],
   "/dialog/welcome.dialog": [
-    null,
-    null,
-    null,
-    null,
-    null,
-    null
+    "De nada",
+    "Un pracer poder axudar",
+    "Un pracer axudar",
+    "De nada",
+    "Sen problema ningún",
+    "Faltaría máis"
   ]
 }
