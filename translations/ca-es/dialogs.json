@@ -1,4 +1,16 @@
 {
+  "/dialog/hello.dialog": [
+    "Hola!",
+    "Ei, hola!",
+    "Bones!",
+    "Hola a tu també!",
+    "Encantat de veure't!",
+    "Hola de nou!",
+    "Ei, com va tot?",
+    "Content de sentir-te!",
+    "Hola! Què tal?",
+    "Ei, company!"
+  ],
   "/dialog/hello.world.dialog": [
     "Hola món",
     "Hola",

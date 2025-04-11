@@ -1,4 +1,27 @@
 {
+  "/intents/Greetings.intent": [
+    "hello",
+    "hi",
+    "hey",
+    "hey there",
+    "hello there",
+    "hi there",
+    "good morning",
+    "good afternoon",
+    "good evening",
+    "howdy",
+    "yo",
+    "hiya",
+    "what's up",
+    "sup",
+    "greetings",
+    "g'day",
+    "how’s it going",
+    "nice to see you",
+    "long time no see",
+    "ahoy",
+    "hello again"
+  ],
     "/intents/HowAreYou.intent": [
         "how are you (doing|)",
         "how has your day been",

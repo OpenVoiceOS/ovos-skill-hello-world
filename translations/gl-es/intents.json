@@ -1,4 +1,15 @@
 {
+  "/intents/Greetings.intent": [
+    "ola",
+    "boas",
+    "bos días",
+    "boas tardes",
+    "boas noites",
+    "que tal",
+    "como vai",
+    "encantado de verte",
+    "hai tempo que non nos vemos"
+  ],
     "/intent/HowAreYou.intent": [
         "como estiveches",
         "como estás",

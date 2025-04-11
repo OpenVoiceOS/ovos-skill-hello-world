@@ -1,4 +1,16 @@
 {
+  "/dialog/hello.dialog": [
+    "Kaixo!",
+    "Epa, kaixo!",
+    "Aupa!",
+    "Zuri ere kaixo!",
+    "Pozik zu ikusteaz!",
+    "Kaixo berriro!",
+    "Epa! Nola doa?",
+    "Zure berri izatea pozgarria da!",
+    "Kaixo! Zer moduz?",
+    "Epa lagun!"
+  ],
     "/dialog/hello.world.dialog": [
         "Kaixo",
         "Kaixo, mundu",

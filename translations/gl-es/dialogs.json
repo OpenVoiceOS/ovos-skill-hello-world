@@ -1,4 +1,16 @@
 {
+  "/dialog/hello.dialog": [
+    "Ola!",
+    "Ei, ola!",
+    "Boas!",
+    "Ola a ti tamén!",
+    "Encantado de verte!",
+    "Ola de novo!",
+    "Ei! Como vai todo?",
+    "Alegro de escoitarte!",
+    "Ola! Que tal estás?",
+    "Ei, amigo!"
+  ],
     "/dialog/hello.world.dialog": [
         "Ola",
         "Ola mundo",

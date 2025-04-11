@@ -1,20 +1,34 @@
 # Changelog
 
-## [0.1.14a1](https://github.com/OpenVoiceOS/ovos-skill-hello-world/tree/0.1.14a1) (2025-03-20)
+## [0.2.0a1](https://github.com/OpenVoiceOS/ovos-skill-hello-world/tree/0.2.0a1) (2025-04-11)
 
-[Full Changelog](https://github.com/OpenVoiceOS/ovos-skill-hello-world/compare/0.1.13a1...0.1.14a1)
-
-**Merged pull requests:**
-
-- fix: update and make it less jarring with "hello english folks" [\#56](https://github.com/OpenVoiceOS/ovos-skill-hello-world/pull/56) ([JarbasAl](https://github.com/JarbasAl))
-
-## [0.1.13a1](https://github.com/OpenVoiceOS/ovos-skill-hello-world/tree/0.1.13a1) (2025-03-13)
-
-[Full Changelog](https://github.com/OpenVoiceOS/ovos-skill-hello-world/compare/0.1.12...0.1.13a1)
+[Full Changelog](https://github.com/OpenVoiceOS/ovos-skill-hello-world/compare/0.1.15a3...0.2.0a1)
 
 **Merged pull requests:**
 
-- nl-nl translations [\#49](https://github.com/OpenVoiceOS/ovos-skill-hello-world/pull/49) ([gitlocalize-app[bot]](https://github.com/apps/gitlocalize-app))
+- feat: Greetings.intent [\#64](https://github.com/OpenVoiceOS/ovos-skill-hello-world/pull/64) ([JarbasAl](https://github.com/JarbasAl))
+
+## [0.1.15a3](https://github.com/OpenVoiceOS/ovos-skill-hello-world/tree/0.1.15a3) (2025-03-27)
+
+[Full Changelog](https://github.com/OpenVoiceOS/ovos-skill-hello-world/compare/0.1.15a1...0.1.15a3)
+
+## [0.1.15a1](https://github.com/OpenVoiceOS/ovos-skill-hello-world/tree/0.1.15a1) (2025-03-27)
+
+[Full Changelog](https://github.com/OpenVoiceOS/ovos-skill-hello-world/compare/0.1.15a2...0.1.15a1)
+
+**Merged pull requests:**
+
+- Missing French [\#59](https://github.com/OpenVoiceOS/ovos-skill-hello-world/pull/59) ([gitlocalize-app[bot]](https://github.com/apps/gitlocalize-app))
+- Better dialog [\#58](https://github.com/OpenVoiceOS/ovos-skill-hello-world/pull/58) ([gitlocalize-app[bot]](https://github.com/apps/gitlocalize-app))
+
+## [0.1.15a2](https://github.com/OpenVoiceOS/ovos-skill-hello-world/tree/0.1.15a2) (2025-03-27)
+
+[Full Changelog](https://github.com/OpenVoiceOS/ovos-skill-hello-world/compare/0.1.14...0.1.15a2)
+
+**Merged pull requests:**
+
+- Missing French for skill.json [\#61](https://github.com/OpenVoiceOS/ovos-skill-hello-world/pull/61) ([gitlocalize-app[bot]](https://github.com/apps/gitlocalize-app))
+- Better vocab [\#60](https://github.com/OpenVoiceOS/ovos-skill-hello-world/pull/60) ([gitlocalize-app[bot]](https://github.com/apps/gitlocalize-app))
 
 
 
