@@ -1,34 +1,20 @@
 # Changelog
 
-## [0.2.0a1](https://github.com/OpenVoiceOS/ovos-skill-hello-world/tree/0.2.0a1) (2025-04-11)
+## [0.2.1a3](https://github.com/OpenVoiceOS/ovos-skill-hello-world/tree/0.2.1a3) (2025-04-11)
 
-[Full Changelog](https://github.com/OpenVoiceOS/ovos-skill-hello-world/compare/0.1.15a3...0.2.0a1)
-
-**Merged pull requests:**
-
-- feat: Greetings.intent [\#64](https://github.com/OpenVoiceOS/ovos-skill-hello-world/pull/64) ([JarbasAl](https://github.com/JarbasAl))
-
-## [0.1.15a3](https://github.com/OpenVoiceOS/ovos-skill-hello-world/tree/0.1.15a3) (2025-03-27)
-
-[Full Changelog](https://github.com/OpenVoiceOS/ovos-skill-hello-world/compare/0.1.15a1...0.1.15a3)
-
-## [0.1.15a1](https://github.com/OpenVoiceOS/ovos-skill-hello-world/tree/0.1.15a1) (2025-03-27)
-
-[Full Changelog](https://github.com/OpenVoiceOS/ovos-skill-hello-world/compare/0.1.15a2...0.1.15a1)
+[Full Changelog](https://github.com/OpenVoiceOS/ovos-skill-hello-world/compare/0.2.1a2...0.2.1a3)
 
 **Merged pull requests:**
 
-- Missing French [\#59](https://github.com/OpenVoiceOS/ovos-skill-hello-world/pull/59) ([gitlocalize-app[bot]](https://github.com/apps/gitlocalize-app))
-- Better dialog [\#58](https://github.com/OpenVoiceOS/ovos-skill-hello-world/pull/58) ([gitlocalize-app[bot]](https://github.com/apps/gitlocalize-app))
+- ca-es / translate [\#67](https://github.com/OpenVoiceOS/ovos-skill-hello-world/pull/67) ([gitlocalize-app[bot]](https://github.com/apps/gitlocalize-app))
 
-## [0.1.15a2](https://github.com/OpenVoiceOS/ovos-skill-hello-world/tree/0.1.15a2) (2025-03-27)
+## [0.2.1a2](https://github.com/OpenVoiceOS/ovos-skill-hello-world/tree/0.2.1a2) (2025-04-11)
 
-[Full Changelog](https://github.com/OpenVoiceOS/ovos-skill-hello-world/compare/0.1.14...0.1.15a2)
+[Full Changelog](https://github.com/OpenVoiceOS/ovos-skill-hello-world/compare/0.2.0...0.2.1a2)
 
 **Merged pull requests:**
 
-- Missing French for skill.json [\#61](https://github.com/OpenVoiceOS/ovos-skill-hello-world/pull/61) ([gitlocalize-app[bot]](https://github.com/apps/gitlocalize-app))
-- Better vocab [\#60](https://github.com/OpenVoiceOS/ovos-skill-hello-world/pull/60) ([gitlocalize-app[bot]](https://github.com/apps/gitlocalize-app))
+- es-es/translate [\#68](https://github.com/OpenVoiceOS/ovos-skill-hello-world/pull/68) ([gitlocalize-app[bot]](https://github.com/apps/gitlocalize-app))
 
 
 

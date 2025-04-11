@@ -10,11 +10,21 @@
     "cómo estás",
     "encantado de verte",
     "cuánto tiempo",
-    "hola de nuevo"
+    "hola de nuevo",
+    null,
+    "qué hay?",
+    null,
+    "saludos",
+    null,
+    "¿cómo va?",
+    "(encantado|encantada) de verte",
+    "cuánto tiempo sin (verte|vernos)",
+    null,
+    "Hola de nuevo"
   ],
-    "/intents/HowAreYou.intent": [
-        "(Qué tal|Cómo estas)",
-        "cómo ha ido el día",
-        "cómo te ha ido"
-    ]
+  "/intents/HowAreYou.intent": [
+    "(Qué tal|Cómo estas)",
+    "cómo ha ido el día",
+    "cómo te ha ido"
+  ]
 }
