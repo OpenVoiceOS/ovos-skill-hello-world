@@ -1,4 +1,16 @@
 {
+  "/dialog/hello.dialog": [
+    "¡Hola!",
+    "¡Ey, hola!",
+    "¡Buenas!",
+    "¡Hola a ti también!",
+    "¡Encantado de verte!",
+    "¡Hola de nuevo!",
+    "¡Ey! ¿Cómo va todo?",
+    "¡Qué alegría escucharte!",
+    "¡Hola! ¿Qué tal?",
+    "¡Ey, amigo!"
+  ],
     "/dialog/hello.world.dialog": [
         "Hola mundo",
         "Hola",
