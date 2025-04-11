@@ -1,8 +1,20 @@
 # Changelog
 
+## [0.2.0a1](https://github.com/OpenVoiceOS/ovos-skill-hello-world/tree/0.2.0a1) (2025-04-11)
+
+[Full Changelog](https://github.com/OpenVoiceOS/ovos-skill-hello-world/compare/0.1.15a3...0.2.0a1)
+
+**Merged pull requests:**
+
+- feat: Greetings.intent [\#64](https://github.com/OpenVoiceOS/ovos-skill-hello-world/pull/64) ([JarbasAl](https://github.com/JarbasAl))
+
 ## [0.1.15a3](https://github.com/OpenVoiceOS/ovos-skill-hello-world/tree/0.1.15a3) (2025-03-27)
 
-[Full Changelog](https://github.com/OpenVoiceOS/ovos-skill-hello-world/compare/0.1.15a2...0.1.15a3)
+[Full Changelog](https://github.com/OpenVoiceOS/ovos-skill-hello-world/compare/0.1.15a1...0.1.15a3)
+
+## [0.1.15a1](https://github.com/OpenVoiceOS/ovos-skill-hello-world/tree/0.1.15a1) (2025-03-27)
+
+[Full Changelog](https://github.com/OpenVoiceOS/ovos-skill-hello-world/compare/0.1.15a2...0.1.15a1)
 
 **Merged pull requests:**
 
