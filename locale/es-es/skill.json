@@ -1,0 +1,14 @@
+{
+  "skill_id": "skill-ovos-hello-world.openvoiceos",
+  "source": "https://github.com/OpenVoiceOS/skill-ovos-hello-world",
+  "name": "Hello World",
+  "description": "Habilidad de muestra para que los autores de habilidades puedan ver cómo se crea una habilidad OVOS",
+  "examples": [
+    "Hola Mundo",
+    "Gracias",
+    "¿Cómo estás?"
+  ],
+  "tags": [
+    "tutorial"
+  ]
+}
