@@ -1,4 +1,16 @@
 {
+  "/dialog/hello.dialog": [
+    "Olá!",
+    "Oi!",
+    "E aí!",
+    "Oi pra você também!",
+    "Que bom te ver!",
+    "Olá de novo!",
+    "Oi! Tudo certo por aí?",
+    "Bom falar com você!",
+    "Oi! Como vai?",
+    "E aí, amigo!"
+  ],
     "/dialog/hello.world.dialog": [
         "Ol\u00e1 mundo",
         "Ol\u00e1",

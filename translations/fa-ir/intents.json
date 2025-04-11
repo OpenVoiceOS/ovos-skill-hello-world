@@ -1,5 +1,5 @@
 {
-    "/intent/HowAreYou.intent": [
+    "/intents/HowAreYou.intent": [
         "روزت چطور بوده",
         "چطور هستی",
         "چطوری (|خوبی)"

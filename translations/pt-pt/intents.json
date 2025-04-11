@@ -1,9 +1,16 @@
 {
-    "/intent/HowAreYou.intent": [
-        "Como estás",
-        "como o seu dia foi",
-        "como você foi"
-    ],
+  "/intents/Greetings.intent": [
+    "olá",
+    "bom dia",
+    "boa tarde",
+    "boa noite",
+    "tudo bem",
+    "como vai[s]",
+    "Como está[s]",
+    "que bom ver-te",
+    "faz tempo que não (te vejo|nos vemos)",
+    "olá outra vez"
+  ],
     "/intents/HowAreYou.intent": [
         "Como (estás|andas)",
         "Como foi o teu dia",

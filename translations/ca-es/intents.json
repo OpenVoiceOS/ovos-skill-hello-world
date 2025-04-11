@@ -1,10 +1,22 @@
 {
-    "/intent/HowAreYou.intent": [
+  "/intents/Greetings.intent": [
+    "hola",
+    "ei",
+    "ei, què tal",
+    "hola, bon dia",
+    "bon dia",
+    "bona tarda",
+    "bona nit",
+    "bones",
+    "què tal",
+    "com va",
+    "encantat de veure't",
+    "fa temps que no ens veiem"
+  ],
+    "/intents/HowAreYou.intent": [
         "Com (va|va tot|estàs|anem)",
         "com ha anat",
-        "com ha provat el dia"
-    ],
-    "/intents/HowAreYou.intent": [
+        "com ha provat el dia",
         "com (estàs|ho portes)",
         "com (va|prova) (el|es) dia",
         "com (va|prova) (tot|la cosa|)"

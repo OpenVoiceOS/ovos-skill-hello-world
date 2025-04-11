@@ -75,6 +75,27 @@ class HelloWorldSkill(OVOSSkill):
         """This is an Adapt intent handler, it is triggered by a keyword."""
         self.speak_dialog("welcome")
 
+    @intent_handler(IntentBuilder("HelloWorldIntent").require("HelloWorldKeyword"))
+    def handle_hello_world_intent(self, message):
+        """
+        speak_dialog() is an OVOS skill method that safely handles
+        formatting and speaking a dialog file and its translated dialog
+        back to the user.
+        """
+        # wait=True will block the message bus until the dialog is finished
+        self.speak_dialog("hello.world", wait=True)
+        LOG.debug("'hello world' TTS finished")
+        # this would speak the string without translation
+        # self.speak("hello world")
+
+    @intent_handler("Greetings.intent")
+    def handle_how_are_you_intent(self, message):
+        """This is a Padatious intent handler. It usually triggers after adapt,
+        that means this intent will trigger only if "hello world" does not trigger
+        handles sentences like "hello", "howdy", "good morning" etc
+        """
+        self.speak_dialog("hello")
+
     @intent_handler("HowAreYou.intent")
     def handle_how_are_you_intent(self, message):
         """This is a Padatious intent handler.
@@ -94,18 +115,6 @@ class HelloWorldSkill(OVOSSkill):
         if self.log_level == "WARNING":
             LOG.warning("To be able to see debug logs, you need to change the 'log_level' setting to 'DEBUG' in the core configuration (mycroft.conf)")
 
-    @intent_handler(IntentBuilder("HelloWorldIntent").require("HelloWorldKeyword"))
-    def handle_hello_world_intent(self, message):
-        """
-        speak_dialog() is an OVOS skill method that safely handles
-        formatting and speaking a dialog file and its translated dialog
-        back to the user.
-        """
-        # wait=True will block the message bus until the dialog is finished
-        self.speak_dialog("hello.world", wait=True)
-        LOG.debug("'hello world' TTS finished")
-        # this would speak the string without translation
-        # self.speak("hello world")
 
     def stop(self) -> bool:
         """Optional action to take when "stop" is requested by the user.

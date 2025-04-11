@@ -1,5 +1,5 @@
 {
-    "/intent/HowAreYou.intent": [
+    "/intents/HowAreYou.intent": [
         "(как твои дела|как поживаешь)",
         "как (ваши|) дела",
         "как прошел твой день"

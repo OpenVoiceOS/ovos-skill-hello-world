@@ -1,12 +1,17 @@
 {
-    "/intent/HowAreYou.intent": [
+  "/intents/Greetings.intent": [
+    "kaixo",
+    "epa",
+    "egun on",
+    "arratsalde on",
+    "gau on",
+    "zer moduz",
+    "aspaldi ikusi gabe",
+    "kaixo berriro"
+  ],
+    "/intents/HowAreYou.intent": [
         "(nola|zelan|zer moduz|ongi|ondo) (joan da|joan zaizu|doakizu|doa|doa zure|) eguna",
         "(ongi|ondo) (al|) (zaude|zabiltza|zabiltz|zagoz)",
         "(zer moduz|zelan) (eguna|zaude|zabiltza|zabiltz|zagoz|)"
-    ],
-    "/intents/HowAreYou.intent": [
-        "nola egon zara",
-        "zer ari zara (egiten|)",
-        "zer moduz eguna"
     ]
 }

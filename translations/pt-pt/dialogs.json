@@ -1,4 +1,15 @@
 {
+  "/dialog/hello.dialog": [
+    "Olá!",
+    "Então, tudo bem?",
+    "Olá para ti também!",
+    "Que bom ver-te!",
+    "Olá outra vez!",
+    "Olá! Como estás?",
+    "Olá! Como vais?",
+    "Fico contente por te ouvir!",
+    "Olá! Está tudo?"
+  ],
   "/dialog/hello.world.dialog": [
     "Olá mundo",
     "Olá",
