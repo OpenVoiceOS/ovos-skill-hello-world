@@ -1,35 +1,33 @@
 {
   "/dialog/hello.dialog": [
-    "Ola!",
-    "Ei, ola!",
-    "Boas!",
-    "Ola a ti tamén!",
-    "Encantado de verte!",
-    "Ola de novo!",
-    "Ei! Como vai todo?",
-    "Alegro de escoitarte!",
-    "Ola! Que tal estás?",
-    "Ei, amigo!"
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
   ],
-    "/dialog/hello.world.dialog": [
-        "Ola",
-        "Ola mundo",
-        "Ola a ti tamén"
-    ],
-    "/dialog/how.are.you.dialog": [
-        "Podía ir mellor",
-        "Estou de marabilla",
-        "Estou moi ben",
-        "Estou ben",
-        "Vou indo",
-        "Non hai queixa"
-    ],
-    "/dialog/welcome.dialog": [
-        "De nada",
-        "Un pracer poder axudar",
-        "Un pracer axudar",
-        "De nada",
-        "Sen problema ningún",
-        "Faltaría máis"
-    ]
+  "/dialog/hello.world.dialog": [
+    "Ola"
+  ],
+  "/dialog/how.are.you.dialog": [
+    "Podía ir mellor",
+    "Estou de marabilla",
+    "Estou moi ben",
+    "Estou ben",
+    "Vou indo",
+    "Non hai queixa"
+  ],
+  "/dialog/welcome.dialog": [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+  ]
 }
