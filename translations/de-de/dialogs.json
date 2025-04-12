@@ -1,23 +1,33 @@
 {
-    "/dialog/hello.world.dialog": [
-        "Hallo Welt",
-        "Hallo",
-        "Dir ebenfalls guten Tag"
-    ],
-    "/dialog/how.are.you.dialog": [
-        "mir geht es gut",
-        "ziemlich gut",
-        "Nicht schlecht",
-        "mir geht es ausgezeichnet",
-        "Mir k\u00f6nnte es besser gehen",
-        "mir geht es sehr gut"
-    ],
-    "/dialog/welcome.dialog": [
-        "jeder Zeit.",
-        "Stehe gerne zur verf\u00fcgung.",
-        "Ich bin froh, dass ich helfen kann.",
-        "Gern geschehen.",
-        "Kein Problem.",
-        "Bitte sch\u00f6n."
-    ]
+  "/dialog/hello.dialog": [
+    "Hallo!",
+    null,
+    "Hey!",
+    null,
+    "Schön, dich zu sehen!",
+    null,
+    null,
+    null,
+    null,
+    null
+  ],
+  "/dialog/hello.world.dialog": [
+    "Hallo Welt"
+  ],
+  "/dialog/how.are.you.dialog": [
+    "mir geht es gut",
+    "ziemlich gut",
+    "Nicht schlecht",
+    "mir geht es ausgezeichnet",
+    "Mir könnte es besser gehen",
+    "mir geht es sehr gut"
+  ],
+  "/dialog/welcome.dialog": [
+    "jeder Zeit.",
+    "Stehe gerne zur verfügung.",
+    "Ich bin froh, dass ich helfen kann.",
+    "Gern geschehen.",
+    "Kein Problem.",
+    "Bitte schön."
+  ]
 }
