@@ -1,10 +1,10 @@
 {
-    "/vocab/HelloWorldKeyword.voc": [
-        "saúdos",
-        "ola mundo"
-    ],
-    "/vocab/ThankYouKeyword.voc": [
-        "grazas",
-        "graciñas"
-    ]
+  "/vocab/HelloWorldKeyword.voc": [
+    "ola mundo",
+    "saúdos"
+  ],
+  "/vocab/ThankYouKeyword.voc": [
+    "grazas",
+    "graciñas"
+  ]
 }
