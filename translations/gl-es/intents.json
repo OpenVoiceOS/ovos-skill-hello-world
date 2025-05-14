@@ -1,23 +1,30 @@
 {
   "/intents/Greetings.intent": [
     "ola",
-    "boas",
-    "bos días",
-    "boas tardes",
-    "boas noites",
+    "ola",
+    "ei",
+    "ei que tal",
+    "ola boas",
+    "ola que tal",
+    "(bo día | bos días)",
+    "(boa tarde | boas tardes)",
+    "(boa noite | boas noites)",
+    "oli",
+    "que",
+    "ola",
     "que tal",
+    "e logo que",
+    "saúdos",
+    "boas",
     "como vai",
-    "encantado de verte",
-    "hai tempo que non nos vemos"
+    "alégrome de verte",
+    "canto tempo sen vernos",
+    "a ver, ho",
+    "(ola | boas) de novo"
   ],
-    "/intent/HowAreYou.intent": [
-        "como estiveches",
-        "como estás",
-        "como foi o teu día"
-    ],
-    "/intents/HowAreYou.intent": [
-        "como che foi",
-        "como che foi o día",
-        "que tal"
-    ]
+  "/intents/HowAreYou.intent": [
+    "como (estás | che vai)",
+    "como che foi o día",
+    "como che foi"
+  ]
 }
