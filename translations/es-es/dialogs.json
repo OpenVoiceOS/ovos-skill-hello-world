@@ -11,25 +11,23 @@
     "¡Hola! ¿Qué tal?",
     "¡Ey, amigo!"
   ],
-    "/dialog/hello.world.dialog": [
-        "Hola mundo",
-        "Hola",
-        "Hola a ti tambi\u00e9n"
-    ],
-    "/dialog/how.are.you.dialog": [
-        "Estoy bien",
-        "Bastante bien",
-        "Nada mal",
-        "Estoy de maravilla",
-        "Podr\u00eda estar mejor",
-        "Estoy muy bien"
-    ],
-    "/dialog/welcome.dialog": [
-        "En cualquier momento.",
-        "Me alegra ser de ayuda.",
-        "Feliz de ayudarte.",
-        "El placer es m\u00edo.",
-        "No hay problema.",
-        "De nada."
-    ]
+  "/dialog/hello.world.dialog": [
+    "Hola mundo"
+  ],
+  "/dialog/how.are.you.dialog": [
+    "Estoy bien",
+    "Bastante bien",
+    "Nada mal",
+    "Estoy de maravilla",
+    "Podría estar mejor",
+    "Estoy muy bien"
+  ],
+  "/dialog/welcome.dialog": [
+    "En cualquier momento.",
+    "Me alegra ser de ayuda.",
+    "Feliz de ayudarte.",
+    "El placer es mío.",
+    "No hay problema.",
+    "De nada."
+  ]
 }

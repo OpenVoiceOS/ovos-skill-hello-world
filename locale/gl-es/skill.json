@@ -1,6 +1,6 @@
 {
-  "skill_id": "skill-ovos-hello-world.openvoiceos",
-  "source": "https://github.com/OpenVoiceOS/skill-ovos-hello-world",
+  "skill_id": "ovos-skill-hello-world.openvoiceos",
+  "source": "https://github.com/OpenVoiceOS/ovos-skill-hello-world",
   "name": "Ola Mundo",
   "description": "Habilidade introdutiva para que as persoas programadoras de habilidades poidan ver como se monta unha habilidade OVOS",
   "examples": [
