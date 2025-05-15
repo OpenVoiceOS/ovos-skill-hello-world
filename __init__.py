@@ -89,11 +89,7 @@ class HelloWorldSkill(OVOSSkill):
         # self.speak("hello world")
 
     @intent_handler("Greetings.intent")
-    def handle_how_are_you_intent(self, message):
-        """This is a Padatious intent handler. It usually triggers after adapt,
-        that means this intent will trigger only if "hello world" does not trigger
-        handles sentences like "hello", "howdy", "good morning" etc
-        """
+    def handle_greetings(self, message):
         self.speak_dialog("hello")
 
     @intent_handler("HowAreYou.intent")

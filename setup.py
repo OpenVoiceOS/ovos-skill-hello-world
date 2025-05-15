@@ -3,7 +3,7 @@ import os
 from setuptools import setup
 from os import walk, path
 
-URL = "https://github.com/OpenVoiceOS/skill-ovos-hello-world"
+URL = "https://github.com/OpenVoiceOS/ovos-skill-hello-world"
 SKILL_CLAZZ = "HelloWorldSkill"  # needs to match __init__.py class name
 PYPI_NAME = "ovos-skill-hello-world"  # pip install PYPI_NAME
 
@@ -11,11 +11,10 @@ PYPI_NAME = "ovos-skill-hello-world"  # pip install PYPI_NAME
 SKILL_AUTHOR, SKILL_NAME = URL.split(".com/")[-1].split("/")
 SKILL_PKG = SKILL_NAME.lower().replace('-', '_')
 PLUGIN_ENTRY_POINT = f'{SKILL_NAME.lower()}.{SKILL_AUTHOR.lower()}={SKILL_PKG}:{SKILL_CLAZZ}'
-# skill_id=package_name:SkillClass
 
 
 def find_resource_files():
-    resource_base_dirs = ("locale", "ui", "vocab", "dialog", "regex", "skill")
+    resource_base_dirs = ("locale", )
     base_dir = path.dirname(__file__)
     package_data = ["*.json"]
     for res in resource_base_dirs:
