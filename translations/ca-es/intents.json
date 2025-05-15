@@ -13,13 +13,13 @@
     "encantat de veure't",
     "fa temps que no ens veiem",
     "què hi ha",
-    null,
+    "ep",
     "se't saluda",
-    null,
+    "bon dia",
     "com està anant?",
     "(encantat|encantada) de veure't",
     "quant de temps sense veure('t|'ns)",
-    null,
+    "oió",
     "hola de nou"
   ],
   "/intents/HowAreYou.intent": [
