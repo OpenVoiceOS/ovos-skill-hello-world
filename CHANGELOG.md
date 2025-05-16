@@ -1,30 +1,12 @@
 # Changelog
 
-## [0.2.1a4](https://github.com/OpenVoiceOS/ovos-skill-hello-world/tree/0.2.1a4) (2025-05-15)
+## [0.2.2a1](https://github.com/OpenVoiceOS/ovos-skill-hello-world/tree/0.2.2a1) (2025-05-16)
 
-[Full Changelog](https://github.com/OpenVoiceOS/ovos-skill-hello-world/compare/0.2.1a3...0.2.1a4)
-
-**Merged pull requests:**
-
-- fix: standardize urls / skill-id / pypi-name [\#74](https://github.com/OpenVoiceOS/ovos-skill-hello-world/pull/74) ([JarbasAl](https://github.com/JarbasAl))
-- gl/translate [\#72](https://github.com/OpenVoiceOS/ovos-skill-hello-world/pull/72) ([gitlocalize-app[bot]](https://github.com/apps/gitlocalize-app))
-- adding German translations for new words [\#71](https://github.com/OpenVoiceOS/ovos-skill-hello-world/pull/71) ([gitlocalize-app[bot]](https://github.com/apps/gitlocalize-app))
-
-## [0.2.1a3](https://github.com/OpenVoiceOS/ovos-skill-hello-world/tree/0.2.1a3) (2025-04-11)
-
-[Full Changelog](https://github.com/OpenVoiceOS/ovos-skill-hello-world/compare/0.2.1a2...0.2.1a3)
+[Full Changelog](https://github.com/OpenVoiceOS/ovos-skill-hello-world/compare/0.2.1...0.2.2a1)
 
 **Merged pull requests:**
 
-- ca-es / translate [\#67](https://github.com/OpenVoiceOS/ovos-skill-hello-world/pull/67) ([gitlocalize-app[bot]](https://github.com/apps/gitlocalize-app))
-
-## [0.2.1a2](https://github.com/OpenVoiceOS/ovos-skill-hello-world/tree/0.2.1a2) (2025-04-11)
-
-[Full Changelog](https://github.com/OpenVoiceOS/ovos-skill-hello-world/compare/0.2.0...0.2.1a2)
-
-**Merged pull requests:**
-
-- es-es/translate [\#68](https://github.com/OpenVoiceOS/ovos-skill-hello-world/pull/68) ([gitlocalize-app[bot]](https://github.com/apps/gitlocalize-app))
+- gl/translate [\#77](https://github.com/OpenVoiceOS/ovos-skill-hello-world/pull/77) ([gitlocalize-app[bot]](https://github.com/apps/gitlocalize-app))
 
 
 
