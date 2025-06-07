@@ -110,12 +110,3 @@ class HelloWorldSkill(OVOSSkill):
         #                  and is non-recoverable
         if self.log_level == "WARNING":
             LOG.warning("To be able to see debug logs, you need to change the 'log_level' setting to 'DEBUG' in the core configuration (mycroft.conf)")
-
-
-    def stop(self) -> bool:
-        """Optional action to take when "stop" is requested by the user.
-        This method should return True if it stopped something or
-        False (or None) otherwise.
-        If not relevant to your skill, feel free to remove.
-        """
-        return False
