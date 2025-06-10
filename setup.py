@@ -1,15 +1,15 @@
 #!/usr/bin/env python3
 import os
-from setuptools import setup
 from os import walk, path
+
+from setuptools import setup
 
 URL = "https://github.com/OpenVoiceOS/ovos-skill-hello-world"
 SKILL_CLAZZ = "HelloWorldSkill"  # needs to match __init__.py class name
 PYPI_NAME = "ovos-skill-hello-world"  # pip install PYPI_NAME
+SKILL_PKG = PYPI_NAME.lower().replace('-', '_')  # import name
 
-# below derived from github url to ensure standard skill_id
-SKILL_AUTHOR, SKILL_NAME = URL.split(".com/")[-1].split("/")
-SKILL_PKG = SKILL_NAME.lower().replace('-', '_')
+SKILL_AUTHOR, SKILL_NAME = URL.split(".com/")[-1].split("/")  # derived from github url to ensure standard skill_id
 PLUGIN_ENTRY_POINT = f'{SKILL_NAME.lower()}.{SKILL_AUTHOR.lower()}={SKILL_PKG}:{SKILL_CLAZZ}'
 
 
@@ -59,10 +59,11 @@ def get_version():
 setup(
     name=PYPI_NAME,
     version=get_version(),
+    description='OVOS hello world skill plugin',
     long_description=long_description,
+    long_description_content_type="text/markdown",
     url=URL,
     author=SKILL_AUTHOR,
-    description='OVOS hello world skill plugin',
     author_email='jarbasai@mailfence.com',
     license='Apache-2.0',
     packages=[SKILL_PKG],
