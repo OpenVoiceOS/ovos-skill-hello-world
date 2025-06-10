@@ -1,7 +1,0 @@
-{
-    "/intents/HowAreYou.intent": [
-        "Hoe gaat het (doing|)",
-        "hoe is het met jou gegaan",
-        "hoe is je dag geweest"
-    ]
-}

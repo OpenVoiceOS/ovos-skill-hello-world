@@ -1,2 +1,0 @@
-recursive-include ovos_skill_hello_world/locale *
-include *.txt

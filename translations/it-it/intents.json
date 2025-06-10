@@ -1,9 +1,0 @@
-{
-    "/intents/HowAreYou.intent": [
-        "com'è stata la tua giornata",
-        "come (va| stai)",
-        "come (stai|sta andando)",
-        "come sei stato",
-        "come è andata (la tua giornata|oggi)"
-    ]
-}
