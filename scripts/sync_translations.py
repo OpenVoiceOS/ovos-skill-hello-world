@@ -1,15 +1,11 @@
-"""this script should run in every PR originated from @gitlocalize-app
-TODO - before PR merge
-"""
-
 import json
 from os.path import dirname
 import os
 from ovos_utils.bracket_expansion import expand_template
 from ovos_utils.list_utils import flatten_list, deduplicate_list
 
-locale = f"{dirname(dirname(__file__))}/locale"
-tx = f"{dirname(dirname(__file__))}/translations"
+locale = f"{dirname(dirname(__file__))}/ovos_skill_hello_world/locale"
+tx = f"{dirname(dirname(__file__))}/ovos_skill_hello_world/translations"
 
 for lang in os.listdir(tx):
     intents = f"{tx}/{lang}/intents.json"

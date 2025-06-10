@@ -1,14 +1,9 @@
-"""this script should run every time the contents of the locale folder change
-except if PR originated from @gitlocalize-app
-TODO - on commit to dev
-"""
-
 import json
 from os.path import dirname
 import os
 
-locale = f"{dirname(dirname(__file__))}/locale"
-tx = f"{dirname(dirname(__file__))}/translations"
+locale = f"{dirname(dirname(__file__))}/ovos_skill_hello_world/locale"
+tx = f"{dirname(dirname(__file__))}/ovos_skill_hello_world/translations"
 
 
 for lang in os.listdir(locale):
