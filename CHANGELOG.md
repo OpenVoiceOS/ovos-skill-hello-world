@@ -1,5 +1,13 @@
 # Changelog
 
+## [0.2.3a2](https://github.com/OpenVoiceOS/ovos-skill-hello-world/tree/0.2.3a2) (2025-06-10)
+
+[Full Changelog](https://github.com/OpenVoiceOS/ovos-skill-hello-world/compare/0.2.3a1...0.2.3a2)
+
+**Merged pull requests:**
+
+- add end2end tests [\#81](https://github.com/OpenVoiceOS/ovos-skill-hello-world/pull/81) ([JarbasAl](https://github.com/JarbasAl))
+
 ## [0.2.3a1](https://github.com/OpenVoiceOS/ovos-skill-hello-world/tree/0.2.3a1) (2025-06-07)
 
 [Full Changelog](https://github.com/OpenVoiceOS/ovos-skill-hello-world/compare/0.2.2a1...0.2.3a1)
