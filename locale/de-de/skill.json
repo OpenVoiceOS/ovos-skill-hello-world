@@ -1,0 +1,14 @@
+{
+  "skill_id": "ovos-skill-hello-world.openvoiceos",
+  "source": "https://github.com/OpenVoiceOS/ovos-skill-hello-world",
+  "name": "Hello World",
+  "description": "Einführungs-Skill, damit Skill-Autoren sehen können, wie ein OVOS-Skill zusammengestellt wird",
+  "examples": [
+    "Hello world",
+    "Danke",
+    "Wie geht es dir?"
+  ],
+  "tags": [
+    "Lernprogramm"
+  ]
+}
