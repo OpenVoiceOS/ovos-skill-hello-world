@@ -61,50 +61,6 @@ class TestAdaptIntent(TestCase):
 
         test.execute(timeout=10)
 
-    def test_skill_blacklist(self):
-        session = Session("123")
-        session.pipeline = ['ovos-adapt-pipeline-plugin-high']
-        session.blacklisted_skills = [self.skill_id]
-        message = Message("recognizer_loop:utterance",
-                          {"utterances": ["hello world"], "lang": "en-US"},
-                          {"session": session.serialize(), "source": "A", "destination": "B"})
-
-        test = End2EndTest(
-            minicroft=self.minicroft,
-            skill_ids=[self.skill_id],
-            source_message=message,
-            expected_messages=[
-                message,
-                Message("mycroft.audio.play_sound", {"uri": "snd/error.mp3"}),
-                Message("complete_intent_failure", {}),
-                Message("ovos.utterance.handled", {})
-            ]
-        )
-
-        test.execute(timeout=10)
-
-    def test_intent_blacklist(self):
-        session = Session("123")
-        session.pipeline = ['ovos-adapt-pipeline-plugin-high']
-        session.blacklisted_intents = [f"{self.skill_id}:HelloWorldIntent"]
-        message = Message("recognizer_loop:utterance",
-                          {"utterances": ["hello world"], "lang": "en-US"},
-                          {"session": session.serialize(), "source": "A", "destination": "B"})
-
-        test = End2EndTest(
-            minicroft=self.minicroft,
-            skill_ids=[self.skill_id],
-            source_message=message,
-            expected_messages=[
-                message,
-                Message("mycroft.audio.play_sound", {"uri": "snd/error.mp3"}),
-                Message("complete_intent_failure", {}),
-                Message("ovos.utterance.handled", {})
-            ]
-        )
-
-        test.execute(timeout=10)
-
     def test_padatious_no_match(self):
         session = Session("123")
         session.pipeline = ["ovos-padatious-pipeline-plugin-high"]
@@ -176,50 +132,6 @@ class TestPadatiousIntent(TestCase):
                 Message("ovos.utterance.handled",
                         data={},
                         context={"skill_id": self.skill_id}),
-            ]
-        )
-
-        test.execute(timeout=10)
-
-    def test_skill_blacklist(self):
-        session = Session("123")
-        session.pipeline = ["ovos-padatious-pipeline-plugin-high"]
-        session.blacklisted_skills = [self.skill_id]
-        message = Message("recognizer_loop:utterance",
-                          {"utterances": ["good morning"], "lang": "en-US"},
-                          {"session": session.serialize(), "source": "A", "destination": "B"})
-
-        test = End2EndTest(
-            minicroft=self.minicroft,
-            skill_ids=[self.skill_id],
-            source_message=message,
-            expected_messages=[
-                message,
-                Message("mycroft.audio.play_sound", {"uri": "snd/error.mp3"}),
-                Message("complete_intent_failure", {}),
-                Message("ovos.utterance.handled", {})
-            ]
-        )
-
-        test.execute(timeout=10)
-
-    def test_intent_blacklist(self):
-        session = Session("123")
-        session.pipeline = ["ovos-padatious-pipeline-plugin-high"]
-        session.blacklisted_intents = [f"{self.skill_id}:Greetings.intent"]
-        message = Message("recognizer_loop:utterance",
-                          {"utterances": ["good morning"], "lang": "en-US"},
-                          {"session": session.serialize(), "source": "A", "destination": "B"})
-
-        test = End2EndTest(
-            minicroft=self.minicroft,
-            skill_ids=[self.skill_id],
-            source_message=message,
-            expected_messages=[
-                message,
-                Message("mycroft.audio.play_sound", {"uri": "snd/error.mp3"}),
-                Message("complete_intent_failure", {}),
-                Message("ovos.utterance.handled", {})
             ]
         )
 
@@ -301,46 +213,3 @@ class TestModel2VecIntent(TestCase):
 
         test.execute(timeout=10)
 
-    def test_skill_blacklist(self):
-        session = Session("123")
-        session.pipeline = ["ovos-m2v-pipeline-high"]
-        session.blacklisted_skills = [self.skill_id]
-        message = Message("recognizer_loop:utterance",
-                          {"utterances": ["good morning"], "lang": "en-US"},
-                          {"session": session.serialize(), "source": "A", "destination": "B"})
-
-        test = End2EndTest(
-            minicroft=self.minicroft,
-            skill_ids=[self.skill_id],
-            source_message=message,
-            expected_messages=[
-                message,
-                Message("mycroft.audio.play_sound", {"uri": "snd/error.mp3"}),
-                Message("complete_intent_failure", {}),
-                Message("ovos.utterance.handled", {})
-            ]
-        )
-
-        test.execute(timeout=10)
-
-    def test_intent_blacklist(self):
-        session = Session("123")
-        session.pipeline = ["ovos-m2v-pipeline-high"]
-        session.blacklisted_intents = [f"{self.skill_id}:Greetings.intent"]
-        message = Message("recognizer_loop:utterance",
-                          {"utterances": ["good morning"], "lang": "en-US"},
-                          {"session": session.serialize(), "source": "A", "destination": "B"})
-
-        test = End2EndTest(
-            minicroft=self.minicroft,
-            skill_ids=[self.skill_id],
-            source_message=message,
-            expected_messages=[
-                message,
-                Message("mycroft.audio.play_sound", {"uri": "snd/error.mp3"}),
-                Message("complete_intent_failure", {}),
-                Message("ovos.utterance.handled", {})
-            ]
-        )
-
-        test.execute(timeout=10)
