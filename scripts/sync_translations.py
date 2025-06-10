@@ -5,7 +5,7 @@ from ovos_utils.bracket_expansion import expand_template
 from ovos_utils.list_utils import flatten_list, deduplicate_list
 
 locale = f"{dirname(dirname(__file__))}/ovos_skill_hello_world/locale"
-tx = f"{dirname(dirname(__file__))}/ovos_skill_hello_world/translations"
+tx = f"{dirname(dirname(__file__))}/translations"
 
 for lang in os.listdir(tx):
     intents = f"{tx}/{lang}/intents.json"
