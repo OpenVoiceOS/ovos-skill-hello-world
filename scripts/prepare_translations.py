@@ -3,7 +3,7 @@ from os.path import dirname
 import os
 
 locale = f"{dirname(dirname(__file__))}/ovos_skill_hello_world/locale"
-tx = f"{dirname(dirname(__file__))}/ovos_skill_hello_world/translations"
+tx = f"{dirname(dirname(__file__))}/translations"
 
 
 for lang in os.listdir(locale):
