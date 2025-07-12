@@ -16,7 +16,6 @@
     "Hallo",
     "Grüße",
     "guten Tag",
-    "wie geht's",
     "Schön, dich zu sehen",
     "Lange nicht gesehen",
     "Ahoi",
@@ -25,6 +24,7 @@
   "/intents/HowAreYou.intent": [
     "Wie geht es dir",
     "wie ist es dir gegangen",
-    "wie war dein Tag"
+    "wie war dein Tag",
+    "wie geht's"
   ]
 }
