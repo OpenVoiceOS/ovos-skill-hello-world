@@ -13,18 +13,18 @@
     "encantat de veure't",
     "fa temps que no ens veiem",
     "què hi ha",
-    null,
+    "ep",
     "se't saluda",
+    "bon dia",
     null,
-    "com està anant?",
-    "(encantat|encantada) de veure't",
-    "quant de temps sense veure('t|'ns)",
     null,
-    "hola de nou"
+    null,
+    null
   ],
   "/intents/HowAreYou.intent": [
     "Com (va|va tot|estàs|anem)",
     "com ha anat",
-    "com ha provat el dia"
+    "com ha provat el dia",
+    null
   ]
 }
