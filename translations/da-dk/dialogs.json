@@ -1,23 +1,33 @@
 {
-    "/dialog/hello.world.dialog": [
-        "Hej verden",
-        "Hej",
-        "Hej til dig ogs\u00e5"
-    ],
-    "/dialog/how.are.you.dialog": [
-        "Jeg har det fint",
-        "Rimeligt godt",
-        "Ikke v\u00e6rst",
-        "Jeg har det super",
-        "Kunne ikek have det bedre",
-        "Jeg har det fint"
-    ],
-    "/dialog/welcome.dialog": [
-        "velbekomme",
-        "Jeg er glad for at kunen hj\u00e6lpe",
-        "Jeg er glad for at hj\u00e6lpe",
-        "Selv tak",
-        "Intet problem",
-        "du er velkommen"
-    ]
+  "/dialog/hello.dialog": [
+    "Hello!",
+    "Hej med dig!",
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+  ],
+  "/dialog/hello.world.dialog": [
+    "Hej verden"
+  ],
+  "/dialog/how.are.you.dialog": [
+    "Jeg har det fint",
+    "Rimeligt godt",
+    "Ikke værst",
+    "Jeg har det super",
+    "Kunne ikek have det bedre",
+    "Jeg har det fint"
+  ],
+  "/dialog/welcome.dialog": [
+    "velbekomme",
+    "Jeg er glad for at kunen hjælpe",
+    "Jeg er glad for at hjælpe",
+    "Selv tak",
+    "Intet problem",
+    "du er velkommen"
+  ]
 }
