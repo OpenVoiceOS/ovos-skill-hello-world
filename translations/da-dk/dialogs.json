@@ -2,14 +2,14 @@
   "/dialog/hello.dialog": [
     "Hello!",
     "Hej med dig!",
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null
+    "Hej!",
+    "Hej til dig også!",
+    "Dejligt at se dig!",
+    "Hej igen!",
+    "Hej, hvordan går det?",
+    "Hej! Godt at høre fra dig.",
+    "Hej! Hvad sker der?",
+    "Hej, ven!"
   ],
   "/dialog/hello.world.dialog": [
     "Hej verden"
