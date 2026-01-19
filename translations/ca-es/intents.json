@@ -16,10 +16,10 @@
     "ep",
     "se't saluda",
     "bon dia",
-    null,
-    null,
-    null,
-    null
+    "m'alegro de veure't",
+    "feia temps que no ens veiem",
+    "ei",
+    "hola de nou"
   ],
   "/intents/HowAreYou.intent": [
     "Com (va|va tot|estàs|anem)",
