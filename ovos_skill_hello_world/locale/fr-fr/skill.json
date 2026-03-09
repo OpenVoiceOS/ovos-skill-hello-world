@@ -2,7 +2,7 @@
   "skill_id": "ovos-skill-hello-world.openvoiceos",
   "source": "https://github.com/OpenVoiceOS/ovos-skill-hello-world",
   "name": "Bonjour le monde",
-  "description": "Skill d'introduction qui montre aux auteurs comment une skill OVOS est construite.",
+  "description": "Exemple d'introduction qui montre comment une skill OVOS est construite.",
   "examples": [
     "Bonjour le monde",
     "Merci",
