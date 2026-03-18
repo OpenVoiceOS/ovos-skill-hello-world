@@ -5,8 +5,8 @@
   "description": "Exemple d'introduction qui montre comment une skill OVOS est construite.",
   "examples": [
     "Bonjour le monde",
-    "Merci",
-    "Comment vas-tu ?"
+    "Merci bonjour le monde",
+    "Bonjour le monde, comment vas-tu ?"
   ],
   "tags": [
     "tutoriel"

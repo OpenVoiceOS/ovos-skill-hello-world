@@ -1,21 +1,14 @@
 {
   "/intents/Greetings.intent": [
-    "bonjour",
-    "bonjour à toi",
-    "bonsoir",
-    "salut",
-    "salut toi",
-    "coucou",
-    "h\\u00e9",
-    "bien le bonjour",
-    "content de te retrouver"
+    "bonjour le monde",
+    "salut le monde",
+    "coucou le monde",
+    "bonsoir le monde"
   ],
   "/intents/HowAreYou.intent": [
-    "comment as-tu été",
-    "comment ça a été",
-    "comment s'est passée ta journée",
-    "comment ça s'est passé aujourd'hui",
-    "comment vas-tu",
-    "comment ça va"
+    "bonjour le monde, comment vas-tu",
+    "bonjour le monde, comment ça va",
+    "hello world, comment vas-tu",
+    "hello world, comment ça va"
   ]
 }
