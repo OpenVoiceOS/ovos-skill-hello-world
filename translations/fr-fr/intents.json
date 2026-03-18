@@ -1,7 +1,21 @@
 {
+  "/intents/Greetings.intent": [
+    "bonjour",
+    "bonjour à toi",
+    "bonsoir",
+    "salut",
+    "salut toi",
+    "coucou",
+    "h\\u00e9",
+    "bien le bonjour",
+    "content de te retrouver"
+  ],
   "/intents/HowAreYou.intent": [
-    "comment vas-tu\ncomment ça va",
-    "comment s'est passée ta journée\ncomment ça s'est passé aujourd'hui",
-    "comment as-tu été\ncomment ça a été"
+    "comment as-tu été",
+    "comment ça a été",
+    "comment s'est passée ta journée",
+    "comment ça s'est passé aujourd'hui",
+    "comment vas-tu",
+    "comment ça va"
   ]
 }

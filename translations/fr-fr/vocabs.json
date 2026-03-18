@@ -1,7 +1,11 @@
 {
   "/vocab/HelloWorldKeyword.voc": [
-    "hello world\nbonjour le monde\nsalut",
-    "bonjour\nsalut\nhello"
+    "bonjour",
+    "salut",
+    "hello",
+    "hello world",
+    "bonjour le monde",
+    "salut"
   ],
   "/vocab/ThankYouKeyword.voc": [
     "merci",
