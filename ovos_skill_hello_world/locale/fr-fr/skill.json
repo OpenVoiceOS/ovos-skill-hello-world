@@ -1,12 +1,12 @@
 {
   "skill_id": "ovos-skill-hello-world.openvoiceos",
   "source": "https://github.com/OpenVoiceOS/ovos-skill-hello-world",
-  "name": "Hello World",
-  "description": "Compétence d'introduction pour que les auteurs de compétences puissent voir comment une compétence OVOS est assemblée",
+  "name": "Bonjour le monde",
+  "description": "Exemple d'introduction qui montre comment une skill OVOS est construite.",
   "examples": [
-    "Hello world",
-    "Merci",
-    "Comment vas-tu"
+    "Bonjour le monde",
+    "Merci bonjour le monde",
+    "Bonjour le monde, comment vas-tu ?"
   ],
   "tags": [
     "tutoriel"
