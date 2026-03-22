@@ -1,5 +1,13 @@
 # Changelog
 
+## [0.2.3a4](https://github.com/OpenVoiceOS/ovos-skill-hello-world/tree/0.2.3a4) (2026-03-22)
+
+[Full Changelog](https://github.com/OpenVoiceOS/ovos-skill-hello-world/compare/0.2.3a2...0.2.3a4)
+
+**Merged pull requests:**
+
+- Complete French hello world locale [\#90](https://github.com/OpenVoiceOS/ovos-skill-hello-world/pull/90) ([goldyfruit](https://github.com/goldyfruit))
+
 ## [0.2.3a2](https://github.com/OpenVoiceOS/ovos-skill-hello-world/tree/0.2.3a2) (2025-06-10)
 
 [Full Changelog](https://github.com/OpenVoiceOS/ovos-skill-hello-world/compare/0.2.3a1...0.2.3a2)
