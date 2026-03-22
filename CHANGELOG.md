@@ -1,5 +1,16 @@
 # Changelog
 
+## [0.2.3a5](https://github.com/OpenVoiceOS/ovos-skill-hello-world/tree/0.2.3a5) (2026-03-22)
+
+[Full Changelog](https://github.com/OpenVoiceOS/ovos-skill-hello-world/compare/0.2.3a4...0.2.3a5)
+
+**Merged pull requests:**
+
+- da-dk/translate [\#89](https://github.com/OpenVoiceOS/ovos-skill-hello-world/pull/89) ([gitlocalize-app[bot]](https://github.com/apps/gitlocalize-app))
+- ca-es/translate [\#88](https://github.com/OpenVoiceOS/ovos-skill-hello-world/pull/88) ([gitlocalize-app[bot]](https://github.com/apps/gitlocalize-app))
+- es-es/translate [\#87](https://github.com/OpenVoiceOS/ovos-skill-hello-world/pull/87) ([gitlocalize-app[bot]](https://github.com/apps/gitlocalize-app))
+- Add pt-BR [\#86](https://github.com/OpenVoiceOS/ovos-skill-hello-world/pull/86) ([gitlocalize-app[bot]](https://github.com/apps/gitlocalize-app))
+
 ## [0.2.3a4](https://github.com/OpenVoiceOS/ovos-skill-hello-world/tree/0.2.3a4) (2026-03-22)
 
 [Full Changelog](https://github.com/OpenVoiceOS/ovos-skill-hello-world/compare/0.2.3a2...0.2.3a4)
