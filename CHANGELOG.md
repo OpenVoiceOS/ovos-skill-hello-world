@@ -1,5 +1,13 @@
 # Changelog
 
+## [0.2.4a1](https://github.com/OpenVoiceOS/ovos-skill-hello-world/tree/0.2.4a1) (2026-04-03)
+
+[Full Changelog](https://github.com/OpenVoiceOS/ovos-skill-hello-world/compare/0.2.3a5...0.2.4a1)
+
+**Merged pull requests:**
+
+- fix\(i18n\): normalize locale folders to canonical BCP-47 [\#94](https://github.com/OpenVoiceOS/ovos-skill-hello-world/pull/94) ([JarbasAl](https://github.com/JarbasAl))
+
 ## [0.2.3a5](https://github.com/OpenVoiceOS/ovos-skill-hello-world/tree/0.2.3a5) (2026-03-22)
 
 [Full Changelog](https://github.com/OpenVoiceOS/ovos-skill-hello-world/compare/0.2.3a4...0.2.3a5)
