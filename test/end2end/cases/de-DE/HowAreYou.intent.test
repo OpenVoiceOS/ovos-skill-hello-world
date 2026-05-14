@@ -1,0 +1,6 @@
+# Utterances expected to match HowAreYou.intent in de-DE.
+# Sourced from locale/de-DE/intents/HowAreYou.intent (filtered to plain forms).
+# `#` comments and blank lines are ignored.
+Wie geht es dir
+wie ist es dir gegangen
+wie war dein Tag

@@ -1,0 +1,15 @@
+# Utterances expected to match Greetings.intent in de-DE.
+# Sourced from locale/de-DE/intents/Greetings.intent (filtered to plain forms).
+# `#` comments and blank lines are ignored.
+Ahoi
+Grüße
+Guten Abend
+Guten Morgen
+Guten Tag
+Hallo
+Hallo nochmal
+Hey
+Hi
+Lange nicht gesehen
+Schön, dich zu sehen
+was ist los

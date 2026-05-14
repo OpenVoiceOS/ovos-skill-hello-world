@@ -1,0 +1,6 @@
+# Utterances expected to match HowAreYou.intent in tr-TR.
+# Sourced from locale/tr-TR/intents/HowAreYou.intent (filtered to plain forms).
+# `#` comments and blank lines are ignored.
+Senin günün nasıldı
+nasıl oldun
+nasılsın

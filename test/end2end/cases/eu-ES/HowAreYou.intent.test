@@ -1,0 +1,15 @@
+# Utterances expected to match HowAreYou.intent in eu-ES.
+# Sourced from locale/eu-ES/intents/HowAreYou.intent (filtered to plain forms).
+# `#` comments and blank lines are ignored.
+nola  eguna
+nola doa eguna
+nola doa zure eguna
+nola doakizu eguna
+nola joan da eguna
+nola joan zaizu eguna
+ondo  eguna
+ondo  zabiltz
+ondo  zabiltza
+ondo  zagoz
+ondo  zaude
+ondo al zabiltz

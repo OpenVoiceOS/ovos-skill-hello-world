@@ -1,0 +1,11 @@
+# Utterances expected to match HowAreYou.intent in it-IT.
+# Sourced from locale/it-IT/intents/HowAreYou.intent (filtered to plain forms).
+# `#` comments and blank lines are ignored.
+com'è stata la tua giornata
+come  stai
+come sei stato
+come sta andando
+come stai
+come va
+come è andata la tua giornata
+come è andata oggi

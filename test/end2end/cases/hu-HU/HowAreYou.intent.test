@@ -1,0 +1,6 @@
+# Utterances expected to match HowAreYou.intent in hu-HU.
+# Sourced from locale/hu-HU/intents/HowAreYou.intent (filtered to plain forms).
+# `#` comments and blank lines are ignored.
+hogy telt a napod
+hogy vagy
+milyen volt a napod

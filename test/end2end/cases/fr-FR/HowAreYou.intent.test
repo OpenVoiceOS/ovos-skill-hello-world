@@ -1,0 +1,7 @@
+# Utterances expected to match HowAreYou.intent in fr-FR.
+# Sourced from locale/fr-FR/intents/HowAreYou.intent (filtered to plain forms).
+# `#` comments and blank lines are ignored.
+bonjour le monde, comment vas-tu
+bonjour le monde, comment ça va
+hello world, comment vas-tu
+hello world, comment ça va

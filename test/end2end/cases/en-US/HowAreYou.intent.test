@@ -1,0 +1,8 @@
+# Utterances expected to match HowAreYou.intent in en-US.
+# Sourced from locale/en-US/intents/HowAreYou.intent (filtered to plain forms).
+# `#` comments and blank lines are ignored.
+how are you
+how are you doing
+how has your day been
+how have you been
+how’s it going

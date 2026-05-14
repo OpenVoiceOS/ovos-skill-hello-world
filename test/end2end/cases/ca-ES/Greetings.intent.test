@@ -1,0 +1,15 @@
+# Utterances expected to match Greetings.intent in ca-ES.
+# Sourced from locale/ca-ES/intents/Greetings.intent (filtered to plain forms).
+# `#` comments and blank lines are ignored.
+bon dia
+bona nit
+bona tarda
+bones
+com va
+ei
+ei, què tal
+encantat de veure't
+ep
+fa temps que no ens veiem
+feia temps que no ens veiem
+hola

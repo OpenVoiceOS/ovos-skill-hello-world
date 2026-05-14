@@ -1,0 +1,15 @@
+# Utterances expected to match Greetings.intent in en-US.
+# Sourced from locale/en-US/intents/Greetings.intent (filtered to plain forms).
+# `#` comments and blank lines are ignored.
+ahoy
+g'day
+good afternoon
+good evening
+good morning
+greetings
+hello
+hello again
+hello there
+hey
+hey there
+hi

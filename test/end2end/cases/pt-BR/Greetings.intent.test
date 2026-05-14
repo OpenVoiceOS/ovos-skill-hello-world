@@ -1,0 +1,15 @@
+# Utterances expected to match Greetings.intent in pt-BR.
+# Sourced from locale/pt-BR/intents/Greetings.intent (filtered to plain forms).
+# `#` comments and blank lines are ignored.
+Olá de novo
+ahoy
+boa noite
+boa tarde
+bom dia
+como vai
+e aí
+e aí?
+faz tempo que não nos vemos
+há quanto tempo
+oi
+olá

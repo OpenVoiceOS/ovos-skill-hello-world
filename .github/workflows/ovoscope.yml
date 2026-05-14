@@ -13,3 +13,9 @@ jobs:
       python_version: '3.11'
       install_extras: 'test'
       test_path: 'test/end2end/'
+      # Install ovoscope + pipeline plugins from their `dev` branches so the
+      # intent-case helper is available before it lands on PyPI. Drop once
+      # an ovoscope release ships.
+      pre_release: true
+      require_padatious: true
+      require_m2v: true

@@ -1,0 +1,10 @@
+# Utterances expected to match HowAreYou.intent in ca-ES.
+# Sourced from locale/ca-ES/intents/HowAreYou.intent (filtered to plain forms).
+# `#` comments and blank lines are ignored.
+Com anem
+Com estàs
+Com va
+Com va tot
+com ha anat
+com ha provat el dia
+com ho portes

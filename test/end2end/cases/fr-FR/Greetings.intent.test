@@ -1,0 +1,7 @@
+# Utterances expected to match Greetings.intent in fr-FR.
+# Sourced from locale/fr-FR/intents/Greetings.intent (filtered to plain forms).
+# `#` comments and blank lines are ignored.
+bonjour le monde
+bonsoir le monde
+coucou le monde
+salut le monde

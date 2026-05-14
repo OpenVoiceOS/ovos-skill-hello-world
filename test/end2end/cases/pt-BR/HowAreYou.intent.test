@@ -1,0 +1,7 @@
+# Utterances expected to match HowAreYou.intent in pt-BR.
+# Sourced from locale/pt-BR/intents/HowAreYou.intent (filtered to plain forms).
+# `#` comments and blank lines are ignored.
+como foi seu dia
+como tá indo
+como você está
+como você tem estado

@@ -1,0 +1,7 @@
+# Utterances expected to match HowAreYou.intent in ro-RO.
+# Sourced from locale/ro-RO/intents/HowAreYou.intent (filtered to plain forms).
+# `#` comments and blank lines are ignored.
+Cum a fost ziua ta
+ce  faci
+ce mai faci
+cum ai fost

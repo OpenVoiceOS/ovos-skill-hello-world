@@ -1,0 +1,8 @@
+# Utterances expected to match HowAreYou.intent in pt-PT.
+# Sourced from locale/pt-PT/intents/HowAreYou.intent (filtered to plain forms).
+# `#` comments and blank lines are ignored.
+Como andas
+Como estás
+Como foi o teu dia
+Como tens andado
+Como tens estado

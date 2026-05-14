@@ -1,0 +1,7 @@
+# Utterances expected to match HowAreYou.intent in nl-NL.
+# Sourced from locale/nl-NL/intents/HowAreYou.intent (filtered to plain forms).
+# `#` comments and blank lines are ignored.
+Hoe gaat het
+Hoe gaat het doing
+hoe is het met jou gegaan
+hoe is je dag geweest

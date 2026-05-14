@@ -1,0 +1,6 @@
+# Utterances expected to match HowAreYou.intent in sv-SE.
+# Sourced from locale/sv-SE/intents/HowAreYou.intent (filtered to plain forms).
+# `#` comments and blank lines are ignored.
+hur har din dag varit
+hur har du haft det
+hur mår du

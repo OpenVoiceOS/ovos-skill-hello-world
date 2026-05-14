@@ -1,0 +1,8 @@
+# Utterances expected to match HowAreYou.intent in es-ES.
+# Sourced from locale/es-ES/intents/HowAreYou.intent (filtered to plain forms).
+# `#` comments and blank lines are ignored.
+cómo estas
+cómo ha ido el día
+cómo te ha ido
+cómo va
+qué tal
