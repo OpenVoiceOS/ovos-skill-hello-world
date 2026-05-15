@@ -12,14 +12,15 @@ jobs:
     with:
       python_version: '3.11'
       install_extras: 'test'
-      test_path: 'test/end2end/'
+      test_path: 'test/end2end/test_helloworld.py'
       # Install ovoscope + pipeline plugins from their `dev` branches so the
       # intent-case helper is available before it lands on PyPI. Drop once
       # an ovoscope release ships.
       pre_release: true
       require_padatious: true
       require_m2v: true
-      # Shard by language — one matrix job per locale so each runs a few
-      # hundred tests instead of 1,200 in series. Must match the locale
-      # folders shipped under ovos_skill_hello_world/locale/.
-      langs: '["ca-ES","cs-CZ","da-DK","de-DE","el-GR","en-US","es-ES","eu-ES","fa-IR","fr-FR","gl-ES","hu-HU","it-IT","nl-NL","pl-PL","pt-BR","pt-PT","ro-RO","ru-RU","sv-SE","tr-TR"]'
+      # Run hand-written end-to-end tests only — intent-case routing
+      # accuracy is gated by the sibling intent-case-tests.yml workflow.
+      # The auto-discovery shim under test/end2end/test_intents.py also
+      # gets collected here, which is fine: the canon source of the
+      # accuracy gate is the dedicated workflow.

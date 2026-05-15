@@ -1,0 +1,21 @@
+name: Intent-Case Tests
+
+on:
+  pull_request:
+    branches: [dev, master, main]
+  workflow_dispatch:
+
+jobs:
+  intent_case_tests:
+    uses: OpenVoiceOS/gh-automations/.github/workflows/intent-case-tests.yml@dev
+    secrets: inherit
+    with:
+      python_version: '3.11'
+      install_extras: 'test'
+      test_path: 'test/end2end/test_intents.py'
+      pre_release: true
+      require_padatious: true
+      require_m2v: true
+      # One matrix job per locale shipped under ovos_skill_hello_world/locale/.
+      # Each shard runs a few hundred tests instead of 1,200 serialised.
+      langs: '["ca-ES","cs-CZ","da-DK","de-DE","el-GR","en-US","es-ES","eu-ES","fa-IR","fr-FR","gl-ES","hu-HU","it-IT","nl-NL","pl-PL","pt-BR","pt-PT","ro-RO","ru-RU","sv-SE","tr-TR"]'
