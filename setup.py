@@ -80,7 +80,19 @@ setup(
     package_data={SKILL_PKG: find_resource_files()},
     include_package_data=True,
     install_requires=required("requirements.txt"),
-    extras_require={"test": required("test/requirements.txt")},
+    extras_require={
+        # Inlined rather than read from test/requirements.txt so the sdist
+        # (which doesn't ship test/) installs cleanly with [test].
+        "test": [
+            "pytest>=5.2.4",
+            "pytest-cov>=2.8.1",
+            "cov-core>=1.15.0",
+            "coveralls>=1.8.2",
+            "flake8>=3.7.9",
+            "ovoscope>=0.5.1,<1.0.0",
+            "ovos-core[plugins,lgpl]>=2.0.0a1",
+        ],
+    },
     keywords='ovos skill plugin',
     entry_points={'ovos.plugin.skill': PLUGIN_ENTRY_POINT}
 )
