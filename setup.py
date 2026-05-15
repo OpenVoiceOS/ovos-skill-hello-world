@@ -32,6 +32,16 @@ with open(path.join(path.abspath(path.dirname(__file__)), "README.md"), "r") as 
     long_description = f.read()
 
 
+def required(requirements_file):
+    """Read a requirements file, stripping comments and blank lines."""
+    with open(path.join(path.abspath(path.dirname(__file__)), requirements_file), "r") as f:
+        requirements = f.read().splitlines()
+        if "MYCROFT_LOOSE_REQUIREMENTS" in os.environ:
+            print("USING LOOSE REQUIREMENTS!")
+            requirements = [r.replace("==", ">=").replace("~=", ">=") for r in requirements]
+        return [pkg for pkg in requirements if pkg and not pkg.startswith("#")]
+
+
 def get_version():
     """ Find the version of this skill"""
     version_file = os.path.join(os.path.dirname(__file__), SKILL_PKG, 'version.py')
@@ -69,6 +79,8 @@ setup(
     packages=[SKILL_PKG],
     package_data={SKILL_PKG: find_resource_files()},
     include_package_data=True,
+    install_requires=required("requirements.txt"),
+    extras_require={"test": required("test/requirements.txt")},
     keywords='ovos skill plugin',
     entry_points={'ovos.plugin.skill': PLUGIN_ENTRY_POINT}
 )
