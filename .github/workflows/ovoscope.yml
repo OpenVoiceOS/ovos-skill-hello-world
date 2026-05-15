@@ -19,3 +19,7 @@ jobs:
       pre_release: true
       require_padatious: true
       require_m2v: true
+      # Shard by language — one matrix job per locale so each runs a few
+      # hundred tests instead of 1,200 in series. Must match the locale
+      # folders shipped under ovos_skill_hello_world/locale/.
+      langs: '["ca-ES","cs-CZ","da-DK","de-DE","el-GR","en-US","es-ES","eu-ES","fa-IR","fr-FR","gl-ES","hu-HU","it-IT","nl-NL","pl-PL","pt-BR","pt-PT","ro-RO","ru-RU","sv-SE","tr-TR"]'
