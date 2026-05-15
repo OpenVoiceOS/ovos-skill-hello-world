@@ -84,13 +84,16 @@ setup(
         # Inlined rather than read from test/requirements.txt so the sdist
         # (which doesn't ship test/) installs cleanly with [test].
         "test": [
+            # Lightweight extras for build-tests / coverage workflows. The
+            # ovoscope workflow installs ovoscope + ovos-core[plugins] on
+            # top via its own install step (with the apt deps fann2 needs);
+            # pulling them in here would force every build-tests matrix
+            # entry to compile fann2, which fails without libfann-dev.
             "pytest>=5.2.4",
             "pytest-cov>=2.8.1",
             "cov-core>=1.15.0",
             "coveralls>=1.8.2",
             "flake8>=3.7.9",
-            "ovoscope>=0.5.1,<1.0.0",
-            "ovos-core[plugins,lgpl]>=2.0.0a1",
         ],
     },
     keywords='ovos skill plugin',
