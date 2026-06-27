@@ -77,7 +77,13 @@ setup(
     package_data={SKILL_PKG: find_resource_files()},
     include_package_data=True,
     install_requires=get_requirements("requirements.txt"),
-    extras_require={"test": get_requirements("test/requirements.txt")},
+    extras_require={
+        # lightweight deps for unit tests / coverage (no system deps)
+        "test": get_requirements("test/requirements.txt"),
+        # heavy end-to-end stack (ovoscope + ovos-core plugins); needs
+        # swig + libfann-dev system deps to build padatious' fann2
+        "end2end": get_requirements("test/requirements-end2end.txt"),
+    },
     keywords='ovos skill plugin',
     entry_points={'ovos.plugin.skill': PLUGIN_ENTRY_POINT}
 )
