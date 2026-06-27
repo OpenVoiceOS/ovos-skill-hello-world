@@ -40,7 +40,7 @@ class TestAdaptIntent(TestCase):
                 Message("mycroft.skill.handler.start",
                         data={"name": "HelloWorldSkill.handle_hello_world_intent"},
                         context={"skill_id": self.skill_id}),
-                Message("speak",
+                Message("ovos.utterance.speak",
                         data={"utterance": "Hello world",
                               "lang": "en-US",
                               "expect_response": False,
@@ -117,7 +117,7 @@ class TestPadatiousIntent(TestCase):
                 Message("mycroft.skill.handler.start",
                         data={"name": "HelloWorldSkill.handle_greetings"},
                         context={"skill_id": self.skill_id}),
-                Message("speak",
+                Message("ovos.utterance.speak",
                         data={"lang": "en-US",
                               "expect_response": False,
                               "meta": {

@@ -12,6 +12,7 @@ jobs:
     with:
       python_version: '3.11'
       coverage_source: 'ovos_skill_hello_world'
-      test_path: 'test/'
+      test_path: 'test/unittests'
+      test_extras: 'test'
       install_extras: ''
       min_coverage: 0
