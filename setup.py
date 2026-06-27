@@ -28,6 +28,13 @@ def find_resource_files():
     return package_data
 
 
+def get_requirements(requirements_filename: str):
+    requirements_file = path.join(path.abspath(path.dirname(__file__)), requirements_filename)
+    with open(requirements_file, 'r', encoding='utf-8') as r:
+        requirements = r.readlines()
+    return [x.strip() for x in requirements if x.strip() and not x.strip().startswith("#")]
+
+
 with open(path.join(path.abspath(path.dirname(__file__)), "README.md"), "r") as f:
     long_description = f.read()
 
@@ -69,6 +76,8 @@ setup(
     packages=[SKILL_PKG],
     package_data={SKILL_PKG: find_resource_files()},
     include_package_data=True,
+    install_requires=get_requirements("requirements.txt"),
+    extras_require={"test": get_requirements("test/requirements.txt")},
     keywords='ovos skill plugin',
     entry_points={'ovos.plugin.skill': PLUGIN_ENTRY_POINT}
 )
