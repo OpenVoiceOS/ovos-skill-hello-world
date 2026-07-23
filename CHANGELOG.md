@@ -1,5 +1,13 @@
 # Changelog
 
+## [0.2.6a2](https://github.com/OpenVoiceOS/ovos-skill-hello-world/tree/0.2.6a2) (2026-07-23)
+
+[Full Changelog](https://github.com/OpenVoiceOS/ovos-skill-hello-world/compare/0.2.6a1...0.2.6a2)
+
+**Merged pull requests:**
+
+- chore: migrate skill entrypoint to canonical opm.skill group [\#105](https://github.com/OpenVoiceOS/ovos-skill-hello-world/pull/105) ([JarbasAl](https://github.com/JarbasAl))
+
 ## [0.2.6a1](https://github.com/OpenVoiceOS/ovos-skill-hello-world/tree/0.2.6a1) (2026-06-27)
 
 [Full Changelog](https://github.com/OpenVoiceOS/ovos-skill-hello-world/compare/0.2.5a2...0.2.6a1)
