@@ -2,13 +2,19 @@
 
 # <img src='https://raw.githack.com/FortAwesome/Font-Awesome/master/svgs/solid/smile.svg' card_color='#22a7f0' width='50' height='50' style='vertical-align:bottom'/> Hello World
 
-Introductory Skill so that Skill Authors can see how an OVOS Skill is put together
-
 ## About
 
-This is a basic Hello Word Skill that takes an _Utterance_ from the user and provides a voice response - a _Dialog_. This Skill demonstrates the basic directory and file structure of an OVOS Skill, and is a good first Skill to study if you are interested in developing Skills for the OVOS ecosystem.
+This is an introductory skill for [OpenVoiceOS](https://github.com/OpenVoiceOS). It takes an utterance from the user and speaks a reply. Read its code to see the basic file and directory structure of an OVOS skill. Use it as a starting point when you write your own skill.
 
-## Examples
+## Install
+
+```bash
+pip install ovos-skill-hello-world
+```
+
+## Usage
+
+Say one of these phrases to trigger the skill:
 
 - "Hello world"
 - "How are you?"
