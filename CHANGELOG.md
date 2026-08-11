@@ -1,5 +1,13 @@
 # Changelog
 
+## [0.2.7a1](https://github.com/OpenVoiceOS/ovos-skill-hello-world/tree/0.2.7a1) (2026-08-11)
+
+[Full Changelog](https://github.com/OpenVoiceOS/ovos-skill-hello-world/compare/0.2.6a3...0.2.7a1)
+
+**Merged pull requests:**
+
+- fix: add missing pipeline plugins to end2end test extras [\#109](https://github.com/OpenVoiceOS/ovos-skill-hello-world/pull/109) ([JarbasAl](https://github.com/JarbasAl))
+
 ## [0.2.6a3](https://github.com/OpenVoiceOS/ovos-skill-hello-world/tree/0.2.6a3) (2026-08-01)
 
 [Full Changelog](https://github.com/OpenVoiceOS/ovos-skill-hello-world/compare/0.2.6a2...0.2.6a3)
