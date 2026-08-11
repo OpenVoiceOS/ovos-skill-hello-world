@@ -2,6 +2,7 @@ from unittest import TestCase
 
 from ovos_bus_client.message import Message
 from ovos_bus_client.session import Session
+from ovos_spec_tools.messages import SpecMessage
 from ovos_utils.log import LOG
 from ovoscope import End2EndTest, get_minicroft
 
@@ -34,13 +35,21 @@ class TestAdaptIntent(TestCase):
                 Message(f"{self.skill_id}.activate",
                         data={},
                         context={"skill_id": self.skill_id}),
+                Message(SpecMessage.INTENT_MATCHED,
+                        data={"skill_id": self.skill_id,
+                              "intent_name": f"{self.skill_id}:HelloWorldIntent"},
+                        context={"skill_id": self.skill_id}),
+                Message(SpecMessage.INTENT_HANDLER_START,
+                        data={"skill_id": self.skill_id,
+                              "intent_name": "HelloWorldIntent"},
+                        context={"skill_id": self.skill_id}),
                 Message(f"{self.skill_id}:HelloWorldIntent",
                         data={"utterance": "hello world", "lang": "en-US"},
                         context={"skill_id": self.skill_id}),
                 Message("mycroft.skill.handler.start",
                         data={"name": "HelloWorldSkill.handle_hello_world_intent"},
                         context={"skill_id": self.skill_id}),
-                Message("ovos.utterance.speak",
+                Message(SpecMessage.SPEAK,
                         data={"utterance": "Hello world",
                               "lang": "en-US",
                               "expect_response": False,
@@ -53,7 +62,11 @@ class TestAdaptIntent(TestCase):
                 Message("mycroft.skill.handler.complete",
                         data={"name": "HelloWorldSkill.handle_hello_world_intent"},
                         context={"skill_id": self.skill_id}),
-                Message("ovos.utterance.handled",
+                Message(SpecMessage.INTENT_HANDLER_COMPLETE,
+                        data={"skill_id": self.skill_id,
+                              "intent_name": "HelloWorldIntent"},
+                        context={"skill_id": self.skill_id}),
+                Message(SpecMessage.UTTERANCE_HANDLED,
                         data={},
                         context={"skill_id": self.skill_id}),
             ]
@@ -75,8 +88,8 @@ class TestAdaptIntent(TestCase):
             expected_messages=[
                 message,
                 Message("mycroft.audio.play_sound", {"uri": "snd/error.mp3"}),
-                Message("complete_intent_failure", {}),
-                Message("ovos.utterance.handled", {})
+                Message(SpecMessage.INTENT_UNMATCHED, {}),
+                Message(SpecMessage.UTTERANCE_HANDLED, {})
             ]
         )
 
@@ -111,13 +124,21 @@ class TestPadatiousIntent(TestCase):
                 Message(f"{self.skill_id}.activate",
                         data={},
                         context={"skill_id": self.skill_id}),
-                Message(f"{self.skill_id}:Greetings.intent",
+                Message(SpecMessage.INTENT_MATCHED,
+                        data={"skill_id": self.skill_id,
+                              "intent_name": f"{self.skill_id}:Greetings"},
+                        context={"skill_id": self.skill_id}),
+                Message(SpecMessage.INTENT_HANDLER_START,
+                        data={"skill_id": self.skill_id,
+                              "intent_name": "Greetings"},
+                        context={"skill_id": self.skill_id}),
+                Message(f"{self.skill_id}:Greetings",
                         data={"utterance": "good morning", "lang": "en-US"},
                         context={"skill_id": self.skill_id}),
                 Message("mycroft.skill.handler.start",
                         data={"name": "HelloWorldSkill.handle_greetings"},
                         context={"skill_id": self.skill_id}),
-                Message("ovos.utterance.speak",
+                Message(SpecMessage.SPEAK,
                         data={"lang": "en-US",
                               "expect_response": False,
                               "meta": {
@@ -129,7 +150,11 @@ class TestPadatiousIntent(TestCase):
                 Message("mycroft.skill.handler.complete",
                         data={"name": "HelloWorldSkill.handle_greetings"},
                         context={"skill_id": self.skill_id}),
-                Message("ovos.utterance.handled",
+                Message(SpecMessage.INTENT_HANDLER_COMPLETE,
+                        data={"skill_id": self.skill_id,
+                              "intent_name": "Greetings"},
+                        context={"skill_id": self.skill_id}),
+                Message(SpecMessage.UTTERANCE_HANDLED,
                         data={},
                         context={"skill_id": self.skill_id}),
             ]
@@ -151,8 +176,8 @@ class TestPadatiousIntent(TestCase):
             expected_messages=[
                 message,
                 Message("mycroft.audio.play_sound", {"uri": "snd/error.mp3"}),
-                Message("complete_intent_failure", {}),
-                Message("ovos.utterance.handled", {})
+                Message(SpecMessage.INTENT_UNMATCHED, {}),
+                Message(SpecMessage.UTTERANCE_HANDLED, {})
             ]
         )
 
