@@ -1,5 +1,13 @@
 # Changelog
 
+## [0.2.7a2](https://github.com/OpenVoiceOS/ovos-skill-hello-world/tree/0.2.7a2) (2026-08-13)
+
+[Full Changelog](https://github.com/OpenVoiceOS/ovos-skill-hello-world/compare/0.2.7a1...0.2.7a2)
+
+**Merged pull requests:**
+
+- test: golden-utterance e2e suite for ovos-skill-hello-world [\#111](https://github.com/OpenVoiceOS/ovos-skill-hello-world/pull/111) ([JarbasAl](https://github.com/JarbasAl))
+
 ## [0.2.7a1](https://github.com/OpenVoiceOS/ovos-skill-hello-world/tree/0.2.7a1) (2026-08-11)
 
 [Full Changelog](https://github.com/OpenVoiceOS/ovos-skill-hello-world/compare/0.2.6a3...0.2.7a1)
