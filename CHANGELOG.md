@@ -1,8 +1,8 @@
 # Changelog
 
-## [0.2.7a3](https://github.com/OpenVoiceOS/ovos-skill-hello-world/tree/0.2.7a3) (2026-08-25)
+## [0.2.7a4](https://github.com/OpenVoiceOS/ovos-skill-hello-world/tree/0.2.7a4) (2026-08-25)
 
-[Full Changelog](https://github.com/OpenVoiceOS/ovos-skill-hello-world/compare/0.2.7a2...0.2.7a3)
+[Full Changelog](https://github.com/OpenVoiceOS/ovos-skill-hello-world/compare/0.2.7a2...0.2.7a4)
 
 **Merged pull requests:**
 
