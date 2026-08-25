@@ -1,5 +1,17 @@
 # Changelog
 
+## [0.2.7a3](https://github.com/OpenVoiceOS/ovos-skill-hello-world/tree/0.2.7a3) (2026-08-25)
+
+[Full Changelog](https://github.com/OpenVoiceOS/ovos-skill-hello-world/compare/0.2.7a2...0.2.7a3)
+
+**Merged pull requests:**
+
+- translate\(kab-DZ\): update hello.dialog [\#116](https://github.com/OpenVoiceOS/ovos-skill-hello-world/pull/116) ([ovos-localize[bot]](https://github.com/apps/ovos-localize))
+- translate\(kab-DZ\): update hello.world.dialog [\#115](https://github.com/OpenVoiceOS/ovos-skill-hello-world/pull/115) ([ovos-localize[bot]](https://github.com/apps/ovos-localize))
+- translate\(kab-DZ\): update how.are.you.dialog [\#114](https://github.com/OpenVoiceOS/ovos-skill-hello-world/pull/114) ([ovos-localize[bot]](https://github.com/apps/ovos-localize))
+- translate\(kab-DZ\): update welcome.dialog [\#113](https://github.com/OpenVoiceOS/ovos-skill-hello-world/pull/113) ([ovos-localize[bot]](https://github.com/apps/ovos-localize))
+- translate\(fa-IR\): update skill.json [\#93](https://github.com/OpenVoiceOS/ovos-skill-hello-world/pull/93) ([ovos-localize[bot]](https://github.com/apps/ovos-localize))
+
 ## [0.2.7a2](https://github.com/OpenVoiceOS/ovos-skill-hello-world/tree/0.2.7a2) (2026-08-13)
 
 [Full Changelog](https://github.com/OpenVoiceOS/ovos-skill-hello-world/compare/0.2.7a1...0.2.7a2)
