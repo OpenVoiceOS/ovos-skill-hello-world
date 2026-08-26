@@ -1,8 +1,20 @@
 # Changelog
 
+## [0.2.8a1](https://github.com/OpenVoiceOS/ovos-skill-hello-world/tree/0.2.8a1) (2026-08-26)
+
+[Full Changelog](https://github.com/OpenVoiceOS/ovos-skill-hello-world/compare/0.2.7a4...0.2.8a1)
+
+**Merged pull requests:**
+
+- fix: rename bare lang code locale directories [\#119](https://github.com/OpenVoiceOS/ovos-skill-hello-world/pull/119) ([ovos-localize[bot]](https://github.com/apps/ovos-localize))
+
 ## [0.2.7a4](https://github.com/OpenVoiceOS/ovos-skill-hello-world/tree/0.2.7a4) (2026-08-25)
 
-[Full Changelog](https://github.com/OpenVoiceOS/ovos-skill-hello-world/compare/0.2.7a2...0.2.7a4)
+[Full Changelog](https://github.com/OpenVoiceOS/ovos-skill-hello-world/compare/0.2.7a3...0.2.7a4)
+
+## [0.2.7a3](https://github.com/OpenVoiceOS/ovos-skill-hello-world/tree/0.2.7a3) (2026-08-25)
+
+[Full Changelog](https://github.com/OpenVoiceOS/ovos-skill-hello-world/compare/0.2.7a2...0.2.7a3)
 
 **Merged pull requests:**
 
