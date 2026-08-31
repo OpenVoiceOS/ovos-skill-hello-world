@@ -1,6 +1,5 @@
 from ovos_utils import classproperty
 from ovos_utils.log import LOG
-from ovos_workshop.intents import IntentBuilder
 from ovos_utils.process_utils import RuntimeRequirements
 from ovos_workshop.decorators import intent_handler
 from ovos_workshop.skills import OVOSSkill
@@ -70,12 +69,12 @@ class HelloWorldSkill(OVOSSkill):
         """
         return self.settings.get("log_level", "INFO")
 
-    @intent_handler(IntentBuilder("ThankYouIntent").require("ThankYouKeyword"))
+    @intent_handler("ThankYouIntent.intent")
     def handle_thank_you_intent(self, message):
-        """This is an Adapt intent handler, it is triggered by a keyword."""
+        """This is a Padatious intent handler, it is triggered by a keyword."""
         self.speak_dialog("welcome")
 
-    @intent_handler(IntentBuilder("HelloWorldIntent").require("HelloWorldKeyword"))
+    @intent_handler("HelloWorldIntent.intent")
     def handle_hello_world_intent(self, message):
         """
         speak_dialog() is an OVOS skill method that safely handles
