@@ -1,5 +1,13 @@
 # Changelog
 
+## [0.2.8a2](https://github.com/OpenVoiceOS/ovos-skill-hello-world/tree/0.2.8a2) (2026-09-02)
+
+[Full Changelog](https://github.com/OpenVoiceOS/ovos-skill-hello-world/compare/0.2.8a1...0.2.8a2)
+
+**Merged pull requests:**
+
+- refactor: migrate adapt intents to intent files [\#121](https://github.com/OpenVoiceOS/ovos-skill-hello-world/pull/121) ([JarbasAl](https://github.com/JarbasAl))
+
 ## [0.2.8a1](https://github.com/OpenVoiceOS/ovos-skill-hello-world/tree/0.2.8a1) (2026-08-26)
 
 [Full Changelog](https://github.com/OpenVoiceOS/ovos-skill-hello-world/compare/0.2.7a4...0.2.8a1)
