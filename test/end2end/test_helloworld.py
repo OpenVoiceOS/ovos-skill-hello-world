@@ -4,10 +4,13 @@ from ovos_bus_client.message import Message
 from ovos_bus_client.session import Session
 from ovos_spec_tools.messages import SpecMessage
 from ovos_utils.log import LOG
-from ovoscope import End2EndTest, get_minicroft
+from ovoscope import CaptureSession, End2EndTest, get_minicroft
 
 
-class TestAdaptIntent(TestCase):
+class TestPadatiousHelloWorldIntent(TestCase):
+    """``HelloWorldIntent`` is now a Padatious/Padacioso intent file, not an
+    Adapt keyword rule, so it is reachable via the padatious pipeline and
+    unreachable via an adapt-only pipeline."""
 
     def setUp(self):
         LOG.set_level("DEBUG")
@@ -19,9 +22,9 @@ class TestAdaptIntent(TestCase):
             self.minicroft.stop()
         LOG.set_level("CRITICAL")
 
-    def test_adapt_match(self):
+    def test_padatious_match(self):
         session = Session("123")
-        session.pipeline = ['ovos-adapt-pipeline-plugin-high']
+        session.pipeline = ["ovos-padatious-pipeline-plugin-high"]
         message = Message("recognizer_loop:utterance",
                           {"utterances": ["hello world"], "lang": "en-US"},
                           {"session": session.serialize(), "source": "A", "destination": "B"})
@@ -74,9 +77,9 @@ class TestAdaptIntent(TestCase):
 
         test.execute(timeout=10)
 
-    def test_padatious_no_match(self):
+    def test_adapt_no_match(self):
         session = Session("123")
-        session.pipeline = ["ovos-padatious-pipeline-plugin-high"]
+        session.pipeline = ['ovos-adapt-pipeline-plugin-high']
         message = Message("recognizer_loop:utterance",
                           {"utterances": ["hello world"], "lang": "en-US"},
                           {"session": session.serialize(), "source": "A", "destination": "B"})
@@ -183,3 +186,44 @@ class TestPadatiousIntent(TestCase):
 
         test.execute(timeout=10)
 
+
+
+class TestNoAdaptPipeline(TestCase):
+    """``HelloWorldIntent`` and ``ThankYouIntent`` are Padatious/Padacioso
+    intent files (see ``locale/*/intents/HelloWorldIntent.intent`` and
+    ``ThankYouIntent.intent``), not Adapt keyword rules. A pipeline stack
+    with no Adapt stage at all must still match them, which an Adapt-only
+    keyword intent never would."""
+
+    def setUp(self):
+        LOG.set_level("DEBUG")
+        self.skill_id = "ovos-skill-hello-world.openvoiceos"
+        self.minicroft = get_minicroft([self.skill_id])
+
+    def tearDown(self):
+        if self.minicroft:
+            self.minicroft.stop()
+        LOG.set_level("CRITICAL")
+
+    def _matched_intent_names(self, utterance):
+        session = Session("123")
+        session.pipeline = [
+            "ovos-padatious-pipeline-plugin-high",
+            "ovos-padacioso-pipeline-plugin-high",
+        ]
+        message = Message("recognizer_loop:utterance",
+                          {"utterances": [utterance], "lang": "en-US"},
+                          {"session": session.serialize(), "source": "A", "destination": "B"})
+        capture = CaptureSession(self.minicroft)
+        capture.capture(message, timeout=15)
+        messages = capture.finish()
+        matched = [m for m in messages if m.msg_type == SpecMessage.INTENT_MATCHED]
+        return [m.data.get("intent_name") for m in matched]
+
+    def test_hello_world_matches_without_adapt(self):
+        names = self._matched_intent_names("hello world")
+        self.assertIn(f"{self.skill_id}:HelloWorldIntent", names)
+
+    def test_thank_you_matches_without_adapt(self):
+        names = self._matched_intent_names("thank you")
+        self.assertIn(f"{self.skill_id}:ThankYouIntent", names)
