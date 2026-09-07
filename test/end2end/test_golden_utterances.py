@@ -3,7 +3,7 @@
 The master ovoscope corpus carries no rows for
 ``ovos-skill-hello-world.openvoiceos``, so ``golden_utterances.jsonl`` is
 derived entirely from this skill's own intent templates: ``HelloWorldIntent``,
-``ThankYouIntent``, ``Greetings`` and ``HowAreYou`` (all Padatious/Padacioso,
+``ThankYouIntent``, ``Greetings`` and ``HowAreYou`` (all Padacioso,
 phrase-based intent files).
 
 Every row is asserted via the ``ovos.intent.matched`` bus message's
@@ -28,7 +28,6 @@ LANG = "en-US"
 
 _PIPELINE = [
     "ovos-adapt-pipeline-plugin-high",
-    "ovos-padatious-pipeline-plugin-high",
     "ovos-padacioso-pipeline-plugin-high",
     "ovos-adapt-pipeline-plugin-medium",
     "ovos-padacioso-pipeline-plugin-medium",
