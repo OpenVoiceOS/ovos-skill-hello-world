@@ -1,0 +1,14 @@
+{
+  "skill_id": "ovos-skill-hello-world.openvoiceos",
+  "source": "https://github.com/OpenVoiceOS/ovos-skill-hello-world",
+  "name": "Adieu monde",
+  "description": "Abilitat d'introduccion per que los autors d'abilitats vejan cossí es facha una abilitat d'OVOS",
+  "examples": [
+    "Adieu monde",
+    "Mercé",
+    "Cossí vas?"
+  ],
+  "tags": [
+    "tutorial"
+  ]
+}
