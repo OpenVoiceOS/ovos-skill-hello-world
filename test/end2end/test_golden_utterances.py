@@ -26,6 +26,23 @@ from ovoscope import CaptureSession, get_minicroft
 SKILL_ID = "ovos-skill-hello-world.openvoiceos"
 LANG = "en-US"
 
+# Dialog file each intent speaks from, read directly at test time so the
+# expected set always tracks the shipped locale content instead of a copy
+# typed into the test.
+_DIALOG_DIR = Path(__file__).parents[2] / "ovos_skill_hello_world" / "locale" / LANG / "dialog"
+_INTENT_DIALOG = {
+    "HelloWorldIntent": "hello.world.dialog",
+    "ThankYouIntent": "welcome.dialog",
+    "Greetings": "hello.dialog",
+    "HowAreYou": "how.are.you.dialog",
+}
+
+
+def _dialog_lines(dialog_file):
+    path = _DIALOG_DIR / dialog_file
+    with open(path, encoding="utf-8") as f:
+        return {line.strip() for line in f if line.strip()}
+
 _PIPELINE = [
     "ovos-adapt-pipeline-plugin-high",
     "ovos-padatious-pipeline-plugin-high",
@@ -101,6 +118,22 @@ def test_golden_utterance(minicroft, row):
     names = [m.data.get("intent_name") for m in matched]
     assert expected_intent in names, (
         f"{row['utterance']!r}: expected intent_name {expected_intent!r}, got {names!r}"
+    )
+
+    # Routing alone is satisfied by a handler that speaks nothing, speaks
+    # the wrong dialog, or raises after the intent is matched. Assert the
+    # actual spoken text landed and is one of the lines the skill ships in
+    # its own dialog file for this intent.
+    spoken = [m for m in messages if m.msg_type in ("speak", "ovos.utterance.speak")]
+    assert spoken, (
+        f"{row['utterance']!r}: intent matched but no 'speak' message was "
+        f"emitted, got {[m.msg_type for m in messages]!r}"
+    )
+    utterance = spoken[0].data.get("utterance")
+    valid_lines = _dialog_lines(_INTENT_DIALOG[row["intent_label"]])
+    assert utterance in valid_lines, (
+        f"{row['utterance']!r}: spoke {utterance!r}, not one of the lines in "
+        f"{_INTENT_DIALOG[row['intent_label']]}: {valid_lines!r}"
     )
 
 
