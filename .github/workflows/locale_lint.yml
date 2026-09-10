@@ -1,0 +1,13 @@
+name: Locale Lint
+on:
+  pull_request:
+    branches: [dev]
+  workflow_dispatch:
+
+jobs:
+  locale:
+    uses: OpenVoiceOS/gh-automations/.github/workflows/locale-lint.yml@feat/locale-lint-workflow
+    with:
+      # the policy job takes scripts/locale_gate.py from this ref; dev has no copy
+      gh_automations_ref: feat/locale-lint-workflow
+    secrets: inherit
