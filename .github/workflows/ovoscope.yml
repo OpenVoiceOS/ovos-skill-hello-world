@@ -7,7 +7,7 @@ on:
 
 jobs:
   ovoscope:
-    uses: OpenVoiceOS/gh-automations/.github/workflows/ovoscope.yml@dev
+    uses: OpenVoiceOS/gh-automations/.github/workflows/ovoscope.yml@fix/ovoscope-hang-names-itself
     secrets: inherit
     with:
       python_version: '3.11'
