@@ -1,0 +1,14 @@
+{
+  "skill_id": "ovos-skill-hello-world.openvoiceos",
+  "source": "https://github.com/OpenVoiceOS/ovos-skill-hello-world",
+  "name": "سلام دنیا",
+  "description": "یک مهارت نمونه تا توسعه‌دهنده‌ها بفهمند یک مهارت OVOS را سرهم کنند",
+  "examples": [
+    "سلام دنیا",
+    "ممنون",
+    "چطوری؟"
+  ],
+  "tags": [
+    "آموزشی"
+  ]
+}

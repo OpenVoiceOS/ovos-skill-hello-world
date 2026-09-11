@@ -1,0 +1,14 @@
+{
+  "skill_id": "ovos-skill-hello-world.openvoiceos",
+  "source": "https://github.com/OpenVoiceOS/ovos-skill-hello-world",
+  "name": "Azul ay amaḍal",
+  "description": "Tazmert n usentem i wid ara yebnun tizmirin OVOS akken ad walin amek i tettwabna",
+  "examples": [
+    "Azul ay amaḍal",
+    "Tanemmirt",
+    "Amek i tettiliḍ?"
+  ],
+  "tags": [
+    "tutorial"
+  ]
+}
