@@ -1,5 +1,13 @@
 # Changelog
 
+## [0.3.0a1](https://github.com/OpenVoiceOS/ovos-skill-hello-world/tree/0.3.0a1) (2026-09-11)
+
+[Full Changelog](https://github.com/OpenVoiceOS/ovos-skill-hello-world/compare/0.2.8a2...0.3.0a1)
+
+**Merged pull requests:**
+
+- feat: locale balance — en-US ca-ES da-DK de-DE es-ES eu-ES fr-FR gl-ES it-IT kab nl-NL oc-FR pt-BR pt-PT sv-SE [\#126](https://github.com/OpenVoiceOS/ovos-skill-hello-world/pull/126) ([JarbasAl](https://github.com/JarbasAl))
+
 ## [0.2.8a2](https://github.com/OpenVoiceOS/ovos-skill-hello-world/tree/0.2.8a2) (2026-09-02)
 
 [Full Changelog](https://github.com/OpenVoiceOS/ovos-skill-hello-world/compare/0.2.8a1...0.2.8a2)
