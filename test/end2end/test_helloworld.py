@@ -33,6 +33,10 @@ class TestPadatiousHelloWorldIntent(TestCase):
             minicroft=self.minicroft,
             skill_ids=[self.skill_id],
             source_message=message,
+            # padatious retrains in a background thread; "mycroft.skills.trained"
+            # is a pipeline lifecycle broadcast that lands nondeterministically
+            # inside the capture window, not a message this skill ever sends
+            ignore_messages=["mycroft.skills.trained"],
             expected_messages=[
                 message,
                 Message(f"{self.skill_id}.activate",
@@ -122,6 +126,10 @@ class TestPadatiousIntent(TestCase):
             minicroft=self.minicroft,
             skill_ids=[self.skill_id],
             source_message=message,
+            # padatious retrains in a background thread; "mycroft.skills.trained"
+            # is a pipeline lifecycle broadcast that lands nondeterministically
+            # inside the capture window, not a message this skill ever sends
+            ignore_messages=["mycroft.skills.trained"],
             expected_messages=[
                 message,
                 Message(f"{self.skill_id}.activate",
