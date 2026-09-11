@@ -34,8 +34,8 @@ class TestPadatiousHelloWorldIntent(TestCase):
     def setUp(self):
         LOG.set_level("DEBUG")
         self.skill_id = "ovos-skill-hello-world.openvoiceos"
-        self.minicroft = get_minicroft([self.skill_id])
-        wait_for_minicroft_ready(self.minicroft)  # reuse for speed, but beware if skills keeping internal state
+        self.minicroft = get_minicroft([self.skill_id])  # reuse for speed, but beware if skills keeping internal state
+        wait_for_minicroft_ready(self.minicroft)
 
     def tearDown(self):
         if self.minicroft:

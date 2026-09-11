@@ -60,24 +60,34 @@ def wait_for_minicroft_ready(mc, ready_timeout: float = DEFAULT_READY_TIMEOUT,
     mc.bus.on("mycroft.skills.trained", _on_trained)
     try:
         deadline = time.monotonic() + ready_timeout
-        while getattr(getattr(mc, "status", None), "state", None) != ProcessState.READY:
+        while mc.status.state != ProcessState.READY:
             if time.monotonic() > deadline:
-                break
+                raise TimeoutError(
+                    f"MiniCroft did not reach READY within {ready_timeout}s "
+                    f"(state={mc.status.state!r})"
+                )
             time.sleep(0.2)
 
         overall_deadline = time.monotonic() + max_trained_wait
-        saw_any = False
-        while True:
-            remaining = overall_deadline - time.monotonic()
-            if remaining <= 0:
-                break
-            if trained.wait(timeout=min(quiet_window, remaining)):
-                trained.clear()
-                saw_any = True
-                continue  # a delivery landed -- reset the quiet-window clock
-            break  # quiet_window elapsed with no new delivery: settled
-
-        if not saw_any:
+        # Wait for the FIRST delivery bounded by the full max_trained_wait,
+        # not the short quiet_window -- a slow runner (e.g. coverage
+        # instrumentation) can push that first delivery well past
+        # quiet_window, and returning early there is the race this helper
+        # exists to close. Only once a delivery has landed does the
+        # quiet-window logic apply, to settle any later passes.
+        if trained.wait(timeout=max_trained_wait):
+            trained.clear()
+            while True:
+                remaining = overall_deadline - time.monotonic()
+                if remaining <= 0:
+                    break
+                if trained.wait(timeout=min(quiet_window, remaining)):
+                    trained.clear()
+                    continue  # a delivery landed -- reset the quiet-window clock
+                break  # quiet_window elapsed with no new delivery: settled
+        else:
+            # Nothing arrived within max_trained_wait at all (e.g. an
+            # ovos-padatious version too old to emit the signal).
             time.sleep(FALLBACK_SETTLE)
     finally:
         mc.bus.remove("mycroft.skills.trained", _on_trained)
