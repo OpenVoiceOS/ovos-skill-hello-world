@@ -4,7 +4,26 @@ from ovos_bus_client.message import Message
 from ovos_bus_client.session import Session
 from ovos_spec_tools.messages import SpecMessage
 from ovos_utils.log import LOG
-from ovoscope import CaptureSession, End2EndTest, get_minicroft
+from ovoscope import CaptureSession, DEFAULT_IGNORED, End2EndTest, get_minicroft
+
+from ._wait_trained import wait_for_minicroft_ready
+
+
+# Messages whose presence in a capture depends on the environment or on thread
+# timing rather than on the skill.
+#
+# Audio output lifecycle messages come from the audio service, which a minimal
+# test extra does not install.
+#
+# mycroft.skills.trained is the completion signal ovos-padatious emits for a
+# training pass. setUp waits for it, so the utterance is never sent before the
+# compile lands; it is ignored here as well because a later pass can still
+# land inside a capture window and change the count. Waiting is what makes the
+# intent reachable, and ignoring is what keeps the count stable.
+ENVIRONMENTAL = ["recognizer_loop:audio_output_start",
+                 "recognizer_loop:audio_output_end",
+                 "mycroft.skills.trained"]
+IGNORED = DEFAULT_IGNORED + ENVIRONMENTAL
 
 
 class TestPadatiousHelloWorldIntent(TestCase):
@@ -15,7 +34,8 @@ class TestPadatiousHelloWorldIntent(TestCase):
     def setUp(self):
         LOG.set_level("DEBUG")
         self.skill_id = "ovos-skill-hello-world.openvoiceos"
-        self.minicroft = get_minicroft([self.skill_id])  # reuse for speed, but beware if skills keeping internal state
+        self.minicroft = get_minicroft([self.skill_id])
+        wait_for_minicroft_ready(self.minicroft)  # reuse for speed, but beware if skills keeping internal state
 
     def tearDown(self):
         if self.minicroft:
@@ -33,6 +53,7 @@ class TestPadatiousHelloWorldIntent(TestCase):
             minicroft=self.minicroft,
             skill_ids=[self.skill_id],
             source_message=message,
+            ignore_messages=IGNORED,
             expected_messages=[
                 message,
                 Message(f"{self.skill_id}.activate",
@@ -88,6 +109,7 @@ class TestPadatiousHelloWorldIntent(TestCase):
             minicroft=self.minicroft,
             skill_ids=[self.skill_id],
             source_message=message,
+            ignore_messages=IGNORED,
             expected_messages=[
                 message,
                 Message("mycroft.audio.play_sound", {"uri": "snd/error.mp3"}),
@@ -105,6 +127,7 @@ class TestPadatiousIntent(TestCase):
         LOG.set_level("DEBUG")
         self.skill_id = "ovos-skill-hello-world.openvoiceos"
         self.minicroft = get_minicroft([self.skill_id])
+        wait_for_minicroft_ready(self.minicroft)
 
     def tearDown(self):
         if self.minicroft:
@@ -122,6 +145,7 @@ class TestPadatiousIntent(TestCase):
             minicroft=self.minicroft,
             skill_ids=[self.skill_id],
             source_message=message,
+            ignore_messages=IGNORED,
             expected_messages=[
                 message,
                 Message(f"{self.skill_id}.activate",
@@ -176,6 +200,7 @@ class TestPadatiousIntent(TestCase):
             minicroft=self.minicroft,
             skill_ids=[self.skill_id],
             source_message=message,
+            ignore_messages=IGNORED,
             expected_messages=[
                 message,
                 Message("mycroft.audio.play_sound", {"uri": "snd/error.mp3"}),
@@ -199,6 +224,7 @@ class TestNoAdaptPipeline(TestCase):
         LOG.set_level("DEBUG")
         self.skill_id = "ovos-skill-hello-world.openvoiceos"
         self.minicroft = get_minicroft([self.skill_id])
+        wait_for_minicroft_ready(self.minicroft)
 
     def tearDown(self):
         if self.minicroft:
