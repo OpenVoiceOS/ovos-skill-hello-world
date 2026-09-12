@@ -80,8 +80,7 @@ setup(
     extras_require={
         # lightweight deps for unit tests / coverage (no system deps)
         "test": get_requirements("test/requirements.txt"),
-        # heavy end-to-end stack (ovoscope + ovos-core plugins); needs
-        # swig + libfann-dev system deps to build padatious' fann2
+        # heavy end-to-end stack (ovoscope + ovos-core plugins)
         "end2end": get_requirements("test/requirements-end2end.txt"),
     },
     keywords='ovos skill plugin',
