@@ -1,10 +1,10 @@
 {
   "/vocab/HelloWorldKeyword.voc": [
-    "hello world\nbonjour le monde\nsalut",
-    "bonjour\nsalut\nhello"
+    "hello world",
+    "bonjour le monde"
   ],
   "/vocab/ThankYouKeyword.voc": [
-    "merci",
-    "merci bien"
+    "merci bonjour le monde",
+    "merci hello world"
   ]
 }
