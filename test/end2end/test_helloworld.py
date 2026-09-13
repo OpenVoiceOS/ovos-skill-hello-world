@@ -4,7 +4,15 @@ from ovos_bus_client.message import Message
 from ovos_bus_client.session import Session
 from ovos_spec_tools.messages import SpecMessage
 from ovos_utils.log import LOG
-from ovoscope import CaptureSession, End2EndTest, get_minicroft
+from ovoscope import CaptureSession, DEFAULT_IGNORED, End2EndTest, get_minicroft
+
+
+# Messages whose presence in a capture depends on the environment rather than
+# on the skill. Audio output lifecycle messages come from the audio service,
+# which a minimal test extra does not install.
+ENVIRONMENTAL = ["recognizer_loop:audio_output_start",
+                 "recognizer_loop:audio_output_end"]
+IGNORED = DEFAULT_IGNORED + ENVIRONMENTAL
 
 
 class TestPadatiousHelloWorldIntent(TestCase):
@@ -33,6 +41,7 @@ class TestPadatiousHelloWorldIntent(TestCase):
             minicroft=self.minicroft,
             skill_ids=[self.skill_id],
             source_message=message,
+            ignore_messages=IGNORED,
             expected_messages=[
                 message,
                 Message(f"{self.skill_id}.activate",
@@ -88,6 +97,7 @@ class TestPadatiousHelloWorldIntent(TestCase):
             minicroft=self.minicroft,
             skill_ids=[self.skill_id],
             source_message=message,
+            ignore_messages=IGNORED,
             expected_messages=[
                 message,
                 Message("mycroft.audio.play_sound", {"uri": "snd/error.mp3"}),
@@ -122,6 +132,7 @@ class TestPadatiousIntent(TestCase):
             minicroft=self.minicroft,
             skill_ids=[self.skill_id],
             source_message=message,
+            ignore_messages=IGNORED,
             expected_messages=[
                 message,
                 Message(f"{self.skill_id}.activate",
@@ -176,6 +187,7 @@ class TestPadatiousIntent(TestCase):
             minicroft=self.minicroft,
             skill_ids=[self.skill_id],
             source_message=message,
+            ignore_messages=IGNORED,
             expected_messages=[
                 message,
                 Message("mycroft.audio.play_sound", {"uri": "snd/error.mp3"}),
