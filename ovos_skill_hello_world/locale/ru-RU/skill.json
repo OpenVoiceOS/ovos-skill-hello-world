@@ -1,0 +1,14 @@
+{
+  "skill_id": "ovos-skill-hello-world.openvoiceos",
+  "source": "https://github.com/OpenVoiceOS/ovos-skill-hello-world",
+  "name": "Привет, мир",
+  "description": "Вводный навык, чтобы авторы навыков могли увидеть, как устроен навык OVOS",
+  "examples": [
+    "Привет, мир",
+    "Спасибо",
+    "Как дела?"
+  ],
+  "tags": [
+    "обучение"
+  ]
+}
