@@ -16,7 +16,7 @@ IGNORED = DEFAULT_IGNORED + ENVIRONMENTAL
 
 
 class TestPadatiousHelloWorldIntent(TestCase):
-    """``HelloWorldIntent`` is now a Padatious/Padacioso intent file, not an
+    """``hello_world_intent`` is now a Padatious/Padacioso intent file, not an
     Adapt keyword rule, so it is reachable via the padatious pipeline and
     unreachable via an adapt-only pipeline."""
 
@@ -49,13 +49,13 @@ class TestPadatiousHelloWorldIntent(TestCase):
                         context={"skill_id": self.skill_id}),
                 Message(SpecMessage.INTENT_MATCHED,
                         data={"skill_id": self.skill_id,
-                              "intent_name": f"{self.skill_id}:HelloWorldIntent"},
+                              "intent_name": f"{self.skill_id}:hello_world_intent"},
                         context={"skill_id": self.skill_id}),
                 Message(SpecMessage.INTENT_HANDLER_START,
                         data={"skill_id": self.skill_id,
-                              "intent_name": "HelloWorldIntent"},
+                              "intent_name": "hello_world_intent"},
                         context={"skill_id": self.skill_id}),
-                Message(f"{self.skill_id}:HelloWorldIntent",
+                Message(f"{self.skill_id}:hello_world_intent",
                         data={"utterance": "hello world", "lang": "en-US"},
                         context={"skill_id": self.skill_id}),
                 Message("mycroft.skill.handler.start",
@@ -66,7 +66,7 @@ class TestPadatiousHelloWorldIntent(TestCase):
                               "lang": "en-US",
                               "expect_response": False,
                               "meta": {
-                                  "dialog": "hello.world",
+                                  "dialog": "hello_world",
                                   "data": {},
                                   "skill": self.skill_id
                               }},
@@ -76,7 +76,7 @@ class TestPadatiousHelloWorldIntent(TestCase):
                         context={"skill_id": self.skill_id}),
                 Message(SpecMessage.INTENT_HANDLER_COMPLETE,
                         data={"skill_id": self.skill_id,
-                              "intent_name": "HelloWorldIntent"},
+                              "intent_name": "hello_world_intent"},
                         context={"skill_id": self.skill_id}),
                 Message(SpecMessage.UTTERANCE_HANDLED,
                         data={},
@@ -140,13 +140,13 @@ class TestPadatiousIntent(TestCase):
                         context={"skill_id": self.skill_id}),
                 Message(SpecMessage.INTENT_MATCHED,
                         data={"skill_id": self.skill_id,
-                              "intent_name": f"{self.skill_id}:Greetings"},
+                              "intent_name": f"{self.skill_id}:greetings"},
                         context={"skill_id": self.skill_id}),
                 Message(SpecMessage.INTENT_HANDLER_START,
                         data={"skill_id": self.skill_id,
-                              "intent_name": "Greetings"},
+                              "intent_name": "greetings"},
                         context={"skill_id": self.skill_id}),
-                Message(f"{self.skill_id}:Greetings",
+                Message(f"{self.skill_id}:greetings",
                         data={"utterance": "good morning", "lang": "en-US"},
                         context={"skill_id": self.skill_id}),
                 Message("mycroft.skill.handler.start",
@@ -166,7 +166,7 @@ class TestPadatiousIntent(TestCase):
                         context={"skill_id": self.skill_id}),
                 Message(SpecMessage.INTENT_HANDLER_COMPLETE,
                         data={"skill_id": self.skill_id,
-                              "intent_name": "Greetings"},
+                              "intent_name": "greetings"},
                         context={"skill_id": self.skill_id}),
                 Message(SpecMessage.UTTERANCE_HANDLED,
                         data={},
@@ -201,9 +201,9 @@ class TestPadatiousIntent(TestCase):
 
 
 class TestNoAdaptPipeline(TestCase):
-    """``HelloWorldIntent`` and ``ThankYouIntent`` are Padatious/Padacioso
-    intent files (see ``locale/*/intents/HelloWorldIntent.intent`` and
-    ``ThankYouIntent.intent``), not Adapt keyword rules. A pipeline stack
+    """``hello_world_intent`` and ``thank_you_intent`` are Padatious/Padacioso
+    intent files (see ``locale/*/intents/hello_world_intent.intent`` and
+    ``thank_you_intent.intent``), not Adapt keyword rules. A pipeline stack
     with no Adapt stage at all must still match them, which an Adapt-only
     keyword intent never would."""
 
@@ -234,8 +234,8 @@ class TestNoAdaptPipeline(TestCase):
 
     def test_hello_world_matches_without_adapt(self):
         names = self._matched_intent_names("hello world")
-        self.assertIn(f"{self.skill_id}:HelloWorldIntent", names)
+        self.assertIn(f"{self.skill_id}:hello_world_intent", names)
 
     def test_thank_you_matches_without_adapt(self):
         names = self._matched_intent_names("thank you")
-        self.assertIn(f"{self.skill_id}:ThankYouIntent", names)
+        self.assertIn(f"{self.skill_id}:thank_you_intent", names)

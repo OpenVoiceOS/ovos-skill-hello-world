@@ -69,12 +69,12 @@ class HelloWorldSkill(OVOSSkill):
         """
         return self.settings.get("log_level", "INFO")
 
-    @intent_handler("ThankYouIntent.intent")
+    @intent_handler("thank_you_intent.intent")
     def handle_thank_you_intent(self, message):
         """This is a Padatious intent handler, it is triggered by a keyword."""
         self.speak_dialog("welcome")
 
-    @intent_handler("HelloWorldIntent.intent")
+    @intent_handler("hello_world_intent.intent")
     def handle_hello_world_intent(self, message):
         """
         speak_dialog() is an OVOS skill method that safely handles
@@ -82,20 +82,20 @@ class HelloWorldSkill(OVOSSkill):
         back to the user.
         """
         # wait=True will block the message bus until the dialog is finished
-        self.speak_dialog("hello.world", wait=True)
+        self.speak_dialog("hello_world", wait=True)
         LOG.debug("'hello world' TTS finished")
         # this would speak the string without translation
         # self.speak("hello world")
 
-    @intent_handler("Greetings.intent")
+    @intent_handler("greetings.intent")
     def handle_greetings(self, message):
         self.speak_dialog("hello")
 
-    @intent_handler("HowAreYou.intent")
+    @intent_handler("how_are_you.intent")
     def handle_how_are_you_intent(self, message):
         """This is a Padatious intent handler.
         It is triggered using a list of sample phrases."""
-        self.speak_dialog("how.are.you")
+        self.speak_dialog("how_are_you")
         LOG.info("There are five types of log messages: 'info, debug, warning, error, and exception.")
         # Skills can log useful information. These will appear in the CLI and
         # in the skills.log file under ~/.mycroft/logs. LOG.info() is the most
