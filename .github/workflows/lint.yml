@@ -7,7 +7,7 @@ on:
 
 jobs:
   lint:
-    uses: OpenVoiceOS/gh-automations/.github/workflows/lint.yml@fix/lint-file-count
+    uses: OpenVoiceOS/gh-automations/.github/workflows/lint.yml@fix/lint-section-key
     secrets: inherit
     with:
       ruff: true
@@ -16,9 +16,10 @@ jobs:
   # T-2338 canary: ruff_args that matches no Python file must read as
   # "checked no file", not as clean.
   lint_nothing:
-    uses: OpenVoiceOS/gh-automations/.github/workflows/lint.yml@fix/lint-file-count
+    uses: OpenVoiceOS/gh-automations/.github/workflows/lint.yml@fix/lint-section-key
     secrets: inherit
     with:
       ruff: true
       ruff_args: "locale"
       pre_commit: false
+      section_key: nothing
