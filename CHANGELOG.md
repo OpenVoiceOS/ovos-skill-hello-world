@@ -1,5 +1,13 @@
 # Changelog
 
+## [0.5.0a1](https://github.com/OpenVoiceOS/ovos-skill-hello-world/tree/0.5.0a1) (2026-09-18)
+
+[Full Changelog](https://github.com/OpenVoiceOS/ovos-skill-hello-world/compare/0.4.0a2...0.5.0a1)
+
+**Merged pull requests:**
+
+- feat\(locale\): fill cs-CZ, hu-HU, pl-PL, ro-RO, ru-RU, tr-TR and el-GR gaps against en-US [\#139](https://github.com/OpenVoiceOS/ovos-skill-hello-world/pull/139) ([openvoiceos-bot](https://github.com/openvoiceos-bot))
+
 ## [0.4.0a2](https://github.com/OpenVoiceOS/ovos-skill-hello-world/tree/0.4.0a2) (2026-09-18)
 
 [Full Changelog](https://github.com/OpenVoiceOS/ovos-skill-hello-world/compare/0.4.0a1...0.4.0a2)
