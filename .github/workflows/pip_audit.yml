@@ -1,5 +1,9 @@
 name: PIP Audit
 
+# T-2825 canary, not for merge: the pip-audit workflow from
+# gh-automations fix/pip-audit-exit-and-sarif, once on the real dependency
+# set (the control) and once with an old jinja2 pin. Both jobs must be
+# green; the second must carry the warning annotations and the summary table.
 on:
   pull_request:
     branches: [dev]
@@ -7,5 +11,16 @@ on:
 
 jobs:
   pip_audit:
-    uses: OpenVoiceOS/gh-automations/.github/workflows/pip-audit.yml@dev
+    uses: OpenVoiceOS/gh-automations/.github/workflows/pip-audit.yml@fix/pip-audit-exit-and-sarif
     secrets: inherit
+    with:
+      gh_automations_ref: fix/pip-audit-exit-and-sarif
+      sarif_category: pip-audit-canary-control
+
+  pip_audit_old_pin:
+    uses: OpenVoiceOS/gh-automations/.github/workflows/pip-audit.yml@fix/pip-audit-exit-and-sarif
+    secrets: inherit
+    with:
+      gh_automations_ref: fix/pip-audit-exit-and-sarif
+      install_extras: "-r test/canary/pip-audit-vulnerable.txt"
+      sarif_category: pip-audit-canary-old-pin
