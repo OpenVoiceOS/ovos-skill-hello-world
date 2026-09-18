@@ -41,7 +41,7 @@ jobs:
       soft_fail: true
 
   downstream_check:
-    uses: OpenVoiceOS/gh-automations/.github/workflows/downstream-check.yml@fix/downstream-install-says-so
+    uses: OpenVoiceOS/gh-automations/.github/workflows/downstream-check.yml@fix/downstream-pipdeptree-runs
     secrets: inherit
     with:
       package_name: 'ovos-plugin-manager'
