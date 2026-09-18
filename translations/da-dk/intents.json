@@ -1,10 +1,30 @@
 {
-    "/intents/HowAreYou.intent": [
-        "hvordan er din dag gået",
-        "hvordan har du det (har det)",
-        "hvordan har du haft det",
-        "hvordan går det med dig",
-        "hvordan har din dag været",
-        "hvordan har du haft det"
-    ]
+  "/intents/Greetings.intent": [
+    "hej",
+    "hej",
+    "hey",
+    "hej der",
+    "halløj der",
+    "hej der",
+    "godmorgen",
+    "god eftermiddag",
+    "god aften",
+    "howdy",
+    "yo",
+    "hej",
+    "hvad sker der",
+    "sup",
+    "hilsener",
+    "g'dag",
+    "dejligt at se dig",
+    "længe siden",
+    "ohoj",
+    "hej igen"
+  ],
+  "/intents/HowAreYou.intent": [
+    "hvordan er din dag gået",
+    "hvordan har du det (har det)",
+    "hvordan har du haft det",
+    "hvordan går det med dig"
+  ]
 }

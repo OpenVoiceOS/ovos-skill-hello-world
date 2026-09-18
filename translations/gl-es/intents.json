@@ -6,9 +6,9 @@
     "ei que tal",
     "ola boas",
     "ola que tal",
-    "(bo día | bos días)",
-    "(boa tarde | boas tardes)",
-    "(boa noite | boas noites)",
+    "(bo día|bos días)",
+    "(boa tarde|boas tardes)",
+    "(boa noite|boas noites)",
     "oli",
     "que",
     "ola",
@@ -20,10 +20,10 @@
     "alégrome de verte",
     "canto tempo sen vernos",
     "a ver, ho",
-    "(ola | boas) de novo"
+    "(ola|boas) de novo"
   ],
   "/intents/HowAreYou.intent": [
-    "como (estás | che vai)",
+    "como (estás|che vai)",
     "como che foi o día",
     "como che foi"
   ]
