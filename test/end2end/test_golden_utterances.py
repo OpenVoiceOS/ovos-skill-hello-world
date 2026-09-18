@@ -2,8 +2,8 @@
 
 The master ovoscope corpus carries no rows for
 ``ovos-skill-hello-world.openvoiceos``, so ``golden_utterances.jsonl`` is
-derived entirely from this skill's own intent templates: ``HelloWorldIntent``,
-``ThankYouIntent``, ``Greetings`` and ``HowAreYou`` (all Padatious/Padacioso,
+derived entirely from this skill's own intent templates: ``hello_world_intent``,
+``thank_you_intent``, ``greetings`` and ``how_are_you`` (all Padatious/Padacioso,
 phrase-based intent files).
 
 Every row is asserted via the ``ovos.intent.matched`` bus message's
