@@ -4,6 +4,7 @@ name: PIP Audit
 # gh-automations fix/pip-audit-exit-and-sarif, once on the real dependency
 # set (the control) and once with an old jinja2 pin. Both jobs must be
 # green; the second must carry the warning annotations and the summary table.
+# Re-run at 020cc1d: each job keeps its own PR comment section (T-2848).
 on:
   pull_request:
     branches: [dev]
