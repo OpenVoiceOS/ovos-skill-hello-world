@@ -7,5 +7,7 @@ on:
 
 jobs:
   license_check:
-    uses: OpenVoiceOS/gh-automations/.github/workflows/license-check.yml@dev
+    uses: OpenVoiceOS/gh-automations/.github/workflows/license-check.yml@fix/license-expression-permissive
     secrets: inherit
+    with:
+      gh_automations_ref: fix/license-expression-permissive
