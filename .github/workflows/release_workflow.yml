@@ -1,5 +1,8 @@
 name: Release Alpha and Propose Stable
 
+# T-2782 canary, not for merge: publish-alpha against a scratch branch with
+# no tag, no release proposal, no PyPI upload and no Matrix message.
+
 on:
   workflow_dispatch:
   pull_request:
@@ -18,11 +21,11 @@ jobs:
       PYPI_TOKEN: ${{ secrets.PYPI_TOKEN }}
       MATRIX_TOKEN: ${{ secrets.MATRIX_TOKEN }}
     with:
-      branch: 'dev'
+      branch: 'ci/canary-publish-alpha-race-target'
       version_file: 'ovos_skill_hello_world/version.py'
       update_changelog: true
-      publish_prerelease: true
-      propose_release: true
+      publish_prerelease: false
+      propose_release: false
       changelog_max_issues: 50
-      publish_pypi: true
-      notify_matrix: true
+      publish_pypi: false
+      notify_matrix: false
