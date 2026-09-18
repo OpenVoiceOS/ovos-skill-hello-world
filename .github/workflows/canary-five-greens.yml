@@ -1,4 +1,5 @@
 name: Canary five greens (T-2338, not for merge)
+# re-run 2: docs-check at its second commit
 
 on:
   pull_request:
