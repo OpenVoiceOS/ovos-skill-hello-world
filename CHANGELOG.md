@@ -1,5 +1,13 @@
 # Changelog
 
+## [0.5.2a1](https://github.com/OpenVoiceOS/ovos-skill-hello-world/tree/0.5.2a1) (2026-09-18)
+
+[Full Changelog](https://github.com/OpenVoiceOS/ovos-skill-hello-world/compare/0.5.1a1...0.5.2a1)
+
+**Merged pull requests:**
+
+- fix\(gl-ES\): one intents directory, the stray HowAreYou.intent folded in [\#148](https://github.com/OpenVoiceOS/ovos-skill-hello-world/pull/148) ([openvoiceos-bot](https://github.com/openvoiceos-bot))
+
 ## [0.5.1a1](https://github.com/OpenVoiceOS/ovos-skill-hello-world/tree/0.5.1a1) (2026-09-18)
 
 [Full Changelog](https://github.com/OpenVoiceOS/ovos-skill-hello-world/compare/0.5.0a1...0.5.1a1)
