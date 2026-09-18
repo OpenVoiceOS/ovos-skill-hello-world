@@ -94,8 +94,12 @@ jobs:
         git config user.email "jarbasai@mailfence.com"
 
         # The checkout above uses persist-credentials: false, so the remote
-        # has no auth for `git push`. Re-inject it via the URL (not an
-        # inline ${{ }} interpolation) using the PAT passed through env.
+        # has no auth for pushing. Re-inject it via the URL, from the PAT
+        # passed through env, never as an inline expression. (An earlier
+        # version of this comment held an empty dollar-brace-brace pair;
+        # GitHub evaluates expressions inside run blocks, comments included,
+        # and refused the whole file on every push to every branch, with no
+        # job ever created.)
         git remote set-url origin "https://x-access-token:${PAT}@github.com/JarbasHiveMind/hivescope.git"
 
         # Branch name is keyed on the source commit, not the run, so reruns
