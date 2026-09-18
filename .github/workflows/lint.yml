@@ -7,7 +7,7 @@ on:
 
 jobs:
   lint:
-    uses: OpenVoiceOS/gh-automations/.github/workflows/lint.yml@dev
+    uses: OpenVoiceOS/gh-automations/.github/workflows/lint.yml@feat/lint-actionlint
     secrets: inherit
     with:
       ruff: true
