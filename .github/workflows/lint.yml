@@ -7,8 +7,9 @@ on:
 
 jobs:
   lint:
-    uses: OpenVoiceOS/gh-automations/.github/workflows/lint.yml@dev
+    uses: OpenVoiceOS/gh-automations/.github/workflows/lint.yml@fix/t3335-pin-actionlint-py
     secrets: inherit
     with:
       ruff: true
       pre_commit: false   # set true if .pre-commit-config.yaml exists
+      actionlint: true
