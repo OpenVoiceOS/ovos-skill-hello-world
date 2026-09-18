@@ -43,5 +43,4 @@ jobs:
     uses: OpenVoiceOS/gh-automations/.github/workflows/downstream-check.yml@fix/downstream-install-says-so
     secrets: inherit
     with:
-      gh_automations_ref: fix/downstream-install-says-so
       package_name: 'ovos-plugin-manager'
