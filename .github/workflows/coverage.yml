@@ -7,12 +7,24 @@ on:
 
 jobs:
   coverage:
-    uses: OpenVoiceOS/gh-automations/.github/workflows/coverage.yml@dev
+    uses: OpenVoiceOS/gh-automations/.github/workflows/coverage.yml@fix/bare-install-warns
     secrets: inherit
     with:
       python_version: '3.11'
       coverage_source: 'ovos_skill_hello_world'
       test_path: 'test/unittests'
       test_extras: 'test'
+      install_extras: ''
+      min_coverage: 0
+  coverage_bare:
+    # T-2191 canary: neither extra exists, so the install step must warn.
+    uses: OpenVoiceOS/gh-automations/.github/workflows/coverage.yml@fix/bare-install-warns
+    secrets: inherit
+    with:
+      python_version: '3.11'
+      coverage_source: 'ovos_skill_hello_world'
+      test_path: 'test/unittests'
+      test_extras: 'nosuch'
+      test_extras_fallback: 'nosuch2'
       install_extras: ''
       min_coverage: 0
