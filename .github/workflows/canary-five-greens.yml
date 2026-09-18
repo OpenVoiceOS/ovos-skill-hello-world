@@ -1,0 +1,47 @@
+name: Canary five greens (T-2338, not for merge)
+
+on:
+  pull_request:
+    branches: [dev]
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  docs_check:
+    uses: OpenVoiceOS/gh-automations/.github/workflows/docs-check.yml@fix/docs-check-honest
+    secrets: inherit
+    with:
+      gh_automations_ref: fix/docs-check-honest
+      markdownlint: true
+
+  coverage_pages:
+    uses: OpenVoiceOS/gh-automations/.github/workflows/coverage-pages.yml@fix/coverage-pages-gate
+    secrets: inherit
+    with:
+      python_version: '3.11'
+      coverage_source: 'ovos_skill_hello_world'
+      test_path: 'test/unittests'
+      install_extras: 'test'
+      gh_pages_branch: 'ci-canary-t2338-pages'
+
+  channel_compat_soft_fail:
+    # a test path that does not exist: pytest fails, soft_fail holds the job
+    # green, and the new step must warn
+    uses: OpenVoiceOS/gh-automations/.github/workflows/channel-compat.yml@fix/channel-compat-soft-fail-says-so
+    secrets: inherit
+    with:
+      gh_automations_ref: fix/channel-compat-soft-fail-says-so
+      channel_url: https://raw.githubusercontent.com/OpenVoiceOS/ovos-releases/refs/heads/main/constraints-alpha.txt
+      channel_name: alpha
+      install_extras: 'test'
+      test_path: 'test/no_such_dir'
+      soft_fail: true
+
+  downstream_check:
+    uses: OpenVoiceOS/gh-automations/.github/workflows/downstream-check.yml@fix/downstream-install-says-so
+    secrets: inherit
+    with:
+      gh_automations_ref: fix/downstream-install-says-so
+      package_name: 'ovos-plugin-manager'
