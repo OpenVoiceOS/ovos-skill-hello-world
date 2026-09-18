@@ -1,5 +1,13 @@
 # Changelog
 
+## [0.4.0a2](https://github.com/OpenVoiceOS/ovos-skill-hello-world/tree/0.4.0a2) (2026-09-18)
+
+[Full Changelog](https://github.com/OpenVoiceOS/ovos-skill-hello-world/compare/0.4.0a1...0.4.0a2)
+
+**Merged pull requests:**
+
+- translate\(ca-ES\): restore forgotten Greetings.intent phrases [\#123](https://github.com/OpenVoiceOS/ovos-skill-hello-world/pull/123) ([JarbasAl](https://github.com/JarbasAl))
+
 ## [0.4.0a1](https://github.com/OpenVoiceOS/ovos-skill-hello-world/tree/0.4.0a1) (2026-09-13)
 
 [Full Changelog](https://github.com/OpenVoiceOS/ovos-skill-hello-world/compare/0.3.1a1...0.4.0a1)
