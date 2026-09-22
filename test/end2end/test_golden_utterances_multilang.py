@@ -54,6 +54,10 @@ NEGATIVE_UTTERANCES = [
     ("what's the weather", "en-US", "ovos-skill-weather.openvoiceos"),
     ("set a timer for 5 minutes", "en-US", "ovos-skill-alerts.openvoiceos"),
     ("tell me a joke", "en-US", "skill-icanhazdadjokes.openvoiceos"),
+    ("play some music", "en-US", None),
+    ("who are you", "en-US", None),
+    ("what is your name", "en-US", None),
+    ("search the web for cats", "en-US", None),
 ]
 
 
