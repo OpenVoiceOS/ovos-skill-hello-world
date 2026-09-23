@@ -1,5 +1,13 @@
 # Changelog
 
+## [0.5.2a2](https://github.com/OpenVoiceOS/ovos-skill-hello-world/tree/0.5.2a2) (2026-09-23)
+
+[Full Changelog](https://github.com/OpenVoiceOS/ovos-skill-hello-world/compare/0.5.2a1...0.5.2a2)
+
+**Merged pull requests:**
+
+- test: golden utterances for every locale [\#141](https://github.com/OpenVoiceOS/ovos-skill-hello-world/pull/141) ([openvoiceos-bot](https://github.com/openvoiceos-bot))
+
 ## [0.5.2a1](https://github.com/OpenVoiceOS/ovos-skill-hello-world/tree/0.5.2a1) (2026-09-18)
 
 [Full Changelog](https://github.com/OpenVoiceOS/ovos-skill-hello-world/compare/0.5.1a1...0.5.2a1)
