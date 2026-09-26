@@ -1,5 +1,13 @@
 # Changelog
 
+## [0.5.3a1](https://github.com/OpenVoiceOS/ovos-skill-hello-world/tree/0.5.3a1) (2026-09-26)
+
+[Full Changelog](https://github.com/OpenVoiceOS/ovos-skill-hello-world/compare/0.5.2a2...0.5.3a1)
+
+**Merged pull requests:**
+
+- fix\(locale\): each phrase belongs to one intent, and es-ES keeps three rows [\#152](https://github.com/OpenVoiceOS/ovos-skill-hello-world/pull/152) ([openvoiceos-bot](https://github.com/openvoiceos-bot))
+
 ## [0.5.2a2](https://github.com/OpenVoiceOS/ovos-skill-hello-world/tree/0.5.2a2) (2026-09-23)
 
 [Full Changelog](https://github.com/OpenVoiceOS/ovos-skill-hello-world/compare/0.5.2a1...0.5.2a2)
