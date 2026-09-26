@@ -1,0 +1,12 @@
+{"skill_id": "ovos-skill-hello-world.openvoiceos", "utterance": "Hej.", "lang": "pl-PL", "intent_label": "greetings", "intent_type": "padatious", "needs_manual": false}
+{"skill_id": "ovos-skill-hello-world.openvoiceos", "utterance": "Od dawna się nie widzieliśmy", "lang": "pl-PL", "intent_label": "greetings", "intent_type": "padatious", "needs_manual": false}
+{"skill_id": "ovos-skill-hello-world.openvoiceos", "utterance": "Hej, cześć.", "lang": "pl-PL", "intent_label": "greetings", "intent_type": "padatious", "needs_manual": false}
+{"skill_id": "ovos-skill-hello-world.openvoiceos", "utterance": "witam", "lang": "pl-PL", "intent_label": "hello_world_intent", "intent_type": "padatious", "needs_manual": false}
+{"skill_id": "ovos-skill-hello-world.openvoiceos", "utterance": "pozdrowienia dla świata", "lang": "pl-PL", "intent_label": "hello_world_intent", "intent_type": "padatious", "needs_manual": false}
+{"skill_id": "ovos-skill-hello-world.openvoiceos", "utterance": "witaj świecie", "lang": "pl-PL", "intent_label": "hello_world_intent", "intent_type": "padatious", "needs_manual": false}
+{"skill_id": "ovos-skill-hello-world.openvoiceos", "utterance": "Jak tam", "lang": "pl-PL", "intent_label": "how_are_you", "intent_type": "padatious", "needs_manual": false}
+{"skill_id": "ovos-skill-hello-world.openvoiceos", "utterance": "jak ci minął dzień", "lang": "pl-PL", "intent_label": "how_are_you", "intent_type": "padatious", "needs_manual": false}
+{"skill_id": "ovos-skill-hello-world.openvoiceos", "utterance": "Jak tam leci", "lang": "pl-PL", "intent_label": "how_are_you", "intent_type": "padatious", "needs_manual": false}
+{"skill_id": "ovos-skill-hello-world.openvoiceos", "utterance": "dzięki", "lang": "pl-PL", "intent_label": "thank_you_intent", "intent_type": "padatious", "needs_manual": false}
+{"skill_id": "ovos-skill-hello-world.openvoiceos", "utterance": "dziękuję bardzo", "lang": "pl-PL", "intent_label": "thank_you_intent", "intent_type": "padatious", "needs_manual": false}
+{"skill_id": "ovos-skill-hello-world.openvoiceos", "utterance": "dziękuję", "lang": "pl-PL", "intent_label": "thank_you_intent", "intent_type": "padatious", "needs_manual": false}

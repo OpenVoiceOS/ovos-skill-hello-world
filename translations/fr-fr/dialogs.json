@@ -1,23 +1,29 @@
 {
+  "/dialog/hello.dialog": [
+    "Bonjour !",
+    "Salut !",
+    "Rebonjour !",
+    "Salut, content de t'entendre."
+  ],
   "/dialog/hello.world.dialog": [
     "Bonjour le monde",
-    "Salut",
-    "Bonjour à toi"
+    "Bonjour à toi",
+    "Salut"
   ],
   "/dialog/how.are.you.dialog": [
-    "Je vais bien",
-    "Plutôt bien",
-    "Pas mal",
-    "Je vais très bien",
     "Comme ci, comme ça",
-    "Je vais super bien"
+    "Je vais bien",
+    "Je vais super bien",
+    "Je vais très bien",
+    "Pas mal",
+    "Plutôt bien"
   ],
   "/dialog/welcome.dialog": [
+    "Aucun problème",
+    "Avec plaisir",
     "De rien",
     "Heureux d'être utile",
     "Heureux de pouvoir aider",
-    "Avec plaisir",
-    "Aucun problème",
     "Ça fait plaisir"
   ]
 }
