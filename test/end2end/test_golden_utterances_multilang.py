@@ -20,15 +20,24 @@ padacioso high/medium/low pipeline), class-scoped and torn down after
 that locale's rows run, rather than one shared MiniCroft carrying every
 locale as a secondary language.
 
+This suite needs the ``end2end`` extra, not ``test``. The ``test`` extra
+carries the unit-test dependencies only and ships no ``ovoscope``, so
+installing it and running this file raises ImportError on the import above.
+CI installs ``end2end``; a reader following a bare ``pip install -e .[test]``
+does not.
+
 Run:
+    uv pip install -e ".[end2end]"
     uv run pytest test/end2end/test_golden_utterances_multilang.py -v
 """
 import json
+import re
 from pathlib import Path
 from unittest import TestCase
 
 from ovos_bus_client.message import Message
 from ovos_bus_client.session import Session
+from ovos_spec_tools.expansion import expand
 from ovoscope import CaptureSession, get_minicroft
 
 SKILL_ID = "ovos-skill-hello-world.openvoiceos"
@@ -42,6 +51,20 @@ PIPELINE = [
 ]
 
 END2END_DIR = Path(__file__).parent
+LOCALE_DIR = END2END_DIR.parent.parent / "ovos_skill_hello_world" / "locale"
+
+# The dialog each handler speaks, read off the four @intent_handler bodies in
+# ovos_skill_hello_world/__init__.py. A row asserts the intent it names AND the
+# dialog file that intent's handler speaks from, so a handler that routes
+# correctly and then says the wrong thing cannot pass.
+DIALOG_FOR_INTENT = {
+    "greetings": "hello",
+    "hello_world_intent": "hello_world",
+    "how_are_you": "how_are_you",
+    "thank_you_intent": "welcome",
+}
+
+_SPOKE = ("speak", "ovos.utterance.speak")
 
 LANGS = [
     "en-US", "ca-ES", "cs-CZ", "da-DK", "de-DE", "el-GR", "es-ES",
@@ -61,6 +84,31 @@ NEGATIVE_UTTERANCES = [
 ]
 
 
+def _collapse(text: str) -> str:
+    """The renderer collapses every run of whitespace, so compare collapsed."""
+    return " ".join((text or "").split())
+
+
+def _spoken_forms(line: str) -> set:
+    """Every string the renderer can speak one dialog line as.
+
+    Two kab lines carry a ``(a|b)`` group (``Azul fell-(ak|am)`` and
+    ``Ansuf (yis-k|yis-m) melmi tebɣiḍ``), so a verbatim comparison would
+    fail for kab whichever alternative the renderer picked.
+    """
+    return {_collapse(form) for form in expand(line)}
+
+
+def _dialog_forms(lang: str, name: str) -> set:
+    """Every form every line of ``<lang>/dialog/<name>.dialog`` can be spoken
+    as. Read from disk at test time, never restated here, so the expectation
+    cannot drift from the shipped file."""
+    path = LOCALE_DIR / lang / "dialog" / f"{name}.dialog"
+    with open(path, encoding="utf-8") as handle:
+        lines = [line.rstrip("\n") for line in handle if line.strip()]
+    return set().union(*(_spoken_forms(line) for line in lines))
+
+
 def _load_rows(lang):
     path = END2END_DIR / f"golden_utterances_{lang}.jsonl"
     rows = []
@@ -76,7 +124,8 @@ def _load_rows(lang):
     return rows
 
 
-def _matched_names(mc, text, lang, session_id):
+def _capture(mc, text, lang, session_id):
+    """Return (matched intent names, spoken utterances) for one utterance."""
     session = Session(session_id)
     session.lang = lang
     session.pipeline = list(PIPELINE)
@@ -87,8 +136,13 @@ def _matched_names(mc, text, lang, session_id):
     )
     capture = CaptureSession(mc)
     capture.capture(utterance, timeout=30)
-    return [m.data.get("intent_name") for m in capture.finish()
-            if m.msg_type == "ovos.intent.matched"]
+    messages = capture.finish()
+    return (
+        [m.data.get("intent_name") for m in messages
+         if m.msg_type == "ovos.intent.matched"],
+        [m.data.get("utterance", "") for m in messages
+         if m.msg_type in _SPOKE],
+    )
 
 
 KNOWN_BUGS = {}
@@ -112,7 +166,7 @@ def _make_locale_test_case(lang):
 
         def _check_row(self, row):
             expected_intent = f"{SKILL_ID}:{row['intent_label']}"
-            names = _matched_names(
+            names, spoken = _capture(
                 self.minicroft, row["utterance"], row["lang"],
                 f"golden-{row['lang']}-{row['intent_label']}-{row['utterance']}",
             )
@@ -126,9 +180,29 @@ def _make_locale_test_case(lang):
                 f"{expected_intent!r}, got {names!r}",
             )
 
+            # Routing is not the answer. Assert the skill spoke, and that
+            # EVERY line it spoke is a line of the dialog file this intent's
+            # handler speaks from. `all` rather than the first line: a handler
+            # that says the right thing and then a wrong thing is a defect,
+            # and checking only spoken[0] cannot see it.
+            valid = _dialog_forms(row["lang"], DIALOG_FOR_INTENT[row["intent_label"]])
+            dialog_name = DIALOG_FOR_INTENT[row["intent_label"]]
+            self.assertTrue(
+                spoken,
+                f"[{row['lang']}] {row['utterance']!r}: matched "
+                f"{expected_intent!r} and then said nothing",
+            )
+            for utterance in spoken:
+                self.assertIn(
+                    _collapse(utterance), valid,
+                    f"[{row['lang']}] {row['utterance']!r}: spoke "
+                    f"{utterance!r}, which is not a line of "
+                    f"{dialog_name}.dialog",
+                )
+
         def _check_negative(self, text, source_skill):
-            names = _matched_names(self.minicroft, text, lang,
-                                    f"negative-{lang}-{text}")
+            names, _spoken = _capture(self.minicroft, text, lang,
+                                       f"negative-{lang}-{text}")
             claimed = any((n or "").startswith(f"{SKILL_ID}:") for n in names)
             self.assertFalse(
                 claimed, f"[{lang}] {text!r} was incorrectly claimed by {SKILL_ID}"
