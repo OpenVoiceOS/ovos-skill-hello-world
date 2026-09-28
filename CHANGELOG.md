@@ -1,5 +1,13 @@
 # Changelog
 
+## [0.5.3a2](https://github.com/OpenVoiceOS/ovos-skill-hello-world/tree/0.5.3a2) (2026-09-28)
+
+[Full Changelog](https://github.com/OpenVoiceOS/ovos-skill-hello-world/compare/0.5.3a1...0.5.3a2)
+
+**Merged pull requests:**
+
+- locale: draft es-CO from es-ES \(copy, unvouched\) [\#154](https://github.com/OpenVoiceOS/ovos-skill-hello-world/pull/154) ([openvoiceos-bot](https://github.com/openvoiceos-bot))
+
 ## [0.5.3a1](https://github.com/OpenVoiceOS/ovos-skill-hello-world/tree/0.5.3a1) (2026-09-26)
 
 [Full Changelog](https://github.com/OpenVoiceOS/ovos-skill-hello-world/compare/0.5.2a2...0.5.3a1)
