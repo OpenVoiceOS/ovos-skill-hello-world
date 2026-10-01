@@ -1,0 +1,14 @@
+{
+  "skill_id": "ovos-skill-hello-world.openvoiceos",
+  "source": "https://github.com/OpenVoiceOS/ovos-skill-hello-world",
+  "name": "Helló világ",
+  "description": "Bevezető képesség, hogy a képességfejlesztők lássák, hogyan épül fel egy OVOS képesség",
+  "examples": [
+    "Helló világ",
+    "Köszönöm",
+    "Hogy vagy?"
+  ],
+  "tags": [
+    "oktatóanyag"
+  ]
+}

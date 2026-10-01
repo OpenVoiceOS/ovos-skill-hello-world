@@ -1,0 +1,10 @@
+{"skill_id": "ovos-skill-hello-world.openvoiceos", "utterance": "ehi", "lang": "it-IT", "intent_label": "greetings", "intent_type": "padatious", "needs_manual": false}
+{"skill_id": "ovos-skill-hello-world.openvoiceos", "utterance": "è un piacere vederti", "lang": "it-IT", "intent_label": "greetings", "intent_type": "padatious", "needs_manual": false}
+{"skill_id": "ovos-skill-hello-world.openvoiceos", "utterance": "ciao", "lang": "it-IT", "intent_label": "greetings", "intent_type": "padatious", "needs_manual": false}
+{"skill_id": "ovos-skill-hello-world.openvoiceos", "utterance": "fai l'esempio ciao mondo", "lang": "it-IT", "intent_label": "hello_world_intent", "intent_type": "padatious", "needs_manual": false}
+{"skill_id": "ovos-skill-hello-world.openvoiceos", "utterance": "puoi dire ciao mondo", "lang": "it-IT", "intent_label": "hello_world_intent", "intent_type": "padatious", "needs_manual": false}
+{"skill_id": "ovos-skill-hello-world.openvoiceos", "utterance": "come è andata la tua giornata", "lang": "it-IT", "intent_label": "how_are_you", "intent_type": "padatious", "needs_manual": false}
+{"skill_id": "ovos-skill-hello-world.openvoiceos", "utterance": "com'è stata la tua giornata", "lang": "it-IT", "intent_label": "how_are_you", "intent_type": "padatious", "needs_manual": false}
+{"skill_id": "ovos-skill-hello-world.openvoiceos", "utterance": "grazie", "lang": "it-IT", "intent_label": "thank_you_intent", "intent_type": "padatious", "needs_manual": false}
+{"skill_id": "ovos-skill-hello-world.openvoiceos", "utterance": "sei gentile grazie", "lang": "it-IT", "intent_label": "thank_you_intent", "intent_type": "padatious", "needs_manual": false}
+{"skill_id": "ovos-skill-hello-world.openvoiceos", "utterance": "ti ringrazio molto", "lang": "it-IT", "intent_label": "thank_you_intent", "intent_type": "padatious", "needs_manual": false}

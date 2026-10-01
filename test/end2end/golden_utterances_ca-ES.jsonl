@@ -1,0 +1,10 @@
+{"skill_id": "ovos-skill-hello-world.openvoiceos", "utterance": "ei", "lang": "ca-ES", "intent_label": "greetings", "intent_type": "padatious", "needs_manual": false}
+{"skill_id": "ovos-skill-hello-world.openvoiceos", "utterance": "feia temps que no ens veiem", "lang": "ca-ES", "intent_label": "greetings", "intent_type": "padatious", "needs_manual": false}
+{"skill_id": "ovos-skill-hello-world.openvoiceos", "utterance": "hola, bon dia", "lang": "ca-ES", "intent_label": "greetings", "intent_type": "padatious", "needs_manual": false}
+{"skill_id": "ovos-skill-hello-world.openvoiceos", "utterance": "hola món", "lang": "ca-ES", "intent_label": "hello_world_intent", "intent_type": "padatious", "needs_manual": false}
+{"skill_id": "ovos-skill-hello-world.openvoiceos", "utterance": "fes l'exemple de hola món", "lang": "ca-ES", "intent_label": "hello_world_intent", "intent_type": "padatious", "needs_manual": false}
+{"skill_id": "ovos-skill-hello-world.openvoiceos", "utterance": "pots dir hola món", "lang": "ca-ES", "intent_label": "hello_world_intent", "intent_type": "padatious", "needs_manual": false}
+{"skill_id": "ovos-skill-hello-world.openvoiceos", "utterance": "com ha provat el dia", "lang": "ca-ES", "intent_label": "how_are_you", "intent_type": "padatious", "needs_manual": false}
+{"skill_id": "ovos-skill-hello-world.openvoiceos", "utterance": "gràcies", "lang": "ca-ES", "intent_label": "thank_you_intent", "intent_type": "padatious", "needs_manual": false}
+{"skill_id": "ovos-skill-hello-world.openvoiceos", "utterance": "moltes gràcies de debò", "lang": "ca-ES", "intent_label": "thank_you_intent", "intent_type": "padatious", "needs_manual": false}
+{"skill_id": "ovos-skill-hello-world.openvoiceos", "utterance": "t'ho agraeixo", "lang": "ca-ES", "intent_label": "thank_you_intent", "intent_type": "padatious", "needs_manual": false}

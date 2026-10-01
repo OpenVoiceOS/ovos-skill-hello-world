@@ -1,0 +1,14 @@
+{
+  "skill_id": "ovos-skill-hello-world.openvoiceos",
+  "source": "https://github.com/OpenVoiceOS/ovos-skill-hello-world",
+  "name": "Salut lume",
+  "description": "Abilitate introductivă pentru ca autorii de abilități să vadă cum este alcătuită o abilitate OVOS",
+  "examples": [
+    "Salut lume",
+    "Mulțumesc",
+    "Ce mai faci?"
+  ],
+  "tags": [
+    "tutorial"
+  ]
+}

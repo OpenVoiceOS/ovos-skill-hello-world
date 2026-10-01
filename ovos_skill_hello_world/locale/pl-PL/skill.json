@@ -1,0 +1,14 @@
+{
+  "skill_id": "ovos-skill-hello-world.openvoiceos",
+  "source": "https://github.com/OpenVoiceOS/ovos-skill-hello-world",
+  "name": "Witaj świecie",
+  "description": "Wprowadzająca umiejętność, dzięki której autorzy umiejętności widzą, jak jest zbudowana umiejętność OVOS",
+  "examples": [
+    "Witaj świecie",
+    "Dziękuję",
+    "Jak się masz?"
+  ],
+  "tags": [
+    "samouczek"
+  ]
+}

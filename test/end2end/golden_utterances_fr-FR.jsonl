@@ -1,0 +1,11 @@
+{"skill_id": "ovos-skill-hello-world.openvoiceos", "utterance": "salut", "lang": "fr-FR", "intent_label": "greetings", "intent_type": "padatious", "needs_manual": false}
+{"skill_id": "ovos-skill-hello-world.openvoiceos", "utterance": "je suis content de te revoir", "lang": "fr-FR", "intent_label": "greetings", "intent_type": "padatious", "needs_manual": false}
+{"skill_id": "ovos-skill-hello-world.openvoiceos", "utterance": "ça fait longtemps", "lang": "fr-FR", "intent_label": "greetings", "intent_type": "padatious", "needs_manual": false}
+{"skill_id": "ovos-skill-hello-world.openvoiceos", "utterance": "fais l'exemple bonjour le monde", "lang": "fr-FR", "intent_label": "hello_world_intent", "intent_type": "padatious", "needs_manual": false}
+{"skill_id": "ovos-skill-hello-world.openvoiceos", "utterance": "bonjour le monde s'il te plaît", "lang": "fr-FR", "intent_label": "hello_world_intent", "intent_type": "padatious", "needs_manual": false}
+{"skill_id": "ovos-skill-hello-world.openvoiceos", "utterance": "tu vas bien", "lang": "fr-FR", "intent_label": "how_are_you", "intent_type": "padatious", "needs_manual": false}
+{"skill_id": "ovos-skill-hello-world.openvoiceos", "utterance": "bonjour le monde, comment vas-tu", "lang": "fr-FR", "intent_label": "how_are_you", "intent_type": "padatious", "needs_manual": false}
+{"skill_id": "ovos-skill-hello-world.openvoiceos", "utterance": "comment vas-tu aujourd'hui", "lang": "fr-FR", "intent_label": "how_are_you", "intent_type": "padatious", "needs_manual": false}
+{"skill_id": "ovos-skill-hello-world.openvoiceos", "utterance": "merci", "lang": "fr-FR", "intent_label": "thank_you_intent", "intent_type": "padatious", "needs_manual": false}
+{"skill_id": "ovos-skill-hello-world.openvoiceos", "utterance": "merci du fond du cœur", "lang": "fr-FR", "intent_label": "thank_you_intent", "intent_type": "padatious", "needs_manual": false}
+{"skill_id": "ovos-skill-hello-world.openvoiceos", "utterance": "je te remercie", "lang": "fr-FR", "intent_label": "thank_you_intent", "intent_type": "padatious", "needs_manual": false}

@@ -1,0 +1,12 @@
+{"skill_id": "ovos-skill-hello-world.openvoiceos", "utterance": "Hej!", "lang": "cs-CZ", "intent_label": "greetings", "intent_type": "padatious", "needs_manual": false}
+{"skill_id": "ovos-skill-hello-world.openvoiceos", "utterance": "Dlouho jsme se neviděli.", "lang": "cs-CZ", "intent_label": "greetings", "intent_type": "padatious", "needs_manual": false}
+{"skill_id": "ovos-skill-hello-world.openvoiceos", "utterance": "Ahoj.", "lang": "cs-CZ", "intent_label": "greetings", "intent_type": "padatious", "needs_manual": false}
+{"skill_id": "ovos-skill-hello-world.openvoiceos", "utterance": "zdravím", "lang": "cs-CZ", "intent_label": "hello_world_intent", "intent_type": "padatious", "needs_manual": false}
+{"skill_id": "ovos-skill-hello-world.openvoiceos", "utterance": "zdravím tě světe", "lang": "cs-CZ", "intent_label": "hello_world_intent", "intent_type": "padatious", "needs_manual": false}
+{"skill_id": "ovos-skill-hello-world.openvoiceos", "utterance": "ahoj světe", "lang": "cs-CZ", "intent_label": "hello_world_intent", "intent_type": "padatious", "needs_manual": false}
+{"skill_id": "ovos-skill-hello-world.openvoiceos", "utterance": "jak se", "lang": "cs-CZ", "intent_label": "how_are_you", "intent_type": "padatious", "needs_manual": false}
+{"skill_id": "ovos-skill-hello-world.openvoiceos", "utterance": "jaký byl tvůj den", "lang": "cs-CZ", "intent_label": "how_are_you", "intent_type": "padatious", "needs_manual": false}
+{"skill_id": "ovos-skill-hello-world.openvoiceos", "utterance": "jak se máš", "lang": "cs-CZ", "intent_label": "how_are_you", "intent_type": "padatious", "needs_manual": false}
+{"skill_id": "ovos-skill-hello-world.openvoiceos", "utterance": "díky", "lang": "cs-CZ", "intent_label": "thank_you_intent", "intent_type": "padatious", "needs_manual": false}
+{"skill_id": "ovos-skill-hello-world.openvoiceos", "utterance": "mockrát děkuji", "lang": "cs-CZ", "intent_label": "thank_you_intent", "intent_type": "padatious", "needs_manual": false}
+{"skill_id": "ovos-skill-hello-world.openvoiceos", "utterance": "děkuji ti", "lang": "cs-CZ", "intent_label": "thank_you_intent", "intent_type": "padatious", "needs_manual": false}

@@ -10,6 +10,21 @@
     "como vai",
     "que bom te ver",
     "faz tempo que não nos vemos",
-    "olá de novo"
+    "olá de novo",
+    "yo",
+    "e aí",
+    "e aí?",
+    "saudações",
+    "bom dia",
+    "é bom te ver",
+    "há quanto tempo",
+    "ahoy",
+    "Olá de novo"
+  ],
+  "/intents/HowAreYou.intent": [
+    "como você está",
+    "como foi seu dia",
+    "como você tem estado",
+    "como tá indo"
   ]
 }

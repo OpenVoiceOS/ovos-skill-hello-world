@@ -1,0 +1,6 @@
+{"skill_id": "ovos-skill-hello-world.openvoiceos", "utterance": "hola mundo", "lang": "es-CO", "intent_label": "hello_world_intent", "intent_type": "padatious", "needs_manual": false, "machine_generated": true}
+{"skill_id": "ovos-skill-hello-world.openvoiceos", "utterance": "cómo estás hoy", "lang": "es-CO", "intent_label": "how_are_you", "intent_type": "padatious", "needs_manual": false, "machine_generated": true}
+{"skill_id": "ovos-skill-hello-world.openvoiceos", "utterance": "gracias", "lang": "es-CO", "intent_label": "thank_you_intent", "intent_type": "padatious", "needs_manual": false, "machine_generated": true}
+{"skill_id": "ovos-skill-hello-world.openvoiceos", "utterance": "buenos días", "lang": "es-CO", "intent_label": "greetings", "intent_type": "padatious", "needs_manual": true, "machine_generated": true}
+{"skill_id": "ovos-skill-hello-world.openvoiceos", "utterance": "hola de nuevo", "lang": "es-CO", "intent_label": "greetings", "intent_type": "padatious", "needs_manual": true, "machine_generated": true}
+{"skill_id": "ovos-skill-hello-world.openvoiceos", "utterance": "mucho tiempo sin verte", "lang": "es-CO", "intent_label": "greetings", "intent_type": "padatious", "needs_manual": true, "machine_generated": true}

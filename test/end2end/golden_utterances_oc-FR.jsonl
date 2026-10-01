@@ -1,0 +1,10 @@
+{"skill_id": "ovos-skill-hello-world.openvoiceos", "utterance": "ei", "lang": "oc-FR", "intent_label": "greetings", "intent_type": "padatious", "needs_manual": false}
+{"skill_id": "ovos-skill-hello-world.openvoiceos", "utterance": "fasiá temps que nos vesèm pas", "lang": "oc-FR", "intent_label": "greetings", "intent_type": "padatious", "needs_manual": false}
+{"skill_id": "ovos-skill-hello-world.openvoiceos", "utterance": "adieu de nòu", "lang": "oc-FR", "intent_label": "greetings", "intent_type": "padatious", "needs_manual": false}
+{"skill_id": "ovos-skill-hello-world.openvoiceos", "utterance": "adieu mond", "lang": "oc-FR", "intent_label": "hello_world_intent", "intent_type": "padatious", "needs_manual": false}
+{"skill_id": "ovos-skill-hello-world.openvoiceos", "utterance": "fai l'exemple d'adieu mond", "lang": "oc-FR", "intent_label": "hello_world_intent", "intent_type": "padatious", "needs_manual": false}
+{"skill_id": "ovos-skill-hello-world.openvoiceos", "utterance": "pòdes dire adieu mond", "lang": "oc-FR", "intent_label": "hello_world_intent", "intent_type": "padatious", "needs_manual": false}
+{"skill_id": "ovos-skill-hello-world.openvoiceos", "utterance": "cossí es anat lo jorn", "lang": "oc-FR", "intent_label": "how_are_you", "intent_type": "padatious", "needs_manual": false}
+{"skill_id": "ovos-skill-hello-world.openvoiceos", "utterance": "mercés", "lang": "oc-FR", "intent_label": "thank_you_intent", "intent_type": "padatious", "needs_manual": false}
+{"skill_id": "ovos-skill-hello-world.openvoiceos", "utterance": "te mercegi de vertat", "lang": "oc-FR", "intent_label": "thank_you_intent", "intent_type": "padatious", "needs_manual": false}
+{"skill_id": "ovos-skill-hello-world.openvoiceos", "utterance": "mila mercés", "lang": "oc-FR", "intent_label": "thank_you_intent", "intent_type": "padatious", "needs_manual": false}

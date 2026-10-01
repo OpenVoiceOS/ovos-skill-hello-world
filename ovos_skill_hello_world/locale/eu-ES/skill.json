@@ -1,0 +1,14 @@
+{
+  "skill_id": "ovos-skill-hello-world.openvoiceos",
+  "source": "https://github.com/OpenVoiceOS/ovos-skill-hello-world",
+  "name": "Kaixo mundua",
+  "description": "Sarrerako trebetasuna, trebetasunen egileek OVOS trebetasun bat nola egiten den ikus dezaten",
+  "examples": [
+    "Kaixo mundua",
+    "Eskerrik asko",
+    "Zer moduz zaude?"
+  ],
+  "tags": [
+    "tutorial"
+  ]
+}

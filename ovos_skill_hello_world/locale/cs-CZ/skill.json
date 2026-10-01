@@ -1,0 +1,14 @@
+{
+  "skill_id": "ovos-skill-hello-world.openvoiceos",
+  "source": "https://github.com/OpenVoiceOS/ovos-skill-hello-world",
+  "name": "Ahoj světe",
+  "description": "Úvodní dovednost, díky které autoři dovedností vidí, jak je OVOS dovednost sestavena",
+  "examples": [
+    "Ahoj světe",
+    "Děkuji",
+    "Jak se máš?"
+  ],
+  "tags": [
+    "výuka"
+  ]
+}
