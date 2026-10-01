@@ -1,5 +1,13 @@
 # Changelog
 
+## [0.5.4a1](https://github.com/OpenVoiceOS/ovos-skill-hello-world/tree/0.5.4a1) (2026-10-01)
+
+[Full Changelog](https://github.com/OpenVoiceOS/ovos-skill-hello-world/compare/0.5.3a5...0.5.4a1)
+
+**Merged pull requests:**
+
+- fix\(locale\): oc-FR greetings and thank-you phrases live in the registered intent files [\#163](https://github.com/OpenVoiceOS/ovos-skill-hello-world/pull/163) ([openvoiceos-bot](https://github.com/openvoiceos-bot))
+
 ## [0.5.3a5](https://github.com/OpenVoiceOS/ovos-skill-hello-world/tree/0.5.3a5) (2026-10-01)
 
 [Full Changelog](https://github.com/OpenVoiceOS/ovos-skill-hello-world/compare/0.5.3a4...0.5.3a5)
@@ -320,8 +328,6 @@
 
 - Release 0.1.15a3 [\#63](https://github.com/OpenVoiceOS/ovos-skill-hello-world/pull/63) ([github-actions[bot]](https://github.com/apps/github-actions))
 - Release 0.1.15a2 [\#62](https://github.com/OpenVoiceOS/ovos-skill-hello-world/pull/62) ([github-actions[bot]](https://github.com/apps/github-actions))
-- Missing French [\#59](https://github.com/OpenVoiceOS/ovos-skill-hello-world/pull/59) ([gitlocalize-app[bot]](https://github.com/apps/gitlocalize-app))
-- Better dialog [\#58](https://github.com/OpenVoiceOS/ovos-skill-hello-world/pull/58) ([gitlocalize-app[bot]](https://github.com/apps/gitlocalize-app))
 
 ## [0.1.15a2](https://github.com/OpenVoiceOS/ovos-skill-hello-world/tree/0.1.15a2) (2025-03-27)
 
