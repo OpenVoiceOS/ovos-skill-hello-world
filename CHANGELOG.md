@@ -1,5 +1,13 @@
 # Changelog
 
+## [0.5.3a4](https://github.com/OpenVoiceOS/ovos-skill-hello-world/tree/0.5.3a4) (2026-10-01)
+
+[Full Changelog](https://github.com/OpenVoiceOS/ovos-skill-hello-world/compare/0.5.3a3...0.5.3a4)
+
+**Merged pull requests:**
+
+- translate\(oc-FR\): update ThankYouIntent.intent [\#159](https://github.com/OpenVoiceOS/ovos-skill-hello-world/pull/159) ([ovos-localize[bot]](https://github.com/apps/ovos-localize))
+
 ## [0.5.3a3](https://github.com/OpenVoiceOS/ovos-skill-hello-world/tree/0.5.3a3) (2026-10-01)
 
 [Full Changelog](https://github.com/OpenVoiceOS/ovos-skill-hello-world/compare/0.5.3a2...0.5.3a3)
