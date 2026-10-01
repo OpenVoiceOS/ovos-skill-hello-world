@@ -43,12 +43,8 @@ PIPELINE = [
 
 END2END_DIR = Path(__file__).parent
 
-LANGS = [
-    "en-US", "ca-ES", "cs-CZ", "da-DK", "de-DE", "el-GR", "es-ES",
-    "eu-ES", "fa-IR", "fr-FR", "gl-ES", "hu-HU", "it-IT", "kab",
-    "nl-NL", "oc-FR", "pl-PL", "pt-BR", "pt-PT", "ro-RO", "ru-RU",
-    "sv-SE", "tr-TR",
-]
+LANGS = sorted(p.stem.removeprefix("golden_utterances_")
+               for p in END2END_DIR.glob("golden_utterances_*.jsonl"))
 
 NEGATIVE_UTTERANCES = [
     ("what's the weather", "en-US", "ovos-skill-weather.openvoiceos"),
@@ -69,10 +65,7 @@ def _load_rows(lang):
             line = line.strip()
             if not line:
                 continue
-            row = json.loads(line)
-            if row.get("needs_manual"):
-                continue
-            rows.append(row)
+            rows.append(json.loads(line))
     return rows
 
 
