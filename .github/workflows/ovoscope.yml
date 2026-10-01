@@ -7,9 +7,10 @@ on:
 
 jobs:
   ovoscope:
-    uses: OpenVoiceOS/gh-automations/.github/workflows/ovoscope.yml@dev
+    uses: OpenVoiceOS/gh-automations/.github/workflows/ovoscope.yml@fix/ovoscope-subtests-outcome
     secrets: inherit
     with:
+      gh_automations_ref: fix/ovoscope-subtests-outcome
       python_version: '3.11'
       install_extras: 'end2end'
       test_path: 'test/end2end/'
