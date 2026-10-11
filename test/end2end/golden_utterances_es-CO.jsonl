@@ -1,6 +1,16 @@
-{"skill_id": "ovos-skill-hello-world.openvoiceos", "utterance": "hola mundo", "lang": "es-CO", "intent_label": "hello_world_intent", "intent_type": "padatious", "needs_manual": false, "machine_generated": true}
-{"skill_id": "ovos-skill-hello-world.openvoiceos", "utterance": "cómo estás hoy", "lang": "es-CO", "intent_label": "how_are_you", "intent_type": "padatious", "needs_manual": false, "machine_generated": true}
-{"skill_id": "ovos-skill-hello-world.openvoiceos", "utterance": "gracias", "lang": "es-CO", "intent_label": "thank_you_intent", "intent_type": "padatious", "needs_manual": false, "machine_generated": true}
-{"skill_id": "ovos-skill-hello-world.openvoiceos", "utterance": "buenos días", "lang": "es-CO", "intent_label": "greetings", "intent_type": "padatious", "needs_manual": true, "machine_generated": true}
-{"skill_id": "ovos-skill-hello-world.openvoiceos", "utterance": "hola de nuevo", "lang": "es-CO", "intent_label": "greetings", "intent_type": "padatious", "needs_manual": true, "machine_generated": true}
-{"skill_id": "ovos-skill-hello-world.openvoiceos", "utterance": "mucho tiempo sin verte", "lang": "es-CO", "intent_label": "greetings", "intent_type": "padatious", "needs_manual": true, "machine_generated": true}
+{"skill_id": "ovos-skill-hello-world.openvoiceos", "lang": "es-CO", "intent_label": "greetings", "utterance": "muy buenos días", "needs_manual": true, "machine_generated": true, "rewritten_from": "buenos días"}
+{"skill_id": "ovos-skill-hello-world.openvoiceos", "lang": "es-CO", "intent_label": "greetings", "utterance": "hola otra vez", "needs_manual": true, "machine_generated": true, "rewritten_from": "hola de nuevo"}
+{"skill_id": "ovos-skill-hello-world.openvoiceos", "lang": "es-CO", "intent_label": "greetings", "utterance": "hace rato que no te veía", "needs_manual": true, "machine_generated": true, "rewritten_from": "mucho tiempo sin verte"}
+{"skill_id": "ovos-skill-hello-world.openvoiceos", "lang": "es-CO", "intent_label": "greetings", "utterance": "quiubo", "needs_manual": true, "machine_generated": true}
+{"skill_id": "ovos-skill-hello-world.openvoiceos", "lang": "es-CO", "intent_label": "hello_world_intent", "utterance": "quiero oírte decir hola mundo", "needs_manual": true, "machine_generated": true, "rewritten_from": "hola mundo"}
+{"skill_id": "ovos-skill-hello-world.openvoiceos", "lang": "es-CO", "intent_label": "hello_world_intent", "utterance": "muéstrame el ejemplo de hola mundo", "needs_manual": true, "machine_generated": true}
+{"skill_id": "ovos-skill-hello-world.openvoiceos", "lang": "es-CO", "intent_label": "hello_world_intent", "utterance": "dime hola mundo por favor", "needs_manual": true, "machine_generated": true}
+{"skill_id": "ovos-skill-hello-world.openvoiceos", "lang": "es-CO", "intent_label": "hello_world_intent", "utterance": "haz el hola mundo, porfa", "needs_manual": true, "machine_generated": true}
+{"skill_id": "ovos-skill-hello-world.openvoiceos", "lang": "es-CO", "intent_label": "how_are_you", "utterance": "cómo vas hoy", "needs_manual": true, "machine_generated": true, "rewritten_from": "cómo estás hoy"}
+{"skill_id": "ovos-skill-hello-world.openvoiceos", "lang": "es-CO", "intent_label": "how_are_you", "utterance": "cómo te ha ido el día de hoy", "needs_manual": true, "machine_generated": true}
+{"skill_id": "ovos-skill-hello-world.openvoiceos", "lang": "es-CO", "intent_label": "how_are_you", "utterance": "cómo te sientes", "needs_manual": true, "machine_generated": true}
+{"skill_id": "ovos-skill-hello-world.openvoiceos", "lang": "es-CO", "intent_label": "how_are_you", "utterance": "cómo amaneciste", "needs_manual": true, "machine_generated": true}
+{"skill_id": "ovos-skill-hello-world.openvoiceos", "lang": "es-CO", "intent_label": "thank_you_intent", "utterance": "gracias", "needs_manual": false}
+{"skill_id": "ovos-skill-hello-world.openvoiceos", "lang": "es-CO", "intent_label": "thank_you_intent", "utterance": "muchas gracias por la ayuda", "needs_manual": true, "machine_generated": true}
+{"skill_id": "ovos-skill-hello-world.openvoiceos", "lang": "es-CO", "intent_label": "thank_you_intent", "utterance": "mil gracias, muy amable", "needs_manual": true, "machine_generated": true}
+{"skill_id": "ovos-skill-hello-world.openvoiceos", "lang": "es-CO", "intent_label": "thank_you_intent", "utterance": "te agradezco un montón", "needs_manual": true, "machine_generated": true}

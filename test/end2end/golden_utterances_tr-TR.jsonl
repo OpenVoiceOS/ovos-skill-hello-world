@@ -1,12 +1,17 @@
-{"skill_id": "ovos-skill-hello-world.openvoiceos", "utterance": "Hey.", "lang": "tr-TR", "intent_label": "greetings", "intent_type": "padatious", "needs_manual": false}
-{"skill_id": "ovos-skill-hello-world.openvoiceos", "utterance": "Uzun zamandır görüşemedik.", "lang": "tr-TR", "intent_label": "greetings", "intent_type": "padatious", "needs_manual": false}
-{"skill_id": "ovos-skill-hello-world.openvoiceos", "utterance": "İyi günler.", "lang": "tr-TR", "intent_label": "greetings", "intent_type": "padatious", "needs_manual": false}
-{"skill_id": "ovos-skill-hello-world.openvoiceos", "utterance": "selamlar", "lang": "tr-TR", "intent_label": "hello_world_intent", "intent_type": "padatious", "needs_manual": false}
-{"skill_id": "ovos-skill-hello-world.openvoiceos", "utterance": "merhaba dünya", "lang": "tr-TR", "intent_label": "hello_world_intent", "intent_type": "padatious", "needs_manual": false}
-{"skill_id": "ovos-skill-hello-world.openvoiceos", "utterance": "selam dünya", "lang": "tr-TR", "intent_label": "hello_world_intent", "intent_type": "padatious", "needs_manual": false}
-{"skill_id": "ovos-skill-hello-world.openvoiceos", "utterance": "nasılsın", "lang": "tr-TR", "intent_label": "how_are_you", "intent_type": "padatious", "needs_manual": false}
-{"skill_id": "ovos-skill-hello-world.openvoiceos", "utterance": "Senin günün nasıldı", "lang": "tr-TR", "intent_label": "how_are_you", "intent_type": "padatious", "needs_manual": false}
-{"skill_id": "ovos-skill-hello-world.openvoiceos", "utterance": "nasıl oldun", "lang": "tr-TR", "intent_label": "how_are_you", "intent_type": "padatious", "needs_manual": false}
-{"skill_id": "ovos-skill-hello-world.openvoiceos", "utterance": "sağ ol", "lang": "tr-TR", "intent_label": "thank_you_intent", "intent_type": "padatious", "needs_manual": false}
-{"skill_id": "ovos-skill-hello-world.openvoiceos", "utterance": "teşekkür ederim", "lang": "tr-TR", "intent_label": "thank_you_intent", "intent_type": "padatious", "needs_manual": false}
-{"skill_id": "ovos-skill-hello-world.openvoiceos", "utterance": "teşekkürler", "lang": "tr-TR", "intent_label": "thank_you_intent", "intent_type": "padatious", "needs_manual": false}
+{"skill_id": "ovos-skill-hello-world.openvoiceos", "lang": "tr-TR", "intent_label": "greetings", "utterance": "Hey.", "needs_manual": false}
+{"skill_id": "ovos-skill-hello-world.openvoiceos", "lang": "tr-TR", "intent_label": "greetings", "utterance": "görüşmeyeli çok oldu", "needs_manual": true, "machine_generated": true, "rewritten_from": "Uzun zamandır görüşemedik."}
+{"skill_id": "ovos-skill-hello-world.openvoiceos", "lang": "tr-TR", "intent_label": "greetings", "utterance": "herkese iyi günler", "needs_manual": true, "machine_generated": true, "rewritten_from": "İyi günler."}
+{"skill_id": "ovos-skill-hello-world.openvoiceos", "lang": "tr-TR", "intent_label": "greetings", "utterance": "selam herkese", "needs_manual": true, "machine_generated": true}
+{"skill_id": "ovos-skill-hello-world.openvoiceos", "lang": "tr-TR", "intent_label": "hello_world_intent", "utterance": "selamlar", "needs_manual": false}
+{"skill_id": "ovos-skill-hello-world.openvoiceos", "lang": "tr-TR", "intent_label": "hello_world_intent", "utterance": "bana merhaba dünya söyler misin", "needs_manual": true, "machine_generated": true, "rewritten_from": "merhaba dünya"}
+{"skill_id": "ovos-skill-hello-world.openvoiceos", "lang": "tr-TR", "intent_label": "hello_world_intent", "utterance": "dünyaya selam söyle", "needs_manual": true, "machine_generated": true, "rewritten_from": "selam dünya"}
+{"skill_id": "ovos-skill-hello-world.openvoiceos", "lang": "tr-TR", "intent_label": "hello_world_intent", "utterance": "merhaba dünya de", "needs_manual": true, "machine_generated": true}
+{"skill_id": "ovos-skill-hello-world.openvoiceos", "lang": "tr-TR", "intent_label": "hello_world_intent", "utterance": "bana merhaba dünya örneğini göster", "needs_manual": true, "machine_generated": true}
+{"skill_id": "ovos-skill-hello-world.openvoiceos", "lang": "tr-TR", "intent_label": "how_are_you", "utterance": "nasılsın", "needs_manual": false}
+{"skill_id": "ovos-skill-hello-world.openvoiceos", "lang": "tr-TR", "intent_label": "how_are_you", "utterance": "bugün günün nasıl geçti", "needs_manual": true, "machine_generated": true, "rewritten_from": "Senin günün nasıldı"}
+{"skill_id": "ovos-skill-hello-world.openvoiceos", "lang": "tr-TR", "intent_label": "how_are_you", "utterance": "bugün nasılsın", "needs_manual": true, "machine_generated": true, "rewritten_from": "nasıl oldun"}
+{"skill_id": "ovos-skill-hello-world.openvoiceos", "lang": "tr-TR", "intent_label": "how_are_you", "utterance": "iyi misin", "needs_manual": true, "machine_generated": true}
+{"skill_id": "ovos-skill-hello-world.openvoiceos", "lang": "tr-TR", "intent_label": "thank_you_intent", "utterance": "sağ ol, çok naziksin", "needs_manual": true, "machine_generated": true, "rewritten_from": "sağ ol"}
+{"skill_id": "ovos-skill-hello-world.openvoiceos", "lang": "tr-TR", "intent_label": "thank_you_intent", "utterance": "çok teşekkür ederim", "needs_manual": true, "machine_generated": true, "rewritten_from": "teşekkür ederim"}
+{"skill_id": "ovos-skill-hello-world.openvoiceos", "lang": "tr-TR", "intent_label": "thank_you_intent", "utterance": "teşekkürler", "needs_manual": false}
+{"skill_id": "ovos-skill-hello-world.openvoiceos", "lang": "tr-TR", "intent_label": "thank_you_intent", "utterance": "yardımın için teşekkürler", "needs_manual": true, "machine_generated": true}

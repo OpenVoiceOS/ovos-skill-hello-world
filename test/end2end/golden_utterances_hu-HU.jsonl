@@ -1,12 +1,17 @@
-{"skill_id": "ovos-skill-hello-world.openvoiceos", "utterance": "Hé!", "lang": "hu-HU", "intent_label": "greetings", "intent_type": "padatious", "needs_manual": false}
-{"skill_id": "ovos-skill-hello-world.openvoiceos", "utterance": "Örülök, hogy látlak.", "lang": "hu-HU", "intent_label": "greetings", "intent_type": "padatious", "needs_manual": false}
-{"skill_id": "ovos-skill-hello-world.openvoiceos", "utterance": "Szép napot!", "lang": "hu-HU", "intent_label": "greetings", "intent_type": "padatious", "needs_manual": false}
-{"skill_id": "ovos-skill-hello-world.openvoiceos", "utterance": "üdv", "lang": "hu-HU", "intent_label": "hello_world_intent", "intent_type": "padatious", "needs_manual": false}
-{"skill_id": "ovos-skill-hello-world.openvoiceos", "utterance": "üdvözlet világ", "lang": "hu-HU", "intent_label": "hello_world_intent", "intent_type": "padatious", "needs_manual": false}
-{"skill_id": "ovos-skill-hello-world.openvoiceos", "utterance": "helló világ", "lang": "hu-HU", "intent_label": "hello_world_intent", "intent_type": "padatious", "needs_manual": false}
-{"skill_id": "ovos-skill-hello-world.openvoiceos", "utterance": "hogy vagy", "lang": "hu-HU", "intent_label": "how_are_you", "intent_type": "padatious", "needs_manual": false}
-{"skill_id": "ovos-skill-hello-world.openvoiceos", "utterance": "milyen volt a napod", "lang": "hu-HU", "intent_label": "how_are_you", "intent_type": "padatious", "needs_manual": false}
-{"skill_id": "ovos-skill-hello-world.openvoiceos", "utterance": "hogy telt a napod", "lang": "hu-HU", "intent_label": "how_are_you", "intent_type": "padatious", "needs_manual": false}
-{"skill_id": "ovos-skill-hello-world.openvoiceos", "utterance": "köszi", "lang": "hu-HU", "intent_label": "thank_you_intent", "intent_type": "padatious", "needs_manual": false}
-{"skill_id": "ovos-skill-hello-world.openvoiceos", "utterance": "köszönöm szépen", "lang": "hu-HU", "intent_label": "thank_you_intent", "intent_type": "padatious", "needs_manual": false}
-{"skill_id": "ovos-skill-hello-world.openvoiceos", "utterance": "köszönöm", "lang": "hu-HU", "intent_label": "thank_you_intent", "intent_type": "padatious", "needs_manual": false}
+{"skill_id": "ovos-skill-hello-world.openvoiceos", "lang": "hu-HU", "intent_label": "greetings", "utterance": "Hé!", "needs_manual": false}
+{"skill_id": "ovos-skill-hello-world.openvoiceos", "lang": "hu-HU", "intent_label": "greetings", "utterance": "de jó újra látni téged", "needs_manual": true, "machine_generated": true, "rewritten_from": "Örülök, hogy látlak."}
+{"skill_id": "ovos-skill-hello-world.openvoiceos", "lang": "hu-HU", "intent_label": "greetings", "utterance": "szép napot neked is", "needs_manual": true, "machine_generated": true, "rewritten_from": "Szép napot!"}
+{"skill_id": "ovos-skill-hello-world.openvoiceos", "lang": "hu-HU", "intent_label": "greetings", "utterance": "jó reggelt mindenkinek", "needs_manual": true, "machine_generated": true}
+{"skill_id": "ovos-skill-hello-world.openvoiceos", "lang": "hu-HU", "intent_label": "hello_world_intent", "utterance": "üdv", "needs_manual": false}
+{"skill_id": "ovos-skill-hello-world.openvoiceos", "lang": "hu-HU", "intent_label": "hello_world_intent", "utterance": "üdvözöld a világot", "needs_manual": true, "machine_generated": true, "rewritten_from": "üdvözlet világ"}
+{"skill_id": "ovos-skill-hello-world.openvoiceos", "lang": "hu-HU", "intent_label": "hello_world_intent", "utterance": "szeretném hallani, hogy helló világ", "needs_manual": true, "machine_generated": true, "rewritten_from": "helló világ"}
+{"skill_id": "ovos-skill-hello-world.openvoiceos", "lang": "hu-HU", "intent_label": "hello_world_intent", "utterance": "mondd, hogy helló világ", "needs_manual": true, "machine_generated": true}
+{"skill_id": "ovos-skill-hello-world.openvoiceos", "lang": "hu-HU", "intent_label": "hello_world_intent", "utterance": "mutasd meg a helló világ példát", "needs_manual": true, "machine_generated": true}
+{"skill_id": "ovos-skill-hello-world.openvoiceos", "lang": "hu-HU", "intent_label": "how_are_you", "utterance": "hogy vagy ma", "needs_manual": true, "machine_generated": true, "rewritten_from": "hogy vagy"}
+{"skill_id": "ovos-skill-hello-world.openvoiceos", "lang": "hu-HU", "intent_label": "how_are_you", "utterance": "milyen napod volt ma", "needs_manual": true, "machine_generated": true, "rewritten_from": "milyen volt a napod"}
+{"skill_id": "ovos-skill-hello-world.openvoiceos", "lang": "hu-HU", "intent_label": "how_are_you", "utterance": "hogy telt a mai napod", "needs_manual": true, "machine_generated": true, "rewritten_from": "hogy telt a napod"}
+{"skill_id": "ovos-skill-hello-world.openvoiceos", "lang": "hu-HU", "intent_label": "how_are_you", "utterance": "jól vagy", "needs_manual": true, "machine_generated": true}
+{"skill_id": "ovos-skill-hello-world.openvoiceos", "lang": "hu-HU", "intent_label": "thank_you_intent", "utterance": "köszi", "needs_manual": false}
+{"skill_id": "ovos-skill-hello-world.openvoiceos", "lang": "hu-HU", "intent_label": "thank_you_intent", "utterance": "nagyon szépen köszönöm", "needs_manual": true, "machine_generated": true, "rewritten_from": "köszönöm szépen"}
+{"skill_id": "ovos-skill-hello-world.openvoiceos", "lang": "hu-HU", "intent_label": "thank_you_intent", "utterance": "köszönöm", "needs_manual": false}
+{"skill_id": "ovos-skill-hello-world.openvoiceos", "lang": "hu-HU", "intent_label": "thank_you_intent", "utterance": "köszönöm a segítséget", "needs_manual": true, "machine_generated": true}

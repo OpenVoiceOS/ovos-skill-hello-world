@@ -1,11 +1,16 @@
-{"skill_id": "ovos-skill-hello-world.openvoiceos", "utterance": "salut", "lang": "fr-FR", "intent_label": "greetings", "intent_type": "padatious", "needs_manual": false}
-{"skill_id": "ovos-skill-hello-world.openvoiceos", "utterance": "je suis content de te revoir", "lang": "fr-FR", "intent_label": "greetings", "intent_type": "padatious", "needs_manual": false}
-{"skill_id": "ovos-skill-hello-world.openvoiceos", "utterance": "ça fait longtemps", "lang": "fr-FR", "intent_label": "greetings", "intent_type": "padatious", "needs_manual": false}
-{"skill_id": "ovos-skill-hello-world.openvoiceos", "utterance": "fais l'exemple bonjour le monde", "lang": "fr-FR", "intent_label": "hello_world_intent", "intent_type": "padatious", "needs_manual": false}
-{"skill_id": "ovos-skill-hello-world.openvoiceos", "utterance": "bonjour le monde s'il te plaît", "lang": "fr-FR", "intent_label": "hello_world_intent", "intent_type": "padatious", "needs_manual": false}
-{"skill_id": "ovos-skill-hello-world.openvoiceos", "utterance": "tu vas bien", "lang": "fr-FR", "intent_label": "how_are_you", "intent_type": "padatious", "needs_manual": false}
-{"skill_id": "ovos-skill-hello-world.openvoiceos", "utterance": "bonjour le monde, comment vas-tu", "lang": "fr-FR", "intent_label": "how_are_you", "intent_type": "padatious", "needs_manual": false}
-{"skill_id": "ovos-skill-hello-world.openvoiceos", "utterance": "comment vas-tu aujourd'hui", "lang": "fr-FR", "intent_label": "how_are_you", "intent_type": "padatious", "needs_manual": false}
-{"skill_id": "ovos-skill-hello-world.openvoiceos", "utterance": "merci", "lang": "fr-FR", "intent_label": "thank_you_intent", "intent_type": "padatious", "needs_manual": false}
-{"skill_id": "ovos-skill-hello-world.openvoiceos", "utterance": "merci du fond du cœur", "lang": "fr-FR", "intent_label": "thank_you_intent", "intent_type": "padatious", "needs_manual": false}
-{"skill_id": "ovos-skill-hello-world.openvoiceos", "utterance": "je te remercie", "lang": "fr-FR", "intent_label": "thank_you_intent", "intent_type": "padatious", "needs_manual": false}
+{"skill_id": "ovos-skill-hello-world.openvoiceos", "lang": "fr-FR", "intent_label": "greetings", "utterance": "salut", "needs_manual": false}
+{"skill_id": "ovos-skill-hello-world.openvoiceos", "lang": "fr-FR", "intent_label": "greetings", "utterance": "ça me fait plaisir de te revoir", "needs_manual": true, "machine_generated": true, "rewritten_from": "je suis content de te revoir"}
+{"skill_id": "ovos-skill-hello-world.openvoiceos", "lang": "fr-FR", "intent_label": "greetings", "utterance": "ça fait un bail", "needs_manual": true, "machine_generated": true, "rewritten_from": "ça fait longtemps"}
+{"skill_id": "ovos-skill-hello-world.openvoiceos", "lang": "fr-FR", "intent_label": "greetings", "utterance": "bonjour à vous", "needs_manual": true, "machine_generated": true}
+{"skill_id": "ovos-skill-hello-world.openvoiceos", "lang": "fr-FR", "intent_label": "greetings", "utterance": "bonsoir tout le monde", "needs_manual": true, "machine_generated": true}
+{"skill_id": "ovos-skill-hello-world.openvoiceos", "lang": "fr-FR", "intent_label": "hello_world_intent", "utterance": "lance l'exemple bonjour le monde", "needs_manual": true, "machine_generated": true, "rewritten_from": "fais l'exemple bonjour le monde"}
+{"skill_id": "ovos-skill-hello-world.openvoiceos", "lang": "fr-FR", "intent_label": "hello_world_intent", "utterance": "dis-moi bonjour le monde s'il te plaît", "needs_manual": true, "machine_generated": true, "rewritten_from": "bonjour le monde s'il te plaît"}
+{"skill_id": "ovos-skill-hello-world.openvoiceos", "lang": "fr-FR", "intent_label": "hello_world_intent", "utterance": "montre-moi ton bonjour le monde", "needs_manual": true, "machine_generated": true}
+{"skill_id": "ovos-skill-hello-world.openvoiceos", "lang": "fr-FR", "intent_label": "how_are_you", "utterance": "est-ce que ça va bien pour toi", "needs_manual": true, "machine_generated": true, "rewritten_from": "tu vas bien"}
+{"skill_id": "ovos-skill-hello-world.openvoiceos", "lang": "fr-FR", "intent_label": "how_are_you", "utterance": "comment ça va de ton côté", "needs_manual": true, "machine_generated": true, "rewritten_from": "bonjour le monde, comment vas-tu"}
+{"skill_id": "ovos-skill-hello-world.openvoiceos", "lang": "fr-FR", "intent_label": "how_are_you", "utterance": "comment tu te sens aujourd'hui", "needs_manual": true, "machine_generated": true, "rewritten_from": "comment vas-tu aujourd'hui"}
+{"skill_id": "ovos-skill-hello-world.openvoiceos", "lang": "fr-FR", "intent_label": "how_are_you", "utterance": "ça va toi", "needs_manual": true, "machine_generated": true}
+{"skill_id": "ovos-skill-hello-world.openvoiceos", "lang": "fr-FR", "intent_label": "thank_you_intent", "utterance": "merci", "needs_manual": false}
+{"skill_id": "ovos-skill-hello-world.openvoiceos", "lang": "fr-FR", "intent_label": "thank_you_intent", "utterance": "merci de tout cœur", "needs_manual": true, "machine_generated": true, "rewritten_from": "merci du fond du cœur"}
+{"skill_id": "ovos-skill-hello-world.openvoiceos", "lang": "fr-FR", "intent_label": "thank_you_intent", "utterance": "je te remercie pour ton aide", "needs_manual": true, "machine_generated": true, "rewritten_from": "je te remercie"}
+{"skill_id": "ovos-skill-hello-world.openvoiceos", "lang": "fr-FR", "intent_label": "thank_you_intent", "utterance": "merci, c'est très gentil", "needs_manual": true, "machine_generated": true}

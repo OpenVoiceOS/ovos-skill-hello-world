@@ -1,12 +1,17 @@
-{"skill_id": "ovos-skill-hello-world.openvoiceos", "utterance": "Έλα!", "lang": "el-GR", "intent_label": "greetings", "intent_type": "padatious", "needs_manual": false}
-{"skill_id": "ovos-skill-hello-world.openvoiceos", "utterance": "Χαίρομαι που σε βλέπω.", "lang": "el-GR", "intent_label": "greetings", "intent_type": "padatious", "needs_manual": false}
-{"skill_id": "ovos-skill-hello-world.openvoiceos", "utterance": "Έι...", "lang": "el-GR", "intent_label": "greetings", "intent_type": "padatious", "needs_manual": false}
-{"skill_id": "ovos-skill-hello-world.openvoiceos", "utterance": "χαιρετίσματα", "lang": "el-GR", "intent_label": "hello_world_intent", "intent_type": "padatious", "needs_manual": false}
-{"skill_id": "ovos-skill-hello-world.openvoiceos", "utterance": "χαιρετίσματα κόσμε", "lang": "el-GR", "intent_label": "hello_world_intent", "intent_type": "padatious", "needs_manual": false}
-{"skill_id": "ovos-skill-hello-world.openvoiceos", "utterance": "γεια σου κόσμε", "lang": "el-GR", "intent_label": "hello_world_intent", "intent_type": "padatious", "needs_manual": false}
-{"skill_id": "ovos-skill-hello-world.openvoiceos", "utterance": "πώς είσαι", "lang": "el-GR", "intent_label": "how_are_you", "intent_type": "padatious", "needs_manual": false}
-{"skill_id": "ovos-skill-hello-world.openvoiceos", "utterance": "πώς ήταν η μέρα σου", "lang": "el-GR", "intent_label": "how_are_you", "intent_type": "padatious", "needs_manual": false}
-{"skill_id": "ovos-skill-hello-world.openvoiceos", "utterance": "πώς τα περνάς", "lang": "el-GR", "intent_label": "how_are_you", "intent_type": "padatious", "needs_manual": false}
-{"skill_id": "ovos-skill-hello-world.openvoiceos", "utterance": "ευχαριστώ", "lang": "el-GR", "intent_label": "thank_you_intent", "intent_type": "padatious", "needs_manual": false}
-{"skill_id": "ovos-skill-hello-world.openvoiceos", "utterance": "ευχαριστώ πολύ", "lang": "el-GR", "intent_label": "thank_you_intent", "intent_type": "padatious", "needs_manual": false}
-{"skill_id": "ovos-skill-hello-world.openvoiceos", "utterance": "σε ευχαριστώ", "lang": "el-GR", "intent_label": "thank_you_intent", "intent_type": "padatious", "needs_manual": false}
+{"skill_id": "ovos-skill-hello-world.openvoiceos", "lang": "el-GR", "intent_label": "greetings", "utterance": "Έλα!", "needs_manual": false}
+{"skill_id": "ovos-skill-hello-world.openvoiceos", "lang": "el-GR", "intent_label": "greetings", "utterance": "χαίρομαι πολύ που σε ξαναβλέπω", "needs_manual": true, "machine_generated": true, "rewritten_from": "Χαίρομαι που σε βλέπω."}
+{"skill_id": "ovos-skill-hello-world.openvoiceos", "lang": "el-GR", "intent_label": "greetings", "utterance": "Έι...", "needs_manual": false}
+{"skill_id": "ovos-skill-hello-world.openvoiceos", "lang": "el-GR", "intent_label": "greetings", "utterance": "καλημέρα σε όλους", "needs_manual": true, "machine_generated": true}
+{"skill_id": "ovos-skill-hello-world.openvoiceos", "lang": "el-GR", "intent_label": "hello_world_intent", "utterance": "χαιρετίσματα", "needs_manual": false}
+{"skill_id": "ovos-skill-hello-world.openvoiceos", "lang": "el-GR", "intent_label": "hello_world_intent", "utterance": "στείλε χαιρετίσματα στον κόσμο", "needs_manual": true, "machine_generated": true, "rewritten_from": "χαιρετίσματα κόσμε"}
+{"skill_id": "ovos-skill-hello-world.openvoiceos", "lang": "el-GR", "intent_label": "hello_world_intent", "utterance": "θέλω να ακούσω το γεια σου κόσμε", "needs_manual": true, "machine_generated": true, "rewritten_from": "γεια σου κόσμε"}
+{"skill_id": "ovos-skill-hello-world.openvoiceos", "lang": "el-GR", "intent_label": "hello_world_intent", "utterance": "πες γεια σου κόσμε", "needs_manual": true, "machine_generated": true}
+{"skill_id": "ovos-skill-hello-world.openvoiceos", "lang": "el-GR", "intent_label": "hello_world_intent", "utterance": "δείξε μου το παράδειγμα γεια σου κόσμε", "needs_manual": true, "machine_generated": true}
+{"skill_id": "ovos-skill-hello-world.openvoiceos", "lang": "el-GR", "intent_label": "how_are_you", "utterance": "πώς είσαι σήμερα", "needs_manual": true, "machine_generated": true, "rewritten_from": "πώς είσαι"}
+{"skill_id": "ovos-skill-hello-world.openvoiceos", "lang": "el-GR", "intent_label": "how_are_you", "utterance": "πώς πέρασες σήμερα", "needs_manual": true, "machine_generated": true, "rewritten_from": "πώς ήταν η μέρα σου"}
+{"skill_id": "ovos-skill-hello-world.openvoiceos", "lang": "el-GR", "intent_label": "how_are_you", "utterance": "πώς τα πας", "needs_manual": true, "machine_generated": true, "rewritten_from": "πώς τα περνάς"}
+{"skill_id": "ovos-skill-hello-world.openvoiceos", "lang": "el-GR", "intent_label": "how_are_you", "utterance": "είσαι καλά", "needs_manual": true, "machine_generated": true}
+{"skill_id": "ovos-skill-hello-world.openvoiceos", "lang": "el-GR", "intent_label": "thank_you_intent", "utterance": "ευχαριστώ", "needs_manual": false}
+{"skill_id": "ovos-skill-hello-world.openvoiceos", "lang": "el-GR", "intent_label": "thank_you_intent", "utterance": "σε ευχαριστώ πάρα πολύ", "needs_manual": true, "machine_generated": true, "rewritten_from": "ευχαριστώ πολύ"}
+{"skill_id": "ovos-skill-hello-world.openvoiceos", "lang": "el-GR", "intent_label": "thank_you_intent", "utterance": "σε ευχαριστώ για τη βοήθεια", "needs_manual": true, "machine_generated": true, "rewritten_from": "σε ευχαριστώ"}
+{"skill_id": "ovos-skill-hello-world.openvoiceos", "lang": "el-GR", "intent_label": "thank_you_intent", "utterance": "χίλια ευχαριστώ", "needs_manual": true, "machine_generated": true}
