@@ -1,5 +1,13 @@
 # Changelog
 
+## [0.5.4a2](https://github.com/OpenVoiceOS/ovos-skill-hello-world/tree/0.5.4a2) (2026-10-12)
+
+[Full Changelog](https://github.com/OpenVoiceOS/ovos-skill-hello-world/compare/0.5.4a1...0.5.4a2)
+
+**Merged pull requests:**
+
+- test: natural golden rows and an m2v gate for every locale [\#165](https://github.com/OpenVoiceOS/ovos-skill-hello-world/pull/165) ([openvoiceos-bot](https://github.com/openvoiceos-bot))
+
 ## [0.5.4a1](https://github.com/OpenVoiceOS/ovos-skill-hello-world/tree/0.5.4a1) (2026-10-01)
 
 [Full Changelog](https://github.com/OpenVoiceOS/ovos-skill-hello-world/compare/0.5.3a5...0.5.4a1)
@@ -332,11 +340,6 @@
 ## [0.1.15a2](https://github.com/OpenVoiceOS/ovos-skill-hello-world/tree/0.1.15a2) (2025-03-27)
 
 [Full Changelog](https://github.com/OpenVoiceOS/ovos-skill-hello-world/compare/0.1.14...0.1.15a2)
-
-**Merged pull requests:**
-
-- Missing French for skill.json [\#61](https://github.com/OpenVoiceOS/ovos-skill-hello-world/pull/61) ([gitlocalize-app[bot]](https://github.com/apps/gitlocalize-app))
-- Better vocab [\#60](https://github.com/OpenVoiceOS/ovos-skill-hello-world/pull/60) ([gitlocalize-app[bot]](https://github.com/apps/gitlocalize-app))
 
 ## [0.1.14](https://github.com/OpenVoiceOS/ovos-skill-hello-world/tree/0.1.14) (2025-03-20)
 
