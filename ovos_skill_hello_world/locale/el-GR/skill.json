@@ -1,0 +1,14 @@
+{
+  "skill_id": "ovos-skill-hello-world.openvoiceos",
+  "source": "https://github.com/OpenVoiceOS/ovos-skill-hello-world",
+  "name": "Γεια σου κόσμε",
+  "description": "Εισαγωγική δεξιότητα ώστε οι δημιουργοί δεξιοτήτων να δουν πώς συντίθεται μια δεξιότητα OVOS",
+  "examples": [
+    "Γεια σου κόσμε",
+    "Ευχαριστώ",
+    "Πώς είσαι;"
+  ],
+  "tags": [
+    "εκμάθηση"
+  ]
+}

@@ -1,0 +1,15 @@
+{"skill_id": "ovos-skill-hello-world.openvoiceos", "lang": "ca-ES", "intent_label": "greetings", "utterance": "ei", "needs_manual": false}
+{"skill_id": "ovos-skill-hello-world.openvoiceos", "lang": "ca-ES", "intent_label": "greetings", "utterance": "feia molt de temps que no et veia", "needs_manual": true, "machine_generated": true, "rewritten_from": "feia temps que no ens veiem"}
+{"skill_id": "ovos-skill-hello-world.openvoiceos", "lang": "ca-ES", "intent_label": "greetings", "utterance": "bon dia a tothom", "needs_manual": true, "machine_generated": true, "rewritten_from": "hola, bon dia"}
+{"skill_id": "ovos-skill-hello-world.openvoiceos", "lang": "ca-ES", "intent_label": "greetings", "utterance": "hola a tots", "needs_manual": true, "machine_generated": true}
+{"skill_id": "ovos-skill-hello-world.openvoiceos", "lang": "ca-ES", "intent_label": "hello_world_intent", "utterance": "vull sentir el hola món", "needs_manual": true, "machine_generated": true, "rewritten_from": "hola món"}
+{"skill_id": "ovos-skill-hello-world.openvoiceos", "lang": "ca-ES", "intent_label": "hello_world_intent", "utterance": "executa l'exemple de hola món", "needs_manual": true, "machine_generated": true, "rewritten_from": "fes l'exemple de hola món"}
+{"skill_id": "ovos-skill-hello-world.openvoiceos", "lang": "ca-ES", "intent_label": "hello_world_intent", "utterance": "digue'm hola món, si us plau", "needs_manual": true, "machine_generated": true, "rewritten_from": "pots dir hola món"}
+{"skill_id": "ovos-skill-hello-world.openvoiceos", "lang": "ca-ES", "intent_label": "hello_world_intent", "utterance": "ensenya'm el hola món", "needs_manual": true, "machine_generated": true}
+{"skill_id": "ovos-skill-hello-world.openvoiceos", "lang": "ca-ES", "intent_label": "how_are_you", "utterance": "has tingut un bon dia", "needs_manual": true, "machine_generated": true, "rewritten_from": "com ha provat el dia"}
+{"skill_id": "ovos-skill-hello-world.openvoiceos", "lang": "ca-ES", "intent_label": "how_are_you", "utterance": "com estàs aquesta tarda", "needs_manual": true, "machine_generated": true}
+{"skill_id": "ovos-skill-hello-world.openvoiceos", "lang": "ca-ES", "intent_label": "how_are_you", "utterance": "va tot bé", "needs_manual": true, "machine_generated": true}
+{"skill_id": "ovos-skill-hello-world.openvoiceos", "lang": "ca-ES", "intent_label": "thank_you_intent", "utterance": "gràcies", "needs_manual": false}
+{"skill_id": "ovos-skill-hello-world.openvoiceos", "lang": "ca-ES", "intent_label": "thank_you_intent", "utterance": "de debò, moltíssimes gràcies", "needs_manual": true, "machine_generated": true, "rewritten_from": "moltes gràcies de debò"}
+{"skill_id": "ovos-skill-hello-world.openvoiceos", "lang": "ca-ES", "intent_label": "thank_you_intent", "utterance": "t'ho agraeixo molt", "needs_manual": true, "machine_generated": true, "rewritten_from": "t'ho agraeixo"}
+{"skill_id": "ovos-skill-hello-world.openvoiceos", "lang": "ca-ES", "intent_label": "thank_you_intent", "utterance": "gràcies per l'ajuda", "needs_manual": true, "machine_generated": true}

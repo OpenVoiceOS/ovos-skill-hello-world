@@ -1,0 +1,14 @@
+{"skill_id": "ovos-skill-hello-world.openvoiceos", "lang": "oc-FR", "intent_label": "greetings", "utterance": "ei", "needs_manual": false}
+{"skill_id": "ovos-skill-hello-world.openvoiceos", "lang": "oc-FR", "intent_label": "greetings", "utterance": "fa plan temps que nos sèm pas vistes", "needs_manual": true, "machine_generated": true, "rewritten_from": "fasiá temps que nos vesèm pas"}
+{"skill_id": "ovos-skill-hello-world.openvoiceos", "lang": "oc-FR", "intent_label": "greetings", "utterance": "adieu a totes", "needs_manual": true, "machine_generated": true, "rewritten_from": "adieu de nòu"}
+{"skill_id": "ovos-skill-hello-world.openvoiceos", "lang": "oc-FR", "intent_label": "greetings", "utterance": "bon jorn a vos", "needs_manual": true, "machine_generated": true}
+{"skill_id": "ovos-skill-hello-world.openvoiceos", "lang": "oc-FR", "intent_label": "hello_world_intent", "utterance": "vòli ausir adieu mond", "needs_manual": true, "machine_generated": true, "rewritten_from": "adieu mond"}
+{"skill_id": "ovos-skill-hello-world.openvoiceos", "lang": "oc-FR", "intent_label": "hello_world_intent", "utterance": "lança l'exemple d'adieu mond", "needs_manual": true, "machine_generated": true, "rewritten_from": "fai l'exemple d'adieu mond"}
+{"skill_id": "ovos-skill-hello-world.openvoiceos", "lang": "oc-FR", "intent_label": "hello_world_intent", "utterance": "digas-me adieu mond", "needs_manual": true, "machine_generated": true, "rewritten_from": "pòdes dire adieu mond"}
+{"skill_id": "ovos-skill-hello-world.openvoiceos", "lang": "oc-FR", "intent_label": "how_are_you", "utterance": "cossí t'es anat lo jorn", "needs_manual": true, "machine_generated": true, "rewritten_from": "cossí es anat lo jorn"}
+{"skill_id": "ovos-skill-hello-world.openvoiceos", "lang": "oc-FR", "intent_label": "how_are_you", "utterance": "cossí vas uèi", "needs_manual": true, "machine_generated": true}
+{"skill_id": "ovos-skill-hello-world.openvoiceos", "lang": "oc-FR", "intent_label": "how_are_you", "utterance": "siás plan uèi", "needs_manual": true, "machine_generated": true}
+{"skill_id": "ovos-skill-hello-world.openvoiceos", "lang": "oc-FR", "intent_label": "thank_you_intent", "utterance": "mercés", "needs_manual": false}
+{"skill_id": "ovos-skill-hello-world.openvoiceos", "lang": "oc-FR", "intent_label": "thank_you_intent", "utterance": "te mercegi plan per ton ajuda", "needs_manual": true, "machine_generated": true, "rewritten_from": "te mercegi de vertat"}
+{"skill_id": "ovos-skill-hello-world.openvoiceos", "lang": "oc-FR", "intent_label": "thank_you_intent", "utterance": "mila mercés a tu", "needs_manual": true, "machine_generated": true, "rewritten_from": "mila mercés"}
+{"skill_id": "ovos-skill-hello-world.openvoiceos", "lang": "oc-FR", "intent_label": "thank_you_intent", "utterance": "mercés per tot", "needs_manual": true, "machine_generated": true}

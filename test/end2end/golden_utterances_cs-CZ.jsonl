@@ -1,0 +1,16 @@
+{"skill_id": "ovos-skill-hello-world.openvoiceos", "lang": "cs-CZ", "intent_label": "greetings", "utterance": "Hej!", "needs_manual": false}
+{"skill_id": "ovos-skill-hello-world.openvoiceos", "lang": "cs-CZ", "intent_label": "greetings", "utterance": "už jsme se dlouho neviděli", "needs_manual": true, "machine_generated": true, "rewritten_from": "Dlouho jsme se neviděli."}
+{"skill_id": "ovos-skill-hello-world.openvoiceos", "lang": "cs-CZ", "intent_label": "greetings", "utterance": "Ahoj.", "needs_manual": false}
+{"skill_id": "ovos-skill-hello-world.openvoiceos", "lang": "cs-CZ", "intent_label": "greetings", "utterance": "dobré ráno všem", "needs_manual": true, "machine_generated": true}
+{"skill_id": "ovos-skill-hello-world.openvoiceos", "lang": "cs-CZ", "intent_label": "hello_world_intent", "utterance": "zdravím", "needs_manual": false}
+{"skill_id": "ovos-skill-hello-world.openvoiceos", "lang": "cs-CZ", "intent_label": "hello_world_intent", "utterance": "řekni ahoj světe", "needs_manual": true, "machine_generated": true, "rewritten_from": "zdravím tě světe"}
+{"skill_id": "ovos-skill-hello-world.openvoiceos", "lang": "cs-CZ", "intent_label": "hello_world_intent", "utterance": "zkus říct ahoj světe", "needs_manual": true, "machine_generated": true, "rewritten_from": "ahoj světe"}
+{"skill_id": "ovos-skill-hello-world.openvoiceos", "lang": "cs-CZ", "intent_label": "hello_world_intent", "utterance": "ukaž mi příklad ahoj světe", "needs_manual": true, "machine_generated": true}
+{"skill_id": "ovos-skill-hello-world.openvoiceos", "lang": "cs-CZ", "intent_label": "how_are_you", "utterance": "jak to dneska jde", "needs_manual": true, "machine_generated": true, "rewritten_from": "jak se"}
+{"skill_id": "ovos-skill-hello-world.openvoiceos", "lang": "cs-CZ", "intent_label": "how_are_you", "utterance": "jak ses dneska měl", "needs_manual": true, "machine_generated": true, "rewritten_from": "jaký byl tvůj den"}
+{"skill_id": "ovos-skill-hello-world.openvoiceos", "lang": "cs-CZ", "intent_label": "how_are_you", "utterance": "daří se ti dobře", "needs_manual": true, "machine_generated": true, "rewritten_from": "jak se máš"}
+{"skill_id": "ovos-skill-hello-world.openvoiceos", "lang": "cs-CZ", "intent_label": "how_are_you", "utterance": "je ti dobře", "needs_manual": true, "machine_generated": true}
+{"skill_id": "ovos-skill-hello-world.openvoiceos", "lang": "cs-CZ", "intent_label": "thank_you_intent", "utterance": "díky", "needs_manual": false}
+{"skill_id": "ovos-skill-hello-world.openvoiceos", "lang": "cs-CZ", "intent_label": "thank_you_intent", "utterance": "moc ti děkuji", "needs_manual": true, "machine_generated": true, "rewritten_from": "mockrát děkuji"}
+{"skill_id": "ovos-skill-hello-world.openvoiceos", "lang": "cs-CZ", "intent_label": "thank_you_intent", "utterance": "děkuji ti za pomoc", "needs_manual": true, "machine_generated": true, "rewritten_from": "děkuji ti"}
+{"skill_id": "ovos-skill-hello-world.openvoiceos", "lang": "cs-CZ", "intent_label": "thank_you_intent", "utterance": "díky moc", "needs_manual": true, "machine_generated": true}
