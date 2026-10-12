@@ -1,12 +1,16 @@
-{"skill_id": "ovos-skill-hello-world.openvoiceos", "utterance": "azul", "lang": "kab", "intent_label": "greetings", "intent_type": "padatious", "needs_manual": false}
-{"skill_id": "ovos-skill-hello-world.openvoiceos", "utterance": "acḥal aya ur nemyeẓri", "lang": "kab", "intent_label": "greetings", "intent_type": "padatious", "needs_manual": false}
-{"skill_id": "ovos-skill-hello-world.openvoiceos", "utterance": "azul ay amdakkel", "lang": "kab", "intent_label": "greetings", "intent_type": "padatious", "needs_manual": false}
-{"skill_id": "ovos-skill-hello-world.openvoiceos", "utterance": "azul ay amaḍal", "lang": "kab", "intent_label": "hello_world_intent", "intent_type": "padatious", "needs_manual": false}
-{"skill_id": "ovos-skill-hello-world.openvoiceos", "utterance": "tzemreḍ ad tiniḍ azul ay amaḍal", "lang": "kab", "intent_label": "hello_world_intent", "intent_type": "padatious", "needs_manual": false}
-{"skill_id": "ovos-skill-hello-world.openvoiceos", "utterance": "xdem azul ay amaḍal", "lang": "kab", "intent_label": "hello_world_intent", "intent_type": "padatious", "needs_manual": false}
-{"skill_id": "ovos-skill-hello-world.openvoiceos", "utterance": "amek i tettiliḍ", "lang": "kab", "intent_label": "how_are_you", "intent_type": "padatious", "needs_manual": false}
-{"skill_id": "ovos-skill-hello-world.openvoiceos", "utterance": "tḥulfaḍ i yiman-ik akken ilaq", "lang": "kab", "intent_label": "how_are_you", "intent_type": "padatious", "needs_manual": false}
-{"skill_id": "ovos-skill-hello-world.openvoiceos", "utterance": "amek i tettiliḍ ass-a", "lang": "kab", "intent_label": "how_are_you", "intent_type": "padatious", "needs_manual": false}
-{"skill_id": "ovos-skill-hello-world.openvoiceos", "utterance": "ṣaḥḥa", "lang": "kab", "intent_label": "thank_you_intent", "intent_type": "padatious", "needs_manual": false}
-{"skill_id": "ovos-skill-hello-world.openvoiceos", "utterance": "ad ak-yerr Ṛebbi lxir", "lang": "kab", "intent_label": "thank_you_intent", "intent_type": "padatious", "needs_manual": false}
-{"skill_id": "ovos-skill-hello-world.openvoiceos", "utterance": "ṣaḥa fell-ak", "lang": "kab", "intent_label": "thank_you_intent", "intent_type": "padatious", "needs_manual": false}
+{"skill_id": "ovos-skill-hello-world.openvoiceos", "lang": "kab", "intent_label": "greetings", "utterance": "azul", "needs_manual": false}
+{"skill_id": "ovos-skill-hello-world.openvoiceos", "lang": "kab", "intent_label": "greetings", "utterance": "acḥal aya ur k-ẓriɣ", "needs_manual": true, "machine_generated": true, "rewritten_from": "acḥal aya ur nemyeẓri"}
+{"skill_id": "ovos-skill-hello-world.openvoiceos", "lang": "kab", "intent_label": "greetings", "utterance": "azul fell-awen akk", "needs_manual": true, "machine_generated": true, "rewritten_from": "azul ay amdakkel"}
+{"skill_id": "ovos-skill-hello-world.openvoiceos", "lang": "kab", "intent_label": "greetings", "utterance": "ṣbaḥ lxir fell-ak", "needs_manual": true, "machine_generated": true}
+{"skill_id": "ovos-skill-hello-world.openvoiceos", "lang": "kab", "intent_label": "hello_world_intent", "utterance": "bɣiɣ ad sliɣ azul ay amaḍal", "needs_manual": true, "machine_generated": true, "rewritten_from": "azul ay amaḍal"}
+{"skill_id": "ovos-skill-hello-world.openvoiceos", "lang": "kab", "intent_label": "hello_world_intent", "utterance": "ini-yi-d azul ay amaḍal", "needs_manual": true, "machine_generated": true, "rewritten_from": "tzemreḍ ad tiniḍ azul ay amaḍal"}
+{"skill_id": "ovos-skill-hello-world.openvoiceos", "lang": "kab", "intent_label": "hello_world_intent", "utterance": "sken-iyi-d azul ay amaḍal", "needs_manual": true, "machine_generated": true, "rewritten_from": "xdem azul ay amaḍal"}
+{"skill_id": "ovos-skill-hello-world.openvoiceos", "lang": "kab", "intent_label": "hello_world_intent", "utterance": "ini azul i umaḍal", "needs_manual": true, "machine_generated": true}
+{"skill_id": "ovos-skill-hello-world.openvoiceos", "lang": "kab", "intent_label": "how_are_you", "utterance": "amek i tettiliḍ tura", "needs_manual": true, "machine_generated": true, "rewritten_from": "amek i tettiliḍ"}
+{"skill_id": "ovos-skill-hello-world.openvoiceos", "lang": "kab", "intent_label": "how_are_you", "utterance": "amek i tḥulfaḍ i yiman-ik ass-a", "needs_manual": true, "machine_generated": true, "rewritten_from": "tḥulfaḍ i yiman-ik akken ilaq"}
+{"skill_id": "ovos-skill-hello-world.openvoiceos", "lang": "kab", "intent_label": "how_are_you", "utterance": "amek telliḍ ass-a", "needs_manual": true, "machine_generated": true, "rewritten_from": "amek i tettiliḍ ass-a"}
+{"skill_id": "ovos-skill-hello-world.openvoiceos", "lang": "kab", "intent_label": "how_are_you", "utterance": "labas fell-ak", "needs_manual": true, "machine_generated": true}
+{"skill_id": "ovos-skill-hello-world.openvoiceos", "lang": "kab", "intent_label": "thank_you_intent", "utterance": "ṣaḥḥa", "needs_manual": false}
+{"skill_id": "ovos-skill-hello-world.openvoiceos", "lang": "kab", "intent_label": "thank_you_intent", "utterance": "tanemmirt, ad ak-yerr Ṛebbi lxir", "needs_manual": true, "machine_generated": true, "rewritten_from": "ad ak-yerr Ṛebbi lxir"}
+{"skill_id": "ovos-skill-hello-world.openvoiceos", "lang": "kab", "intent_label": "thank_you_intent", "utterance": "ṣaḥa fell-ak aṭas", "needs_manual": true, "machine_generated": true, "rewritten_from": "ṣaḥa fell-ak"}
+{"skill_id": "ovos-skill-hello-world.openvoiceos", "lang": "kab", "intent_label": "thank_you_intent", "utterance": "tanemmirt ɣef tallalt-ik", "needs_manual": true, "machine_generated": true}

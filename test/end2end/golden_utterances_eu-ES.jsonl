@@ -1,12 +1,16 @@
-{"skill_id": "ovos-skill-hello-world.openvoiceos", "utterance": "epa", "lang": "eu-ES", "intent_label": "greetings", "intent_type": "padatious", "needs_manual": false}
-{"skill_id": "ovos-skill-hello-world.openvoiceos", "utterance": "pozten naiz zu ikusteaz", "lang": "eu-ES", "intent_label": "greetings", "intent_type": "padatious", "needs_manual": false}
-{"skill_id": "ovos-skill-hello-world.openvoiceos", "utterance": "aspaldiko", "lang": "eu-ES", "intent_label": "greetings", "intent_type": "padatious", "needs_manual": false}
-{"skill_id": "ovos-skill-hello-world.openvoiceos", "utterance": "agurrak", "lang": "eu-ES", "intent_label": "hello_world_intent", "intent_type": "padatious", "needs_manual": false}
-{"skill_id": "ovos-skill-hello-world.openvoiceos", "utterance": "egin kaixo mundua adibidea", "lang": "eu-ES", "intent_label": "hello_world_intent", "intent_type": "padatious", "needs_manual": false}
-{"skill_id": "ovos-skill-hello-world.openvoiceos", "utterance": "esan dezakezu kaixo mundua", "lang": "eu-ES", "intent_label": "hello_world_intent", "intent_type": "padatious", "needs_manual": false}
-{"skill_id": "ovos-skill-hello-world.openvoiceos", "utterance": "zelan", "lang": "eu-ES", "intent_label": "how_are_you", "intent_type": "padatious", "needs_manual": false}
-{"skill_id": "ovos-skill-hello-world.openvoiceos", "utterance": "zer moduz joan zaizu eguna", "lang": "eu-ES", "intent_label": "how_are_you", "intent_type": "padatious", "needs_manual": false}
-{"skill_id": "ovos-skill-hello-world.openvoiceos", "utterance": "ongi doa eguna", "lang": "eu-ES", "intent_label": "how_are_you", "intent_type": "padatious", "needs_manual": false}
-{"skill_id": "ovos-skill-hello-world.openvoiceos", "utterance": "mila esker", "lang": "eu-ES", "intent_label": "thank_you_intent", "intent_type": "padatious", "needs_manual": false}
-{"skill_id": "ovos-skill-hello-world.openvoiceos", "utterance": "eskerrak eman nahi dizkizut", "lang": "eu-ES", "intent_label": "thank_you_intent", "intent_type": "padatious", "needs_manual": false}
-{"skill_id": "ovos-skill-hello-world.openvoiceos", "utterance": "oso eskertuta nago", "lang": "eu-ES", "intent_label": "thank_you_intent", "intent_type": "padatious", "needs_manual": false}
+{"skill_id": "ovos-skill-hello-world.openvoiceos", "lang": "eu-ES", "intent_label": "greetings", "utterance": "epa", "needs_manual": false}
+{"skill_id": "ovos-skill-hello-world.openvoiceos", "lang": "eu-ES", "intent_label": "greetings", "utterance": "pozten naiz berriro zu ikusteaz", "needs_manual": true, "machine_generated": true, "rewritten_from": "pozten naiz zu ikusteaz"}
+{"skill_id": "ovos-skill-hello-world.openvoiceos", "lang": "eu-ES", "intent_label": "greetings", "utterance": "aspaldiko", "needs_manual": false}
+{"skill_id": "ovos-skill-hello-world.openvoiceos", "lang": "eu-ES", "intent_label": "greetings", "utterance": "egun on denoi", "needs_manual": true, "machine_generated": true}
+{"skill_id": "ovos-skill-hello-world.openvoiceos", "lang": "eu-ES", "intent_label": "hello_world_intent", "utterance": "agurrak", "needs_manual": false}
+{"skill_id": "ovos-skill-hello-world.openvoiceos", "lang": "eu-ES", "intent_label": "hello_world_intent", "utterance": "erakutsi kaixo mundua adibidea", "needs_manual": true, "machine_generated": true, "rewritten_from": "egin kaixo mundua adibidea"}
+{"skill_id": "ovos-skill-hello-world.openvoiceos", "lang": "eu-ES", "intent_label": "hello_world_intent", "utterance": "esan iezadazu kaixo mundua", "needs_manual": true, "machine_generated": true, "rewritten_from": "esan dezakezu kaixo mundua"}
+{"skill_id": "ovos-skill-hello-world.openvoiceos", "lang": "eu-ES", "intent_label": "hello_world_intent", "utterance": "kaixo mundua esan mesedez", "needs_manual": true, "machine_generated": true}
+{"skill_id": "ovos-skill-hello-world.openvoiceos", "lang": "eu-ES", "intent_label": "how_are_you", "utterance": "zelan", "needs_manual": false}
+{"skill_id": "ovos-skill-hello-world.openvoiceos", "lang": "eu-ES", "intent_label": "how_are_you", "utterance": "zer moduz pasa duzu gaurko eguna", "needs_manual": true, "machine_generated": true, "rewritten_from": "zer moduz joan zaizu eguna"}
+{"skill_id": "ovos-skill-hello-world.openvoiceos", "lang": "eu-ES", "intent_label": "how_are_you", "utterance": "ondo ari zara gaur", "needs_manual": true, "machine_generated": true, "rewritten_from": "ongi doa eguna"}
+{"skill_id": "ovos-skill-hello-world.openvoiceos", "lang": "eu-ES", "intent_label": "how_are_you", "utterance": "nola zaude gaur", "needs_manual": true, "machine_generated": true}
+{"skill_id": "ovos-skill-hello-world.openvoiceos", "lang": "eu-ES", "intent_label": "thank_you_intent", "utterance": "mila esker zuri", "needs_manual": true, "machine_generated": true, "rewritten_from": "mila esker"}
+{"skill_id": "ovos-skill-hello-world.openvoiceos", "lang": "eu-ES", "intent_label": "thank_you_intent", "utterance": "eskerrak eman nahi dizkizut laguntzagatik", "needs_manual": true, "machine_generated": true, "rewritten_from": "eskerrak eman nahi dizkizut"}
+{"skill_id": "ovos-skill-hello-world.openvoiceos", "lang": "eu-ES", "intent_label": "thank_you_intent", "utterance": "oso eskertuta nago zurekin", "needs_manual": true, "machine_generated": true, "rewritten_from": "oso eskertuta nago"}
+{"skill_id": "ovos-skill-hello-world.openvoiceos", "lang": "eu-ES", "intent_label": "thank_you_intent", "utterance": "eskerrik asko laguntzagatik", "needs_manual": true, "machine_generated": true}

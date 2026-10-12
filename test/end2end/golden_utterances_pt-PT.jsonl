@@ -1,12 +1,17 @@
-{"skill_id": "ovos-skill-hello-world.openvoiceos", "utterance": "olá", "lang": "pt-PT", "intent_label": "greetings", "intent_type": "padatious", "needs_manual": false}
-{"skill_id": "ovos-skill-hello-world.openvoiceos", "utterance": "faz tempo que não nos vemos", "lang": "pt-PT", "intent_label": "greetings", "intent_type": "padatious", "needs_manual": false}
-{"skill_id": "ovos-skill-hello-world.openvoiceos", "utterance": "que bom ver-te", "lang": "pt-PT", "intent_label": "greetings", "intent_type": "padatious", "needs_manual": false}
-{"skill_id": "ovos-skill-hello-world.openvoiceos", "utterance": "olá mundo", "lang": "pt-PT", "intent_label": "hello_world_intent", "intent_type": "padatious", "needs_manual": false}
-{"skill_id": "ovos-skill-hello-world.openvoiceos", "utterance": "faz o exemplo do olá mundo", "lang": "pt-PT", "intent_label": "hello_world_intent", "intent_type": "padatious", "needs_manual": false}
-{"skill_id": "ovos-skill-hello-world.openvoiceos", "utterance": "podes dizer olá mundo", "lang": "pt-PT", "intent_label": "hello_world_intent", "intent_type": "padatious", "needs_manual": false}
-{"skill_id": "ovos-skill-hello-world.openvoiceos", "utterance": "estás bem", "lang": "pt-PT", "intent_label": "how_are_you", "intent_type": "padatious", "needs_manual": false}
-{"skill_id": "ovos-skill-hello-world.openvoiceos", "utterance": "como te corre o dia", "lang": "pt-PT", "intent_label": "how_are_you", "intent_type": "padatious", "needs_manual": false}
-{"skill_id": "ovos-skill-hello-world.openvoiceos", "utterance": "Como tens estado", "lang": "pt-PT", "intent_label": "how_are_you", "intent_type": "padatious", "needs_manual": false}
-{"skill_id": "ovos-skill-hello-world.openvoiceos", "utterance": "obrigado", "lang": "pt-PT", "intent_label": "thank_you_intent", "intent_type": "padatious", "needs_manual": false}
-{"skill_id": "ovos-skill-hello-world.openvoiceos", "utterance": "obrigado do fundo do coração", "lang": "pt-PT", "intent_label": "thank_you_intent", "intent_type": "padatious", "needs_manual": false}
-{"skill_id": "ovos-skill-hello-world.openvoiceos", "utterance": "agradeço-te", "lang": "pt-PT", "intent_label": "thank_you_intent", "intent_type": "padatious", "needs_manual": false}
+{"skill_id": "ovos-skill-hello-world.openvoiceos", "lang": "pt-PT", "intent_label": "greetings", "utterance": "olá", "needs_manual": false}
+{"skill_id": "ovos-skill-hello-world.openvoiceos", "lang": "pt-PT", "intent_label": "greetings", "utterance": "há muito tempo que não nos víamos", "needs_manual": true, "machine_generated": true, "rewritten_from": "faz tempo que não nos vemos"}
+{"skill_id": "ovos-skill-hello-world.openvoiceos", "lang": "pt-PT", "intent_label": "greetings", "utterance": "que bom ver-te outra vez", "needs_manual": true, "machine_generated": true, "rewritten_from": "que bom ver-te"}
+{"skill_id": "ovos-skill-hello-world.openvoiceos", "lang": "pt-PT", "intent_label": "greetings", "utterance": "bom dia a todos", "needs_manual": true, "machine_generated": true}
+{"skill_id": "ovos-skill-hello-world.openvoiceos", "lang": "pt-PT", "intent_label": "greetings", "utterance": "olá a todos", "needs_manual": true, "machine_generated": true}
+{"skill_id": "ovos-skill-hello-world.openvoiceos", "lang": "pt-PT", "intent_label": "hello_world_intent", "utterance": "quero ouvir o olá mundo", "needs_manual": true, "machine_generated": true, "rewritten_from": "olá mundo"}
+{"skill_id": "ovos-skill-hello-world.openvoiceos", "lang": "pt-PT", "intent_label": "hello_world_intent", "utterance": "corre o exemplo do olá mundo", "needs_manual": true, "machine_generated": true, "rewritten_from": "faz o exemplo do olá mundo"}
+{"skill_id": "ovos-skill-hello-world.openvoiceos", "lang": "pt-PT", "intent_label": "hello_world_intent", "utterance": "diz-me olá mundo, por favor", "needs_manual": true, "machine_generated": true, "rewritten_from": "podes dizer olá mundo"}
+{"skill_id": "ovos-skill-hello-world.openvoiceos", "lang": "pt-PT", "intent_label": "hello_world_intent", "utterance": "mostra-me o olá mundo", "needs_manual": true, "machine_generated": true}
+{"skill_id": "ovos-skill-hello-world.openvoiceos", "lang": "pt-PT", "intent_label": "how_are_you", "utterance": "estás bem hoje", "needs_manual": true, "machine_generated": true, "rewritten_from": "estás bem"}
+{"skill_id": "ovos-skill-hello-world.openvoiceos", "lang": "pt-PT", "intent_label": "how_are_you", "utterance": "como está a correr o teu dia", "needs_manual": true, "machine_generated": true, "rewritten_from": "como te corre o dia"}
+{"skill_id": "ovos-skill-hello-world.openvoiceos", "lang": "pt-PT", "intent_label": "how_are_you", "utterance": "como tens estado ultimamente", "needs_manual": true, "machine_generated": true, "rewritten_from": "Como tens estado"}
+{"skill_id": "ovos-skill-hello-world.openvoiceos", "lang": "pt-PT", "intent_label": "how_are_you", "utterance": "está tudo bem contigo", "needs_manual": true, "machine_generated": true}
+{"skill_id": "ovos-skill-hello-world.openvoiceos", "lang": "pt-PT", "intent_label": "thank_you_intent", "utterance": "obrigado", "needs_manual": false}
+{"skill_id": "ovos-skill-hello-world.openvoiceos", "lang": "pt-PT", "intent_label": "thank_you_intent", "utterance": "do fundo do coração, muito obrigado", "needs_manual": true, "machine_generated": true, "rewritten_from": "obrigado do fundo do coração"}
+{"skill_id": "ovos-skill-hello-world.openvoiceos", "lang": "pt-PT", "intent_label": "thank_you_intent", "utterance": "agradeço-te imenso", "needs_manual": true, "machine_generated": true, "rewritten_from": "agradeço-te"}
+{"skill_id": "ovos-skill-hello-world.openvoiceos", "lang": "pt-PT", "intent_label": "thank_you_intent", "utterance": "obrigado pela ajuda", "needs_manual": true, "machine_generated": true}

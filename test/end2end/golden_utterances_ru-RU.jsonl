@@ -1,12 +1,16 @@
-{"skill_id": "ovos-skill-hello-world.openvoiceos", "utterance": "Эй", "lang": "ru-RU", "intent_label": "greetings", "intent_type": "padatious", "needs_manual": false}
-{"skill_id": "ovos-skill-hello-world.openvoiceos", "utterance": "Давненько не виделись.", "lang": "ru-RU", "intent_label": "greetings", "intent_type": "padatious", "needs_manual": false}
-{"skill_id": "ovos-skill-hello-world.openvoiceos", "utterance": "Приветик.", "lang": "ru-RU", "intent_label": "greetings", "intent_type": "padatious", "needs_manual": false}
-{"skill_id": "ovos-skill-hello-world.openvoiceos", "utterance": "привет мир", "lang": "ru-RU", "intent_label": "hello_world_intent", "intent_type": "padatious", "needs_manual": false}
-{"skill_id": "ovos-skill-hello-world.openvoiceos", "utterance": "приветствую мир", "lang": "ru-RU", "intent_label": "hello_world_intent", "intent_type": "padatious", "needs_manual": false}
-{"skill_id": "ovos-skill-hello-world.openvoiceos", "utterance": "здравствуй мир", "lang": "ru-RU", "intent_label": "hello_world_intent", "intent_type": "padatious", "needs_manual": false}
-{"skill_id": "ovos-skill-hello-world.openvoiceos", "utterance": "как  дела", "lang": "ru-RU", "intent_label": "how_are_you", "intent_type": "padatious", "needs_manual": false}
-{"skill_id": "ovos-skill-hello-world.openvoiceos", "utterance": "как прошел твой день", "lang": "ru-RU", "intent_label": "how_are_you", "intent_type": "padatious", "needs_manual": false}
-{"skill_id": "ovos-skill-hello-world.openvoiceos", "utterance": "как поживаешь", "lang": "ru-RU", "intent_label": "how_are_you", "intent_type": "padatious", "needs_manual": false}
-{"skill_id": "ovos-skill-hello-world.openvoiceos", "utterance": "спасибо", "lang": "ru-RU", "intent_label": "thank_you_intent", "intent_type": "padatious", "needs_manual": false}
-{"skill_id": "ovos-skill-hello-world.openvoiceos", "utterance": "большое спасибо", "lang": "ru-RU", "intent_label": "thank_you_intent", "intent_type": "padatious", "needs_manual": false}
-{"skill_id": "ovos-skill-hello-world.openvoiceos", "utterance": "благодарю", "lang": "ru-RU", "intent_label": "thank_you_intent", "intent_type": "padatious", "needs_manual": false}
+{"skill_id": "ovos-skill-hello-world.openvoiceos", "lang": "ru-RU", "intent_label": "greetings", "utterance": "Эй", "needs_manual": false}
+{"skill_id": "ovos-skill-hello-world.openvoiceos", "lang": "ru-RU", "intent_label": "greetings", "utterance": "давно мы с тобой не виделись", "needs_manual": true, "machine_generated": true, "rewritten_from": "Давненько не виделись."}
+{"skill_id": "ovos-skill-hello-world.openvoiceos", "lang": "ru-RU", "intent_label": "greetings", "utterance": "Приветик.", "needs_manual": false}
+{"skill_id": "ovos-skill-hello-world.openvoiceos", "lang": "ru-RU", "intent_label": "greetings", "utterance": "доброе утро всем", "needs_manual": true, "machine_generated": true}
+{"skill_id": "ovos-skill-hello-world.openvoiceos", "lang": "ru-RU", "intent_label": "hello_world_intent", "utterance": "хочу услышать привет мир", "needs_manual": true, "machine_generated": true, "rewritten_from": "привет мир"}
+{"skill_id": "ovos-skill-hello-world.openvoiceos", "lang": "ru-RU", "intent_label": "hello_world_intent", "utterance": "скажи миру привет", "needs_manual": true, "machine_generated": true, "rewritten_from": "приветствую мир"}
+{"skill_id": "ovos-skill-hello-world.openvoiceos", "lang": "ru-RU", "intent_label": "hello_world_intent", "utterance": "скажи здравствуй мир", "needs_manual": true, "machine_generated": true, "rewritten_from": "здравствуй мир"}
+{"skill_id": "ovos-skill-hello-world.openvoiceos", "lang": "ru-RU", "intent_label": "hello_world_intent", "utterance": "покажи пример привет мир", "needs_manual": true, "machine_generated": true}
+{"skill_id": "ovos-skill-hello-world.openvoiceos", "lang": "ru-RU", "intent_label": "how_are_you", "utterance": "как у тебя дела", "needs_manual": true, "machine_generated": true, "rewritten_from": "как  дела"}
+{"skill_id": "ovos-skill-hello-world.openvoiceos", "lang": "ru-RU", "intent_label": "how_are_you", "utterance": "как прошёл сегодняшний день", "needs_manual": true, "machine_generated": true, "rewritten_from": "как прошел твой день"}
+{"skill_id": "ovos-skill-hello-world.openvoiceos", "lang": "ru-RU", "intent_label": "how_are_you", "utterance": "как ты поживаешь", "needs_manual": true, "machine_generated": true, "rewritten_from": "как поживаешь"}
+{"skill_id": "ovos-skill-hello-world.openvoiceos", "lang": "ru-RU", "intent_label": "how_are_you", "utterance": "у тебя всё хорошо", "needs_manual": true, "machine_generated": true}
+{"skill_id": "ovos-skill-hello-world.openvoiceos", "lang": "ru-RU", "intent_label": "thank_you_intent", "utterance": "спасибо", "needs_manual": false}
+{"skill_id": "ovos-skill-hello-world.openvoiceos", "lang": "ru-RU", "intent_label": "thank_you_intent", "utterance": "огромное тебе спасибо", "needs_manual": true, "machine_generated": true, "rewritten_from": "большое спасибо"}
+{"skill_id": "ovos-skill-hello-world.openvoiceos", "lang": "ru-RU", "intent_label": "thank_you_intent", "utterance": "благодарю", "needs_manual": false}
+{"skill_id": "ovos-skill-hello-world.openvoiceos", "lang": "ru-RU", "intent_label": "thank_you_intent", "utterance": "спасибо за помощь", "needs_manual": true, "machine_generated": true}

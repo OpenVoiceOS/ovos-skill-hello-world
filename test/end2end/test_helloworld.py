@@ -15,10 +15,10 @@ ENVIRONMENTAL = ["recognizer_loop:audio_output_start",
 IGNORED = DEFAULT_IGNORED + ENVIRONMENTAL
 
 
-class TestPadatiousHelloWorldIntent(TestCase):
-    """``hello_world_intent`` is now a Padatious/Padacioso intent file, not an
-    Adapt keyword rule, so it is reachable via the padatious pipeline and
-    unreachable via an adapt-only pipeline."""
+class TestPadaciosoHelloWorldIntent(TestCase):
+    """``hello_world_intent`` is an intent file, not an Adapt keyword rule, so
+    it is reachable via the padacioso pipeline and unreachable via an
+    adapt-only pipeline."""
 
     def setUp(self):
         LOG.set_level("DEBUG")
@@ -30,9 +30,9 @@ class TestPadatiousHelloWorldIntent(TestCase):
             self.minicroft.stop()
         LOG.set_level("CRITICAL")
 
-    def test_padatious_match(self):
+    def test_padacioso_match(self):
         session = Session("123")
-        session.pipeline = ["ovos-padatious-pipeline-plugin-high"]
+        session.pipeline = ["ovos-padacioso-pipeline-plugin-high"]
         message = Message("recognizer_loop:utterance",
                           {"utterances": ["hello world"], "lang": "en-US"},
                           {"session": session.serialize(), "source": "A", "destination": "B"})
@@ -109,7 +109,7 @@ class TestPadatiousHelloWorldIntent(TestCase):
         test.execute(timeout=10)
 
 
-class TestPadatiousIntent(TestCase):
+class TestPadaciosoIntent(TestCase):
 
     def setUp(self):
         LOG.set_level("DEBUG")
@@ -121,9 +121,9 @@ class TestPadatiousIntent(TestCase):
             self.minicroft.stop()
         LOG.set_level("CRITICAL")
 
-    def test_padatious_match(self):
+    def test_padacioso_match(self):
         session = Session("123")
-        session.pipeline = ["ovos-padatious-pipeline-plugin-high"]
+        session.pipeline = ["ovos-padacioso-pipeline-plugin-high"]
         message = Message("recognizer_loop:utterance",
                           {"utterances": ["good morning"], "lang": "en-US"},
                           {"session": session.serialize(), "source": "A", "destination": "B"})
@@ -201,8 +201,8 @@ class TestPadatiousIntent(TestCase):
 
 
 class TestNoAdaptPipeline(TestCase):
-    """``hello_world_intent`` and ``thank_you_intent`` are Padatious/Padacioso
-    intent files (see ``locale/*/intents/hello_world_intent.intent`` and
+    """``hello_world_intent`` and ``thank_you_intent`` are intent files (see
+    ``locale/*/intents/hello_world_intent.intent`` and
     ``thank_you_intent.intent``), not Adapt keyword rules. A pipeline stack
     with no Adapt stage at all must still match them, which an Adapt-only
     keyword intent never would."""
@@ -219,10 +219,7 @@ class TestNoAdaptPipeline(TestCase):
 
     def _matched_intent_names(self, utterance):
         session = Session("123")
-        session.pipeline = [
-            "ovos-padatious-pipeline-plugin-high",
-            "ovos-padacioso-pipeline-plugin-high",
-        ]
+        session.pipeline = ["ovos-padacioso-pipeline-plugin-high"]
         message = Message("recognizer_loop:utterance",
                           {"utterances": [utterance], "lang": "en-US"},
                           {"session": session.serialize(), "source": "A", "destination": "B"})
