@@ -2,10 +2,10 @@
 {"skill_id": "ovos-skill-hello-world.openvoiceos", "lang": "fa-IR", "intent_label": "greetings", "utterance": "خیلی خوشحالم که دوباره می بینمت", "needs_manual": true, "machine_generated": true, "rewritten_from": "خوشحالم که تو را می بینم"}
 {"skill_id": "ovos-skill-hello-world.openvoiceos", "lang": "fa-IR", "intent_label": "greetings", "utterance": "سلام علیکم، وقت بخیر", "needs_manual": true, "machine_generated": true, "rewritten_from": "سلام علیکم"}
 {"skill_id": "ovos-skill-hello-world.openvoiceos", "lang": "fa-IR", "intent_label": "greetings", "utterance": "صبح همگی بخیر", "needs_manual": true, "machine_generated": true}
-{"skill_id": "ovos-skill-hello-world.openvoiceos", "lang": "fa-IR", "intent_label": "hello_world_intent", "utterance": "می‌خواهم سلام دنیا را بشنوم", "needs_manual": true, "machine_generated": true, "rewritten_from": "سلام دنیا"}
-{"skill_id": "ovos-skill-hello-world.openvoiceos", "lang": "fa-IR", "intent_label": "hello_world_intent", "utterance": "به دنیا سلام کن", "needs_manual": true, "machine_generated": true, "rewritten_from": "درود بر دنیا"}
-{"skill_id": "ovos-skill-hello-world.openvoiceos", "lang": "fa-IR", "intent_label": "hello_world_intent", "utterance": "بگو سلام دنیا", "needs_manual": true, "machine_generated": true, "rewritten_from": "خوش اومدی"}
-{"skill_id": "ovos-skill-hello-world.openvoiceos", "lang": "fa-IR", "intent_label": "hello_world_intent", "utterance": "مثال سلام دنیا را نشانم بده", "needs_manual": true, "machine_generated": true}
+{"skill_id": "ovos-skill-hello-world.openvoiceos", "lang": "fa-IR", "intent_label": "greetings", "utterance": "می‌خواهم سلام دنیا را بشنوم", "needs_manual": true, "machine_generated": true, "rewritten_from": "سلام دنیا"}
+{"skill_id": "ovos-skill-hello-world.openvoiceos", "lang": "fa-IR", "intent_label": "greetings", "utterance": "به دنیا سلام کن", "needs_manual": true, "machine_generated": true, "rewritten_from": "درود بر دنیا"}
+{"skill_id": "ovos-skill-hello-world.openvoiceos", "lang": "fa-IR", "intent_label": "greetings", "utterance": "بگو سلام دنیا", "needs_manual": true, "machine_generated": true, "rewritten_from": "خوش اومدی"}
+{"skill_id": "ovos-skill-hello-world.openvoiceos", "lang": "fa-IR", "intent_label": "greetings", "utterance": "مثال سلام دنیا را نشانم بده", "needs_manual": true, "machine_generated": true}
 {"skill_id": "ovos-skill-hello-world.openvoiceos", "lang": "fa-IR", "intent_label": "how_are_you", "utterance": "چطوری", "needs_manual": false}
 {"skill_id": "ovos-skill-hello-world.openvoiceos", "lang": "fa-IR", "intent_label": "how_are_you", "utterance": "امروز روزت چطور گذشت", "needs_manual": true, "machine_generated": true, "rewritten_from": "روزت چطور بوده"}
 {"skill_id": "ovos-skill-hello-world.openvoiceos", "lang": "fa-IR", "intent_label": "how_are_you", "utterance": "حالت چطوره", "needs_manual": true, "machine_generated": true, "rewritten_from": "چطور هستی"}

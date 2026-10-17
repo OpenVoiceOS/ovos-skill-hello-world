@@ -16,7 +16,7 @@ IGNORED = DEFAULT_IGNORED + ENVIRONMENTAL
 
 
 class TestPadaciosoHelloWorldIntent(TestCase):
-    """``hello_world_intent`` is an intent file, not an Adapt keyword rule, so
+    """``greetings`` is an intent file, not an Adapt keyword rule, so
     it is reachable via the padacioso pipeline and unreachable via an
     adapt-only pipeline."""
 
@@ -49,17 +49,17 @@ class TestPadaciosoHelloWorldIntent(TestCase):
                         context={"skill_id": self.skill_id}),
                 Message(SpecMessage.INTENT_MATCHED,
                         data={"skill_id": self.skill_id,
-                              "intent_name": f"{self.skill_id}:hello_world_intent"},
+                              "intent_name": f"{self.skill_id}:greetings"},
                         context={"skill_id": self.skill_id}),
                 Message(SpecMessage.INTENT_HANDLER_START,
                         data={"skill_id": self.skill_id,
-                              "intent_name": "hello_world_intent"},
+                              "intent_name": "greetings"},
                         context={"skill_id": self.skill_id}),
-                Message(f"{self.skill_id}:hello_world_intent",
+                Message(f"{self.skill_id}:greetings",
                         data={"utterance": "hello world", "lang": "en-US"},
                         context={"skill_id": self.skill_id}),
                 Message("mycroft.skill.handler.start",
-                        data={"name": "HelloWorldSkill.handle_hello_world_intent"},
+                        data={"name": "HelloWorldSkill.handle_greetings"},
                         context={"skill_id": self.skill_id}),
                 Message(SpecMessage.SPEAK,
                         data={"utterance": "Hello world",
@@ -72,11 +72,11 @@ class TestPadaciosoHelloWorldIntent(TestCase):
                               }},
                         context={"skill_id": self.skill_id}),
                 Message("mycroft.skill.handler.complete",
-                        data={"name": "HelloWorldSkill.handle_hello_world_intent"},
+                        data={"name": "HelloWorldSkill.handle_greetings"},
                         context={"skill_id": self.skill_id}),
                 Message(SpecMessage.INTENT_HANDLER_COMPLETE,
                         data={"skill_id": self.skill_id,
-                              "intent_name": "hello_world_intent"},
+                              "intent_name": "greetings"},
                         context={"skill_id": self.skill_id}),
                 Message(SpecMessage.UTTERANCE_HANDLED,
                         data={},
@@ -201,8 +201,8 @@ class TestPadaciosoIntent(TestCase):
 
 
 class TestNoAdaptPipeline(TestCase):
-    """``hello_world_intent`` and ``thank_you_intent`` are intent files (see
-    ``locale/*/intents/hello_world_intent.intent`` and
+    """``greetings`` and ``thank_you_intent`` are intent files (see
+    ``locale/*/intents/greetings.intent`` and
     ``thank_you_intent.intent``), not Adapt keyword rules. A pipeline stack
     with no Adapt stage at all must still match them, which an Adapt-only
     keyword intent never would."""
@@ -231,8 +231,45 @@ class TestNoAdaptPipeline(TestCase):
 
     def test_hello_world_matches_without_adapt(self):
         names = self._matched_intent_names("hello world")
-        self.assertIn(f"{self.skill_id}:hello_world_intent", names)
+        self.assertIn(f"{self.skill_id}:greetings", names)
 
     def test_thank_you_matches_without_adapt(self):
         names = self._matched_intent_names("thank you")
         self.assertIn(f"{self.skill_id}:thank_you_intent", names)
+
+
+
+class TestWorldKeywordBranch(TestCase):
+    """The ``hello_world_keyword.voc`` keyword decides which dialog the
+    greetings intent speaks, through a real padacioso match of the utterance."""
+
+    skill_id = "ovos-skill-hello-world.openvoiceos"
+
+    def _spoken_dialog(self, utterance, lang):
+        minicroft = get_minicroft([self.skill_id], lang=lang)
+        try:
+            session = Session("123")
+            session.lang = lang
+            session.pipeline = ["ovos-padacioso-pipeline-plugin-high"]
+            message = Message("recognizer_loop:utterance",
+                              {"utterances": [utterance], "lang": lang},
+                              {"session": session.serialize(), "source": "A", "destination": "B"})
+            capture = CaptureSession(minicroft)
+            capture.capture(message, timeout=15)
+            messages = capture.finish()
+        finally:
+            minicroft.stop()
+        matched = [m.data.get("intent_name") for m in messages
+                   if m.msg_type == SpecMessage.INTENT_MATCHED]
+        self.assertEqual(matched, [f"{self.skill_id}:greetings"])
+        spoken = [m for m in messages if m.msg_type == SpecMessage.SPEAK]
+        self.assertEqual(len(spoken), 1)
+        return spoken[0].data["meta"]["dialog"]
+
+    def test_en_us(self):
+        self.assertEqual(self._spoken_dialog("hello world", "en-US"), "hello_world")
+        self.assertEqual(self._spoken_dialog("hello", "en-US"), "hello")
+
+    def test_es_es(self):
+        self.assertEqual(self._spoken_dialog("hola mundo", "es-ES"), "hello_world")
+        self.assertEqual(self._spoken_dialog("hola", "es-ES"), "hello")
