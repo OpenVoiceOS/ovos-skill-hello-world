@@ -54,7 +54,7 @@ class HelloWorldSkill(OVOSSkill):
         # https://openvoiceos.github.io/message_spec/
         # this can be tested using `mana` (https://github.com/NeonGeckoCom/neon-mana-utils)
         # `mana send-message hello.world`
-        self.add_event("hello.world", self.handle_hello_world_intent)
+        self.add_event("hello.world", self.speak_hello_world)
         self.my_var = "hello world"
 
     def on_settings_changed(self):
@@ -74,22 +74,22 @@ class HelloWorldSkill(OVOSSkill):
         """This is a Padatious intent handler, it is triggered by a keyword."""
         self.speak_dialog("welcome")
 
-    @intent_handler("hello_world_intent.intent")
-    def handle_hello_world_intent(self, message):
+    @intent_handler("greetings.intent")
+    def handle_greetings(self, message):
+        """Greet the user, or the world when the utterance names it.
+
+        The ``hello_world_keyword.voc`` keyword picks the branch, so the check stays
+        localizable: each locale lists its own word for "world".
         """
-        speak_dialog() is an OVOS skill method that safely handles
-        formatting and speaking a dialog file and its translated dialog
-        back to the user.
-        """
+        if self.voc_match(message.data.get("utterance", ""), "hello_world_keyword"):
+            self.speak_hello_world()
+        else:
+            self.speak_dialog("hello")
+
+    def speak_hello_world(self, message=None):
         # wait=True will block the message bus until the dialog is finished
         self.speak_dialog("hello_world", wait=True)
         LOG.debug("'hello world' TTS finished")
-        # this would speak the string without translation
-        # self.speak("hello world")
-
-    @intent_handler("greetings.intent")
-    def handle_greetings(self, message):
-        self.speak_dialog("hello")
 
     @intent_handler("how_are_you.intent")
     def handle_how_are_you_intent(self, message):
