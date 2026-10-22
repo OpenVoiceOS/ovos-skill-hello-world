@@ -1,0 +1,15 @@
+{"skill_id": "ovos-skill-hello-world.openvoiceos", "lang": "gl-ES", "intent_label": "greetings", "utterance": "ei", "needs_manual": false}
+{"skill_id": "ovos-skill-hello-world.openvoiceos", "lang": "gl-ES", "intent_label": "greetings", "utterance": "hai moito que non nos viamos", "needs_manual": true, "machine_generated": true, "rewritten_from": "canto tempo sen vernos"}
+{"skill_id": "ovos-skill-hello-world.openvoiceos", "lang": "gl-ES", "intent_label": "greetings", "utterance": "ola, bos días a todos", "needs_manual": true, "machine_generated": true, "rewritten_from": "ei que tal"}
+{"skill_id": "ovos-skill-hello-world.openvoiceos", "lang": "gl-ES", "intent_label": "greetings", "utterance": "boas tardes a todos", "needs_manual": true, "machine_generated": true}
+{"skill_id": "ovos-skill-hello-world.openvoiceos", "lang": "gl-ES", "intent_label": "greetings", "utterance": "quero oír o ola mundo", "needs_manual": true, "machine_generated": true, "rewritten_from": "ola mundo"}
+{"skill_id": "ovos-skill-hello-world.openvoiceos", "lang": "gl-ES", "intent_label": "greetings", "utterance": "executa o exemplo de ola mundo", "needs_manual": true, "machine_generated": true, "rewritten_from": "fai o exemplo de ola mundo"}
+{"skill_id": "ovos-skill-hello-world.openvoiceos", "lang": "gl-ES", "intent_label": "greetings", "utterance": "dime ola mundo, por favor", "needs_manual": true, "machine_generated": true, "rewritten_from": "ola mundo por favor"}
+{"skill_id": "ovos-skill-hello-world.openvoiceos", "lang": "gl-ES", "intent_label": "greetings", "utterance": "amósame o ola mundo", "needs_manual": true, "machine_generated": true}
+{"skill_id": "ovos-skill-hello-world.openvoiceos", "lang": "gl-ES", "intent_label": "how_are_you", "utterance": "estás ben hoxe", "needs_manual": true, "machine_generated": true, "rewritten_from": "estás ben"}
+{"skill_id": "ovos-skill-hello-world.openvoiceos", "lang": "gl-ES", "intent_label": "how_are_you", "utterance": "que tal che vai o día", "needs_manual": true, "machine_generated": true, "rewritten_from": "como che vai o día"}
+{"skill_id": "ovos-skill-hello-world.openvoiceos", "lang": "gl-ES", "intent_label": "how_are_you", "utterance": "como te atopas hoxe", "needs_manual": true, "machine_generated": true, "rewritten_from": "como estás hoxe"}
+{"skill_id": "ovos-skill-hello-world.openvoiceos", "lang": "gl-ES", "intent_label": "thank_you_intent", "utterance": "grazas", "needs_manual": false}
+{"skill_id": "ovos-skill-hello-world.openvoiceos", "lang": "gl-ES", "intent_label": "thank_you_intent", "utterance": "de verdade, moitísimas grazas", "needs_manual": true, "machine_generated": true, "rewritten_from": "mil grazas de verdade"}
+{"skill_id": "ovos-skill-hello-world.openvoiceos", "lang": "gl-ES", "intent_label": "thank_you_intent", "utterance": "agradézocho moito", "needs_manual": true, "machine_generated": true, "rewritten_from": "agradézocho"}
+{"skill_id": "ovos-skill-hello-world.openvoiceos", "lang": "gl-ES", "intent_label": "thank_you_intent", "utterance": "grazas pola axuda", "needs_manual": true, "machine_generated": true}

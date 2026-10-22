@@ -1,0 +1,17 @@
+{"skill_id": "ovos-skill-hello-world.openvoiceos", "lang": "nl-NL", "intent_label": "greetings", "utterance": "hoi", "needs_manual": false}
+{"skill_id": "ovos-skill-hello-world.openvoiceos", "lang": "nl-NL", "intent_label": "greetings", "utterance": "fijn om weer van je te horen", "needs_manual": true, "machine_generated": true, "rewritten_from": "fijn om je te horen"}
+{"skill_id": "ovos-skill-hello-world.openvoiceos", "lang": "nl-NL", "intent_label": "greetings", "utterance": "dag", "needs_manual": false}
+{"skill_id": "ovos-skill-hello-world.openvoiceos", "lang": "nl-NL", "intent_label": "greetings", "utterance": "goedemorgen allemaal", "needs_manual": true, "machine_generated": true}
+{"skill_id": "ovos-skill-hello-world.openvoiceos", "lang": "nl-NL", "intent_label": "greetings", "utterance": "hallo allemaal", "needs_manual": true, "machine_generated": true}
+{"skill_id": "ovos-skill-hello-world.openvoiceos", "lang": "nl-NL", "intent_label": "greetings", "utterance": "groeten", "needs_manual": false}
+{"skill_id": "ovos-skill-hello-world.openvoiceos", "lang": "nl-NL", "intent_label": "greetings", "utterance": "start het hallo wereld voorbeeld", "needs_manual": true, "machine_generated": true, "rewritten_from": "doe het hallo wereld voorbeeld"}
+{"skill_id": "ovos-skill-hello-world.openvoiceos", "lang": "nl-NL", "intent_label": "greetings", "utterance": "zeg eens hallo wereld voor mij", "needs_manual": true, "machine_generated": true, "rewritten_from": "kun je hallo wereld zeggen"}
+{"skill_id": "ovos-skill-hello-world.openvoiceos", "lang": "nl-NL", "intent_label": "greetings", "utterance": "laat me de hallo wereld zien", "needs_manual": true, "machine_generated": true}
+{"skill_id": "ovos-skill-hello-world.openvoiceos", "lang": "nl-NL", "intent_label": "how_are_you", "utterance": "hoe gaat het nu met je", "needs_manual": true, "machine_generated": true, "rewritten_from": "Hoe gaat het"}
+{"skill_id": "ovos-skill-hello-world.openvoiceos", "lang": "nl-NL", "intent_label": "how_are_you", "utterance": "hoe is het je vergaan", "needs_manual": true, "machine_generated": true, "rewritten_from": "hoe is het met jou gegaan"}
+{"skill_id": "ovos-skill-hello-world.openvoiceos", "lang": "nl-NL", "intent_label": "how_are_you", "utterance": "hoe is het vandaag met je", "needs_manual": true, "machine_generated": true, "rewritten_from": "hoe gaat het vandaag"}
+{"skill_id": "ovos-skill-hello-world.openvoiceos", "lang": "nl-NL", "intent_label": "how_are_you", "utterance": "voel je je goed", "needs_manual": true, "machine_generated": true}
+{"skill_id": "ovos-skill-hello-world.openvoiceos", "lang": "nl-NL", "intent_label": "thank_you_intent", "utterance": "bedankt", "needs_manual": false}
+{"skill_id": "ovos-skill-hello-world.openvoiceos", "lang": "nl-NL", "intent_label": "thank_you_intent", "utterance": "bedankt, dat is erg aardig van je", "needs_manual": true, "machine_generated": true, "rewritten_from": "dat is aardig bedankt"}
+{"skill_id": "ovos-skill-hello-world.openvoiceos", "lang": "nl-NL", "intent_label": "thank_you_intent", "utterance": "hartelijk dank voor je hulp", "needs_manual": true, "machine_generated": true, "rewritten_from": "dank je hartelijk"}
+{"skill_id": "ovos-skill-hello-world.openvoiceos", "lang": "nl-NL", "intent_label": "thank_you_intent", "utterance": "dank je voor alles wat je doet", "needs_manual": true, "machine_generated": true}
