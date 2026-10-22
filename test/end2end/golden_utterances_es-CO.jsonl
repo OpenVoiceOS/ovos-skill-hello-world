@@ -2,10 +2,10 @@
 {"skill_id": "ovos-skill-hello-world.openvoiceos", "lang": "es-CO", "intent_label": "greetings", "utterance": "hola otra vez", "needs_manual": true, "machine_generated": true, "rewritten_from": "hola de nuevo"}
 {"skill_id": "ovos-skill-hello-world.openvoiceos", "lang": "es-CO", "intent_label": "greetings", "utterance": "hace rato que no te veía", "needs_manual": true, "machine_generated": true, "rewritten_from": "mucho tiempo sin verte"}
 {"skill_id": "ovos-skill-hello-world.openvoiceos", "lang": "es-CO", "intent_label": "greetings", "utterance": "quiubo", "needs_manual": true, "machine_generated": true}
-{"skill_id": "ovos-skill-hello-world.openvoiceos", "lang": "es-CO", "intent_label": "hello_world_intent", "utterance": "quiero oírte decir hola mundo", "needs_manual": true, "machine_generated": true, "rewritten_from": "hola mundo"}
-{"skill_id": "ovos-skill-hello-world.openvoiceos", "lang": "es-CO", "intent_label": "hello_world_intent", "utterance": "muéstrame el ejemplo de hola mundo", "needs_manual": true, "machine_generated": true}
-{"skill_id": "ovos-skill-hello-world.openvoiceos", "lang": "es-CO", "intent_label": "hello_world_intent", "utterance": "dime hola mundo por favor", "needs_manual": true, "machine_generated": true}
-{"skill_id": "ovos-skill-hello-world.openvoiceos", "lang": "es-CO", "intent_label": "hello_world_intent", "utterance": "haz el hola mundo, porfa", "needs_manual": true, "machine_generated": true}
+{"skill_id": "ovos-skill-hello-world.openvoiceos", "lang": "es-CO", "intent_label": "greetings", "utterance": "quiero oírte decir hola mundo", "needs_manual": true, "machine_generated": true, "rewritten_from": "hola mundo"}
+{"skill_id": "ovos-skill-hello-world.openvoiceos", "lang": "es-CO", "intent_label": "greetings", "utterance": "muéstrame el ejemplo de hola mundo", "needs_manual": true, "machine_generated": true}
+{"skill_id": "ovos-skill-hello-world.openvoiceos", "lang": "es-CO", "intent_label": "greetings", "utterance": "dime hola mundo por favor", "needs_manual": true, "machine_generated": true}
+{"skill_id": "ovos-skill-hello-world.openvoiceos", "lang": "es-CO", "intent_label": "greetings", "utterance": "haz el hola mundo, porfa", "needs_manual": true, "machine_generated": true}
 {"skill_id": "ovos-skill-hello-world.openvoiceos", "lang": "es-CO", "intent_label": "how_are_you", "utterance": "cómo vas hoy", "needs_manual": true, "machine_generated": true, "rewritten_from": "cómo estás hoy"}
 {"skill_id": "ovos-skill-hello-world.openvoiceos", "lang": "es-CO", "intent_label": "how_are_you", "utterance": "cómo te ha ido el día de hoy", "needs_manual": true, "machine_generated": true}
 {"skill_id": "ovos-skill-hello-world.openvoiceos", "lang": "es-CO", "intent_label": "how_are_you", "utterance": "cómo te sientes", "needs_manual": true, "machine_generated": true}

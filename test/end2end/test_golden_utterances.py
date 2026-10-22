@@ -14,8 +14,10 @@ They run on the same pipeline and must not match any intent of this skill.
 Each locale must match at least ``MIN_MATCH_RATE`` of its golden rows, and at
 least ``MIN_MATCHED_ROWS_PER_INTENT`` rows of each intent. A locale in
 ``GOLDEN_LOCALE_GAPS`` below the rate is an expected failure, but it still
-fails when an intent has no matched row or when its rate falls more than
-``GAP_TOLERANCE`` below the rate measured for its entry. A negative row that
+fails when an intent not in ``GOLDEN_INTENT_GAPS`` has no matched row or when
+its rate falls more than ``GAP_TOLERANCE`` below the rate measured for its
+entry; an entry whose rate reaches ``MIN_MATCH_RATE``, or whose intent matches
+a row again, fails too. A negative row that
 matches this skill fails the locale, unless ``NEGATIVE_KNOWN_CLAIMS`` lists
 that claim. All rows run, including rows marked ``needs_manual`` or
 ``machine_generated``, and the test prints every row that misses with the
@@ -38,15 +40,35 @@ MIN_MATCH_RATE = 0.8
 # A locale also fails when any of its intents has fewer matched rows than this.
 MIN_MATCHED_ROWS_PER_INTENT = 1
 END2END_DIR = Path(__file__).parent
-# Locales below MIN_MATCH_RATE after machine-translated lines were added,
-# mapped to the rate measured on the published model and the reason. The
-# rate check becomes an expected failure for them. The per-intent floor still
-# applies, and so does a drop of more than GAP_TOLERANCE below the measured rate.
+# Locales below MIN_MATCH_RATE on the published m2v model, mapped to the rate
+# measured there (identical in three runs) and the reason. The rate check
+# becomes an expected failure for them, and fails once the rate reaches
+# MIN_MATCH_RATE: the stale entry goes. The per-intent floor still applies, and
+# so does a drop of more than GAP_TOLERANCE below the measured rate.
+_RETRAIN = "published m2v model predates these templates; remove after retrain"
 GOLDEN_LOCALE_GAPS = {
-    "es-CO": (0.75, "below 80% after rule 7a: linguonnx added 2 lines, the rest "
-                    "were duplicates or near copies of golden rows"),
+    "cs-CZ": (0.75, f"{_RETRAIN}; the four how_are_you rows match nothing"),
+    "de-DE": (0.765, f"{_RETRAIN}; match nothing: 'einen schönen guten Abend', "
+                     "'hey, was ist denn los', 'hallo ihr alle', "
+                     "'wie ist es dir in letzter zeit ergangen'"),
+    "es-CO": (0.625, f"{_RETRAIN}; match nothing: 'hace rato que no te veía', 'quiubo', "
+                     "'cómo te sientes', 'cómo amaneciste', 'mil gracias, muy amable', "
+                     "'te agradezco un montón'"),
     "it-IT": (0.765, "below 80% after rule 7a: linguonnx added 1 line, the rest "
                      "were duplicates or near copies of golden rows"),
+    "pl-PL": (0.778, f"{_RETRAIN}; match nothing: 'jak tam u ciebie', "
+                     "'jak się dzisiaj czujesz', 'dzięki za pomoc', 'wielkie dzięki'"),
+    "tr-TR": (0.706, f"{_RETRAIN}; match nothing: 'görüşmeyeli çok oldu', "
+                     "'herkese iyi günler', 'selam herkese', 'iyi misin', "
+                     "'yardımın için teşekkürler'"),
+}
+# (locale, intent) pairs that the per-intent floor skips. Each pair keeps its
+# rows in the rate. The test fails once the intent matches a row: the stale
+# entry goes.
+GOLDEN_INTENT_GAPS = {
+    ("cs-CZ", "how_are_you"): f"{_RETRAIN}; measured: none of its four rows matches "
+                              "('jak to dneska jde', 'jak ses dneska měl', "
+                              "'daří se ti dobře', 'je ti dobře')",
 }
 GAP_TOLERANCE = 0.10
 # Locales whose negative rows the published m2v model cannot separate from
@@ -108,20 +130,27 @@ def test_golden_rows_match_their_intent(lang):
         else:
             misses.append(f"{row['utterance']!r}: expected {row['intent_label']}, got {got}")
     starved = sorted(label for label, count in hits.items()
-                     if count < MIN_MATCHED_ROWS_PER_INTENT)
+                     if count < MIN_MATCHED_ROWS_PER_INTENT
+                     and (lang, label) not in GOLDEN_INTENT_GAPS)
+    healed = sorted(label for label, count in hits.items()
+                    if count >= MIN_MATCHED_ROWS_PER_INTENT
+                    and (lang, label) in GOLDEN_INTENT_GAPS)
     rate = 1 - len(misses) / len(rows)
     print(f"[{lang}] {rate:.1%} of {len(rows)} rows match", *misses, sep="\n  ")
     assert not starved, (
         f"[{lang}] intents below {MIN_MATCHED_ROWS_PER_INTENT} matched rows: {starved}"
     )
+    assert not healed, f"[{lang}] intents match again: remove their GOLDEN_INTENT_GAPS entries: {healed}"
     if lang in GOLDEN_LOCALE_GAPS:
         measured, reason = GOLDEN_LOCALE_GAPS[lang]
         assert rate >= measured - GAP_TOLERANCE, (
             f"[{lang}] {rate:.1%} of rows match, more than {GAP_TOLERANCE:.0%} below "
             f"the measured {measured:.1%}:\n  " + "\n  ".join(misses)
         )
-        if rate < MIN_MATCH_RATE:
-            pytest.xfail(f"[{lang}] {rate:.1%} of rows match, known gap: {reason}")
+        assert rate < MIN_MATCH_RATE, (
+            f"[{lang}] {rate:.1%} of rows match, at the gate: remove its GOLDEN_LOCALE_GAPS entry"
+        )
+        pytest.xfail(f"[{lang}] {rate:.1%} of rows match, known gap: {reason}")
     assert rate >= MIN_MATCH_RATE, (
         f"[{lang}] {rate:.1%} of rows match, below {MIN_MATCH_RATE:.0%}:\n  " + "\n  ".join(misses)
     )

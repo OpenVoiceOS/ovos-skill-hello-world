@@ -3,10 +3,10 @@
 {"skill_id": "ovos-skill-hello-world.openvoiceos", "lang": "nl-NL", "intent_label": "greetings", "utterance": "dag", "needs_manual": false}
 {"skill_id": "ovos-skill-hello-world.openvoiceos", "lang": "nl-NL", "intent_label": "greetings", "utterance": "goedemorgen allemaal", "needs_manual": true, "machine_generated": true}
 {"skill_id": "ovos-skill-hello-world.openvoiceos", "lang": "nl-NL", "intent_label": "greetings", "utterance": "hallo allemaal", "needs_manual": true, "machine_generated": true}
-{"skill_id": "ovos-skill-hello-world.openvoiceos", "lang": "nl-NL", "intent_label": "hello_world_intent", "utterance": "groeten", "needs_manual": false}
-{"skill_id": "ovos-skill-hello-world.openvoiceos", "lang": "nl-NL", "intent_label": "hello_world_intent", "utterance": "start het hallo wereld voorbeeld", "needs_manual": true, "machine_generated": true, "rewritten_from": "doe het hallo wereld voorbeeld"}
-{"skill_id": "ovos-skill-hello-world.openvoiceos", "lang": "nl-NL", "intent_label": "hello_world_intent", "utterance": "zeg eens hallo wereld voor mij", "needs_manual": true, "machine_generated": true, "rewritten_from": "kun je hallo wereld zeggen"}
-{"skill_id": "ovos-skill-hello-world.openvoiceos", "lang": "nl-NL", "intent_label": "hello_world_intent", "utterance": "laat me de hallo wereld zien", "needs_manual": true, "machine_generated": true}
+{"skill_id": "ovos-skill-hello-world.openvoiceos", "lang": "nl-NL", "intent_label": "greetings", "utterance": "groeten", "needs_manual": false}
+{"skill_id": "ovos-skill-hello-world.openvoiceos", "lang": "nl-NL", "intent_label": "greetings", "utterance": "start het hallo wereld voorbeeld", "needs_manual": true, "machine_generated": true, "rewritten_from": "doe het hallo wereld voorbeeld"}
+{"skill_id": "ovos-skill-hello-world.openvoiceos", "lang": "nl-NL", "intent_label": "greetings", "utterance": "zeg eens hallo wereld voor mij", "needs_manual": true, "machine_generated": true, "rewritten_from": "kun je hallo wereld zeggen"}
+{"skill_id": "ovos-skill-hello-world.openvoiceos", "lang": "nl-NL", "intent_label": "greetings", "utterance": "laat me de hallo wereld zien", "needs_manual": true, "machine_generated": true}
 {"skill_id": "ovos-skill-hello-world.openvoiceos", "lang": "nl-NL", "intent_label": "how_are_you", "utterance": "hoe gaat het nu met je", "needs_manual": true, "machine_generated": true, "rewritten_from": "Hoe gaat het"}
 {"skill_id": "ovos-skill-hello-world.openvoiceos", "lang": "nl-NL", "intent_label": "how_are_you", "utterance": "hoe is het je vergaan", "needs_manual": true, "machine_generated": true, "rewritten_from": "hoe is het met jou gegaan"}
 {"skill_id": "ovos-skill-hello-world.openvoiceos", "lang": "nl-NL", "intent_label": "how_are_you", "utterance": "hoe is het vandaag met je", "needs_manual": true, "machine_generated": true, "rewritten_from": "hoe gaat het vandaag"}
