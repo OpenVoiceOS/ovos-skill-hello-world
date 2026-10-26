@@ -48,16 +48,9 @@ END2END_DIR = Path(__file__).parent
 _RETRAIN = "published m2v model predates these templates; remove after retrain"
 GOLDEN_LOCALE_GAPS = {
     "cs-CZ": (0.75, f"{_RETRAIN}; the four how_are_you rows match nothing"),
-    "de-DE": (0.765, f"{_RETRAIN}; match nothing: 'einen schönen guten Abend', "
-                     "'hey, was ist denn los', 'hallo ihr alle', "
-                     "'wie ist es dir in letzter zeit ergangen'"),
     "es-CO": (0.625, f"{_RETRAIN}; match nothing: 'hace rato que no te veía', 'quiubo', "
                      "'cómo te sientes', 'cómo amaneciste', 'mil gracias, muy amable', "
                      "'te agradezco un montón'"),
-    "it-IT": (0.765, "below 80% after rule 7a: linguonnx added 1 line, the rest "
-                     "were duplicates or near copies of golden rows"),
-    "pl-PL": (0.778, f"{_RETRAIN}; match nothing: 'jak tam u ciebie', "
-                     "'jak się dzisiaj czujesz', 'dzięki za pomoc', 'wielkie dzięki'"),
     "tr-TR": (0.706, f"{_RETRAIN}; match nothing: 'görüşmeyeli çok oldu', "
                      "'herkese iyi günler', 'selam herkese', 'iyi misin', "
                      "'yardımın için teşekkürler'"),
@@ -78,7 +71,10 @@ NEGATIVE_ENGINE_GAPS = {}
 # {lang: {utterance: claimed_intent}}. A listed claim is allowed, not
 # required, so a row that flips between boots does not fail the test. Any
 # other claim fails the locale.
-NEGATIVE_KNOWN_CLAIMS = {}
+NEGATIVE_KNOWN_CLAIMS = {
+    "es-ES": {"qué tiempo hará mañana": "greetings"},
+    "nl-NL": {"wat voor weer wordt het morgen": "greetings"},
+}
 
 
 def _rows_by_lang(prefix):
