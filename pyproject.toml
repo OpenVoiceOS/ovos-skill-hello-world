@@ -1,0 +1,63 @@
+[build-system]
+requires = ["setuptools>=64"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ovos-skill-hello-world"
+dynamic = ["version"]
+description = "OVOS hello world skill plugin"
+readme = "README.md"
+license = { text = "Apache-2.0" }
+authors = [
+    { name = "OpenVoiceOS", email = "jarbasai@mailfence.com" }
+]
+keywords = ["ovos", "skill", "plugin"]
+requires-python = ">=3.9"
+dependencies = [
+    "ovos-utils>=0.0.38",
+    "ovos-workshop>=0.0.15,<10.0.0",
+    "ovos-plugin-manager>=2.1.0,<3.0.0",
+]
+
+[project.optional-dependencies]
+# unit tests and coverage (test/unittests)
+test = [
+    "coveralls>=1.8.2",
+    "flake8>=3.7.9",
+    "pytest>=5.2.4",
+    "pytest-cov>=2.8.1",
+    "cov-core>=1.15.0",
+]
+# end-to-end suite (test/end2end): ovoscope, the m2v pipeline, padacioso and adapt
+end2end = [
+    "pytest>=5.2.4",
+    "pytest-timeout>=2.0.0",
+    "ovoscope>=1.12.1a1",
+    "ovos-core>=2.0.0a1",
+    "ovos-bus-client",
+    "ovos-adapt-parser>=1.0.9,<2.0.0",
+    "padacioso>=1.0.0",
+    "ovos-m2v-pipeline>=0.37.3a1",
+    "nebulento>=0.1.0",
+    "palavreado>=0.2.0",
+    "ovos-spec-tools",
+]
+
+[project.urls]
+Homepage = "https://github.com/OpenVoiceOS/ovos-skill-hello-world"
+
+[project.entry-points."opm.skill"]
+"ovos-skill-hello-world.openvoiceos" = "ovos_skill_hello_world:HelloWorldSkill"
+
+[tool.setuptools]
+packages = ["ovos_skill_hello_world"]
+include-package-data = true
+
+[tool.setuptools.package-data]
+ovos_skill_hello_world = ["*.json", "locale/**/*"]
+
+[tool.setuptools.dynamic]
+version = { attr = "ovos_skill_hello_world.version.__version__" }
+
+[tool.pytest.ini_options]
+ovoscope_min_routing_rate = 0.80

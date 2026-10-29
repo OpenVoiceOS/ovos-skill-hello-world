@@ -1,0 +1,14 @@
+{
+  "skill_id": "ovos-skill-hello-world.openvoiceos",
+  "source": "https://github.com/OpenVoiceOS/ovos-skill-hello-world",
+  "name": "Merhaba dünya",
+  "description": "Beceri yazarlarının bir OVOS becerisinin nasıl bir araya geldiğini görmesi için giriş becerisi",
+  "examples": [
+    "Merhaba dünya",
+    "Teşekkür ederim",
+    "Nasılsın?"
+  ],
+  "tags": [
+    "eğitim"
+  ]
+}

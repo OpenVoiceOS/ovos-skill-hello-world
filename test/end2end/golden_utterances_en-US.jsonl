@@ -1,0 +1,26 @@
+{"skill_id": "ovos-skill-hello-world.openvoiceos", "lang": "en-US", "intent_label": "greetings", "utterance": "hi", "needs_manual": false}
+{"skill_id": "ovos-skill-hello-world.openvoiceos", "lang": "en-US", "intent_label": "greetings", "utterance": "it's been ages since we last talked", "needs_manual": true, "machine_generated": true, "rewritten_from": "long time no see"}
+{"skill_id": "ovos-skill-hello-world.openvoiceos", "lang": "en-US", "intent_label": "greetings", "utterance": "hey there assistant", "needs_manual": true, "machine_generated": true, "rewritten_from": "hey there"}
+{"skill_id": "ovos-skill-hello-world.openvoiceos", "lang": "en-US", "intent_label": "greetings", "utterance": "good morning to you", "needs_manual": true, "machine_generated": true, "rewritten_from": "good morning"}
+{"skill_id": "ovos-skill-hello-world.openvoiceos", "lang": "en-US", "intent_label": "greetings", "utterance": "greetings", "needs_manual": false}
+{"skill_id": "ovos-skill-hello-world.openvoiceos", "lang": "en-US", "intent_label": "greetings", "utterance": "well hi there friend", "needs_manual": true, "machine_generated": true, "rewritten_from": "hi there"}
+{"skill_id": "ovos-skill-hello-world.openvoiceos", "lang": "en-US", "intent_label": "greetings", "utterance": "hey", "needs_manual": false}
+{"skill_id": "ovos-skill-hello-world.openvoiceos", "lang": "en-US", "intent_label": "greetings", "utterance": "hello hello", "needs_manual": true, "machine_generated": true}
+{"skill_id": "ovos-skill-hello-world.openvoiceos", "lang": "en-US", "intent_label": "greetings", "utterance": "good evening everyone", "needs_manual": true, "machine_generated": true}
+{"skill_id": "ovos-skill-hello-world.openvoiceos", "lang": "en-US", "intent_label": "greetings", "utterance": "let me hear you say hello world", "needs_manual": true, "machine_generated": true, "rewritten_from": "hello world"}
+{"skill_id": "ovos-skill-hello-world.openvoiceos", "lang": "en-US", "intent_label": "greetings", "utterance": "run the hello world demo", "needs_manual": true, "machine_generated": true, "rewritten_from": "do the hello world example"}
+{"skill_id": "ovos-skill-hello-world.openvoiceos", "lang": "en-US", "intent_label": "greetings", "utterance": "could you do hello world for me", "needs_manual": true, "machine_generated": true, "rewritten_from": "hello world please"}
+{"skill_id": "ovos-skill-hello-world.openvoiceos", "lang": "en-US", "intent_label": "greetings", "utterance": "show me the hello world example", "needs_manual": true, "machine_generated": true}
+{"skill_id": "ovos-skill-hello-world.openvoiceos", "lang": "en-US", "intent_label": "greetings", "utterance": "i want to see your hello world", "needs_manual": true, "machine_generated": true}
+{"skill_id": "ovos-skill-hello-world.openvoiceos", "lang": "en-US", "intent_label": "how_are_you", "utterance": "how are you feeling", "needs_manual": true, "machine_generated": true, "rewritten_from": "how are you"}
+{"skill_id": "ovos-skill-hello-world.openvoiceos", "lang": "en-US", "intent_label": "how_are_you", "utterance": "how's your day been so far", "needs_manual": true, "machine_generated": true, "rewritten_from": "how is your day going"}
+{"skill_id": "ovos-skill-hello-world.openvoiceos", "lang": "en-US", "intent_label": "how_are_you", "utterance": "how's everything going with you", "needs_manual": true, "machine_generated": true, "rewritten_from": "how’s it going"}
+{"skill_id": "ovos-skill-hello-world.openvoiceos", "lang": "en-US", "intent_label": "how_are_you", "utterance": "how are you doing tonight", "needs_manual": true, "machine_generated": true, "rewritten_from": "how are you doing"}
+{"skill_id": "ovos-skill-hello-world.openvoiceos", "lang": "en-US", "intent_label": "how_are_you", "utterance": "has your day been good", "needs_manual": true, "machine_generated": true, "rewritten_from": "how has your day been"}
+{"skill_id": "ovos-skill-hello-world.openvoiceos", "lang": "en-US", "intent_label": "how_are_you", "utterance": "are you alright", "needs_manual": true, "machine_generated": true}
+{"skill_id": "ovos-skill-hello-world.openvoiceos", "lang": "en-US", "intent_label": "thank_you_intent", "utterance": "thanks", "needs_manual": false}
+{"skill_id": "ovos-skill-hello-world.openvoiceos", "lang": "en-US", "intent_label": "thank_you_intent", "utterance": "thank you so very much for that", "needs_manual": true, "machine_generated": true, "rewritten_from": "thank you very much"}
+{"skill_id": "ovos-skill-hello-world.openvoiceos", "lang": "en-US", "intent_label": "thank_you_intent", "utterance": "thanks so much for your help", "needs_manual": true, "machine_generated": true, "rewritten_from": "thanks so much"}
+{"skill_id": "ovos-skill-hello-world.openvoiceos", "lang": "en-US", "intent_label": "thank_you_intent", "utterance": "thank you kindly", "needs_manual": true, "machine_generated": true, "rewritten_from": "thank you"}
+{"skill_id": "ovos-skill-hello-world.openvoiceos", "lang": "en-US", "intent_label": "thank_you_intent", "utterance": "much appreciated", "needs_manual": true, "machine_generated": true}
+{"skill_id": "ovos-skill-hello-world.openvoiceos", "lang": "en-US", "intent_label": "thank_you_intent", "utterance": "thanks a bunch", "needs_manual": true, "machine_generated": true}

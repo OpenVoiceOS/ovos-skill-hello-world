@@ -1,0 +1,17 @@
+{"skill_id": "ovos-skill-hello-world.openvoiceos", "lang": "ro-RO", "intent_label": "greetings", "utterance": "Hei.", "needs_manual": false}
+{"skill_id": "ovos-skill-hello-world.openvoiceos", "lang": "ro-RO", "intent_label": "greetings", "utterance": "nu ne-am mai văzut de mult timp", "needs_manual": true, "machine_generated": true, "rewritten_from": "Nu ne-am văzut de mult."}
+{"skill_id": "ovos-skill-hello-world.openvoiceos", "lang": "ro-RO", "intent_label": "greetings", "utterance": "Noroc!", "needs_manual": false}
+{"skill_id": "ovos-skill-hello-world.openvoiceos", "lang": "ro-RO", "intent_label": "greetings", "utterance": "bună dimineața tuturor", "needs_manual": true, "machine_generated": true}
+{"skill_id": "ovos-skill-hello-world.openvoiceos", "lang": "ro-RO", "intent_label": "greetings", "utterance": "salutări", "needs_manual": false}
+{"skill_id": "ovos-skill-hello-world.openvoiceos", "lang": "ro-RO", "intent_label": "greetings", "utterance": "trimite salutări lumii", "needs_manual": true, "machine_generated": true, "rewritten_from": "salutări lume"}
+{"skill_id": "ovos-skill-hello-world.openvoiceos", "lang": "ro-RO", "intent_label": "greetings", "utterance": "vreau să aud salut lume", "needs_manual": true, "machine_generated": true, "rewritten_from": "salut lume"}
+{"skill_id": "ovos-skill-hello-world.openvoiceos", "lang": "ro-RO", "intent_label": "greetings", "utterance": "spune salut lume", "needs_manual": true, "machine_generated": true}
+{"skill_id": "ovos-skill-hello-world.openvoiceos", "lang": "ro-RO", "intent_label": "greetings", "utterance": "arată-mi exemplul salut lume", "needs_manual": true, "machine_generated": true}
+{"skill_id": "ovos-skill-hello-world.openvoiceos", "lang": "ro-RO", "intent_label": "how_are_you", "utterance": "ce mai faci azi", "needs_manual": true, "machine_generated": true, "rewritten_from": "ce  faci"}
+{"skill_id": "ovos-skill-hello-world.openvoiceos", "lang": "ro-RO", "intent_label": "how_are_you", "utterance": "cum ți-a mers ziua", "needs_manual": true, "machine_generated": true, "rewritten_from": "Cum a fost ziua ta"}
+{"skill_id": "ovos-skill-hello-world.openvoiceos", "lang": "ro-RO", "intent_label": "how_are_you", "utterance": "cum te simți", "needs_manual": true, "machine_generated": true, "rewritten_from": "ce mai faci"}
+{"skill_id": "ovos-skill-hello-world.openvoiceos", "lang": "ro-RO", "intent_label": "how_are_you", "utterance": "ești bine", "needs_manual": true, "machine_generated": true}
+{"skill_id": "ovos-skill-hello-world.openvoiceos", "lang": "ro-RO", "intent_label": "thank_you_intent", "utterance": "mersi", "needs_manual": false}
+{"skill_id": "ovos-skill-hello-world.openvoiceos", "lang": "ro-RO", "intent_label": "thank_you_intent", "utterance": "îți mulțumesc foarte mult", "needs_manual": true, "machine_generated": true, "rewritten_from": "mulțumesc mult"}
+{"skill_id": "ovos-skill-hello-world.openvoiceos", "lang": "ro-RO", "intent_label": "thank_you_intent", "utterance": "mulțumesc", "needs_manual": false}
+{"skill_id": "ovos-skill-hello-world.openvoiceos", "lang": "ro-RO", "intent_label": "thank_you_intent", "utterance": "mulțumesc pentru ajutor", "needs_manual": true, "machine_generated": true}

@@ -11,25 +11,23 @@
     "Oi! Como vai?",
     "E aí, amigo!"
   ],
-    "/dialog/hello.world.dialog": [
-        "Ol\u00e1 mundo",
-        "Ol\u00e1",
-        "Oi para voc\u00ea tamb\u00e9m"
-    ],
-    "/dialog/how.are.you.dialog": [
-        "estou indo bem",
-        "Muito bem",
-        "Nada mau",
-        "Eu estou \u00f3timo",
-        "Poderia estar melhor",
-        "Eu estou indo muito bem"
-    ],
-    "/dialog/welcome.dialog": [
-        "A qualquer momento.",
-        "Feliz em poder ajudar",
-        "Feliz em ajudar",
-        "O Prazer \u00e9 meu",
-        "N\u00e3o tem problema.",
-        "De nada."
-    ]
+  "/dialog/hello.world.dialog": [
+    "Olá mundo"
+  ],
+  "/dialog/how.are.you.dialog": [
+    "estou indo bem",
+    "Muito bem",
+    "Nada mau",
+    "Eu estou ótimo",
+    "Poderia estar melhor",
+    "Eu estou indo muito bem"
+  ],
+  "/dialog/welcome.dialog": [
+    "A qualquer momento.",
+    "Feliz em poder ajudar",
+    "Feliz em ajudar",
+    "O Prazer é meu",
+    "Não tem problema.",
+    "De nada."
+  ]
 }
