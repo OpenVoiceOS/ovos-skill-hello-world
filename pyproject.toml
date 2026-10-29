@@ -32,12 +32,12 @@ test = [
 end2end = [
     "pytest>=5.2.4",
     "pytest-timeout>=2.0.0",
-    "ovoscope>=1.11.2a1",
+    "ovoscope>=1.12.1a1",
     "ovos-core>=2.0.0a1",
     "ovos-bus-client",
     "ovos-adapt-parser>=1.0.9,<2.0.0",
     "padacioso>=1.0.0",
-    "ovos-m2v-pipeline>=0.32.0a1",
+    "ovos-m2v-pipeline>=0.37.3a1",
     "nebulento>=0.1.0",
     "palavreado>=0.2.0",
     "ovos-spec-tools",
@@ -58,3 +58,6 @@ ovos_skill_hello_world = ["*.json", "locale/**/*"]
 
 [tool.setuptools.dynamic]
 version = { attr = "ovos_skill_hello_world.version.__version__" }
+
+[tool.pytest.ini_options]
+ovoscope_min_routing_rate = 0.80

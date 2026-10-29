@@ -5,6 +5,7 @@ from ovos_bus_client.session import Session
 from ovos_spec_tools.messages import SpecMessage
 from ovos_utils.log import LOG
 from ovoscope import CaptureSession, DEFAULT_IGNORED, End2EndTest, get_minicroft
+from ovoscope.routing import PIPELINE, TALLY, get_prototype_minicroft
 
 
 # Messages whose presence in a capture depends on the environment rather than
@@ -15,27 +16,41 @@ ENVIRONMENTAL = ["recognizer_loop:audio_output_start",
 IGNORED = DEFAULT_IGNORED + ENVIRONMENTAL
 
 
-class TestPadaciosoHelloWorldIntent(TestCase):
-    """``greetings`` is an intent file, not an Adapt keyword rule, so
-    it is reachable via the padacioso pipeline and unreachable via an
-    adapt-only pipeline."""
+def _fired_types(minicroft, utterance, lang="en-US"):
+    """The message types one request puts on the bus, in its own session."""
+    session = Session(f"routing-{abs(hash(utterance))}")
+    session.lang = lang
+    session.pipeline = PIPELINE
+    message = Message("recognizer_loop:utterance",
+                      {"utterances": [utterance], "lang": lang},
+                      {"session": session.serialize(), "source": "A", "destination": "B"})
+    capture = CaptureSession(minicroft)
+    capture.capture(message, timeout=15)
+    return [m.msg_type for m in capture.finish()]
+
+
+class TestHelloWorldIntent(TestCase):
+    """``greetings`` is an intent file, so the m2v prototype pipeline
+    reaches it."""
 
     def setUp(self):
         LOG.set_level("DEBUG")
         self.skill_id = "ovos-skill-hello-world.openvoiceos"
-        self.minicroft = get_minicroft([self.skill_id])  # reuse for speed, but beware if skills keeping internal state
+        self.minicroft = get_prototype_minicroft([self.skill_id], lang="en-US")
 
     def tearDown(self):
         if self.minicroft:
             self.minicroft.stop()
         LOG.set_level("CRITICAL")
 
-    def test_padacioso_match(self):
+    def test_m2v_match(self):
         session = Session("123")
-        session.pipeline = ["ovos-padacioso-pipeline-plugin-high"]
+        session.pipeline = PIPELINE
         message = Message("recognizer_loop:utterance",
                           {"utterances": ["hello world"], "lang": "en-US"},
                           {"session": session.serialize(), "source": "A", "destination": "B"})
+        TALLY.assert_routed("hello world", f"{self.skill_id}:greetings",
+                            _fired_types(self.minicroft, "hello world"))
 
         test = End2EndTest(
             minicroft=self.minicroft,
@@ -86,47 +101,27 @@ class TestPadaciosoHelloWorldIntent(TestCase):
 
         test.execute(timeout=10)
 
-    def test_adapt_no_match(self):
-        session = Session("123")
-        session.pipeline = ['ovos-adapt-pipeline-plugin-high']
-        message = Message("recognizer_loop:utterance",
-                          {"utterances": ["hello world"], "lang": "en-US"},
-                          {"session": session.serialize(), "source": "A", "destination": "B"})
 
-        test = End2EndTest(
-            minicroft=self.minicroft,
-            skill_ids=[self.skill_id],
-            source_message=message,
-            ignore_messages=IGNORED,
-            expected_messages=[
-                message,
-                Message("mycroft.audio.play_sound", {"uri": "snd/error.mp3"}),
-                Message(SpecMessage.INTENT_UNMATCHED, {}),
-                Message(SpecMessage.UTTERANCE_HANDLED, {})
-            ]
-        )
-
-        test.execute(timeout=10)
-
-
-class TestPadaciosoIntent(TestCase):
+class TestGoodMorningIntent(TestCase):
 
     def setUp(self):
         LOG.set_level("DEBUG")
         self.skill_id = "ovos-skill-hello-world.openvoiceos"
-        self.minicroft = get_minicroft([self.skill_id])
+        self.minicroft = get_prototype_minicroft([self.skill_id], lang="en-US")
 
     def tearDown(self):
         if self.minicroft:
             self.minicroft.stop()
         LOG.set_level("CRITICAL")
 
-    def test_padacioso_match(self):
+    def test_m2v_match(self):
         session = Session("123")
-        session.pipeline = ["ovos-padacioso-pipeline-plugin-high"]
+        session.pipeline = PIPELINE
         message = Message("recognizer_loop:utterance",
                           {"utterances": ["good morning"], "lang": "en-US"},
                           {"session": session.serialize(), "source": "A", "destination": "B"})
+        TALLY.assert_routed("good morning", f"{self.skill_id}:greetings",
+                            _fired_types(self.minicroft, "good morning"))
 
         test = End2EndTest(
             minicroft=self.minicroft,
@@ -176,7 +171,44 @@ class TestPadaciosoIntent(TestCase):
 
         test.execute(timeout=10)
 
+
+class TestAdaptNoMatch(TestCase):
+    """``greetings`` is an intent file, not an Adapt keyword rule, so it is
+    unreachable via an adapt-only pipeline."""
+
+    def setUp(self):
+        LOG.set_level("DEBUG")
+        self.skill_id = "ovos-skill-hello-world.openvoiceos"
+        self.minicroft = get_minicroft([self.skill_id])
+
+    def tearDown(self):
+        if self.minicroft:
+            self.minicroft.stop()
+        LOG.set_level("CRITICAL")
+
     def test_adapt_no_match(self):
+        session = Session("123")
+        session.pipeline = ['ovos-adapt-pipeline-plugin-high']
+        message = Message("recognizer_loop:utterance",
+                          {"utterances": ["hello world"], "lang": "en-US"},
+                          {"session": session.serialize(), "source": "A", "destination": "B"})
+
+        test = End2EndTest(
+            minicroft=self.minicroft,
+            skill_ids=[self.skill_id],
+            source_message=message,
+            ignore_messages=IGNORED,
+            expected_messages=[
+                message,
+                Message("mycroft.audio.play_sound", {"uri": "snd/error.mp3"}),
+                Message(SpecMessage.INTENT_UNMATCHED, {}),
+                Message(SpecMessage.UTTERANCE_HANDLED, {})
+            ]
+        )
+
+        test.execute(timeout=10)
+
+    def test_adapt_no_match_good_morning(self):
         session = Session("123")
         session.pipeline = ['ovos-adapt-pipeline-plugin-high']
         message = Message("recognizer_loop:utterance",
@@ -199,7 +231,6 @@ class TestPadaciosoIntent(TestCase):
         test.execute(timeout=10)
 
 
-
 class TestNoAdaptPipeline(TestCase):
     """``greetings`` and ``thank_you_intent`` are intent files (see
     ``locale/*/intents/greetings.intent`` and
@@ -210,47 +241,36 @@ class TestNoAdaptPipeline(TestCase):
     def setUp(self):
         LOG.set_level("DEBUG")
         self.skill_id = "ovos-skill-hello-world.openvoiceos"
-        self.minicroft = get_minicroft([self.skill_id])
+        self.minicroft = get_prototype_minicroft([self.skill_id], lang="en-US")
 
     def tearDown(self):
         if self.minicroft:
             self.minicroft.stop()
         LOG.set_level("CRITICAL")
 
-    def _matched_intent_names(self, utterance):
-        session = Session("123")
-        session.pipeline = ["ovos-padacioso-pipeline-plugin-high"]
-        message = Message("recognizer_loop:utterance",
-                          {"utterances": [utterance], "lang": "en-US"},
-                          {"session": session.serialize(), "source": "A", "destination": "B"})
-        capture = CaptureSession(self.minicroft)
-        capture.capture(message, timeout=15)
-        messages = capture.finish()
-        matched = [m for m in messages if m.msg_type == SpecMessage.INTENT_MATCHED]
-        return [m.data.get("intent_name") for m in matched]
+    def _assert_routed(self, utterance, intent):
+        TALLY.assert_routed(utterance, f"{self.skill_id}:{intent}",
+                            _fired_types(self.minicroft, utterance))
 
     def test_hello_world_matches_without_adapt(self):
-        names = self._matched_intent_names("hello world")
-        self.assertIn(f"{self.skill_id}:greetings", names)
+        self._assert_routed("hello world", "greetings")
 
     def test_thank_you_matches_without_adapt(self):
-        names = self._matched_intent_names("thank you")
-        self.assertIn(f"{self.skill_id}:thank_you_intent", names)
-
+        self._assert_routed("thank you", "thank_you_intent")
 
 
 class TestWorldKeywordBranch(TestCase):
     """The ``hello_world_keyword.voc`` keyword decides which dialog the
-    greetings intent speaks, through a real padacioso match of the utterance."""
+    greetings intent speaks, through a real match of the utterance."""
 
     skill_id = "ovos-skill-hello-world.openvoiceos"
 
     def _spoken_dialog(self, utterance, lang):
-        minicroft = get_minicroft([self.skill_id], lang=lang)
+        minicroft = get_prototype_minicroft([self.skill_id], lang=lang)
         try:
             session = Session("123")
             session.lang = lang
-            session.pipeline = ["ovos-padacioso-pipeline-plugin-high"]
+            session.pipeline = PIPELINE
             message = Message("recognizer_loop:utterance",
                               {"utterances": [utterance], "lang": lang},
                               {"session": session.serialize(), "source": "A", "destination": "B"})
@@ -259,9 +279,8 @@ class TestWorldKeywordBranch(TestCase):
             messages = capture.finish()
         finally:
             minicroft.stop()
-        matched = [m.data.get("intent_name") for m in messages
-                   if m.msg_type == SpecMessage.INTENT_MATCHED]
-        self.assertEqual(matched, [f"{self.skill_id}:greetings"])
+        TALLY.assert_routed(utterance, f"{self.skill_id}:greetings",
+                            [m.msg_type for m in messages])
         spoken = [m for m in messages if m.msg_type == SpecMessage.SPEAK]
         self.assertEqual(len(spoken), 1)
         return spoken[0].data["meta"]["dialog"]
